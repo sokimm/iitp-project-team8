@@ -106,8 +106,11 @@ class TimeLogicAdapter(LogicAdapter):
         now = datetime.now()
 
         time_features = self.time_question_features(statement.text.lower())
-        confidence = self.classifier.classify(time_features)
-        response = Statement(text='The current time is ' + now.strftime('%I:%M %p'))
 
-        response.confidence = confidence
-        return response
+        if 'time' in statement.text.lower():
+            confidence = self.classifier.classify(time_features)
+            response = Statement(text='The current time is ' + now.strftime('%I:%M %p'))
+            response.confidence = confidence
+            return response
+        confidence = 0
+        return Statement(text='There is no \'time\' in the user input')
