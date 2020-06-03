@@ -22,21 +22,35 @@ class TimeLogicAdapter(LogicAdapter):
 
         self.positive = kwargs.get('positive', [
             'what time is it',
+            'what time is it now',
             'hey what time is it',
             'do you have the time',
             'do you know the time',
             'do you know what time it is',
-            'what is the time'
+            'could you tell me the time, please?',
+            'could you tell me what time it is, please?',
+            'what is the time',
+            'what\'s the time',
+            'tell me the time',
         ])
 
         self.negative = kwargs.get('negative', [
             'it is time to go to sleep',
-            'what is your favorite color',
+            #'what is your favorite color',
             'i had a great time',
-            'thyme is my favorite herb',
+            #'thyme is my favorite herb',
             'do you have time to look at my essay',
-            'how do you have the time to do all this'
-            'what is it'
+            #'how do you have the time to do all this'
+            #'what is it'
+            'do you have time',
+            'i had time',
+            'nice time',
+            'do you have time to look at my essay',
+            'many times',
+            'no time',
+            'how many times',
+            'there is no time',
+            'the phone rang ten times before lisa gave up'       
         ])
 
         labeled_data = (
@@ -52,6 +66,13 @@ class TimeLogicAdapter(LogicAdapter):
         ]
 
         self.classifier = NaiveBayesClassifier.train(train_set)
+        
+    def can_process(self, statement):
+        if 'time' in statement.text.lower():
+            response = self.process(statement)
+        else:
+            return False
+        return response.confidence == 1
 
     def time_question_features(self, text):
         """
