@@ -39,7 +39,7 @@ class MathematicalEvaluation(LogicAdapter):
         Takes a statement string.
         Returns the equation from the statement with the mathematical terms solved.
         """
-        from mathparse import mathparse, mathwords
+        from mathparse import mathparse
 
         input_text = statement.text
 
