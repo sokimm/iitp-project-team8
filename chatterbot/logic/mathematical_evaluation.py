@@ -30,9 +30,12 @@ class MathematicalEvaluation(LogicAdapter):
         Determines whether it is appropriate for this
         adapter to respond to the user input.
         """
-        response = self.process(statement)
-        self.cache[statement.text] = response
-        return response.confidence == 1
+	try:
+            response = self.process(statement)
+            self.cache[statement.text] = response
+            return response.confidence == 1
+        except:
+            return False
 
     def process(self, statement, additional_response_selection_parameters=None):
         """
