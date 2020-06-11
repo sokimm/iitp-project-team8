@@ -43,10 +43,11 @@ def is_constant(string):
     return mathwords.CONSTANTS.get(string, False)
 
 
+
 def is_unary(string):
-    """
-    Return true if the string is a defined unary mathematical operator function.
-    """
+
+    # Return true if the string is a defined unary mathematical operator function.
+
     return string in mathwords.UNARY_FUNCTIONS
 
 
@@ -190,10 +191,6 @@ def to_postfix(tokens):
 
     return postfix
 
-def is_float_var(var):
-    if var%1 != 0:  return True
-    else:   return False
-
 
 def evaluate_postfix(tokens):
     """
@@ -204,6 +201,7 @@ def evaluate_postfix(tokens):
 
     for token in tokens:
         total = None
+
         if is_int(token) or is_float(token) or is_constant(token):
             stack.append(token)
         elif is_unary(token):
@@ -212,11 +210,6 @@ def evaluate_postfix(tokens):
         elif len(stack):
             b = stack.pop()
             a = stack.pop()
-            
-            if is_float_var(a) == True or is_float_var(b) == True:
-                a = Decimal(str(a))
-                b = Decimal(str(b))
-
             if token == '+':
                 total = a + b
             elif token == '-':
@@ -232,9 +225,6 @@ def evaluate_postfix(tokens):
                     total = Decimal(str(a)) / Decimal(str(b))
             else:
                 raise PostfixTokenEvaluationException('Unknown token {}'.format(token))
-                
-            if  is_float_var(a) == True or is_float_var(b) == True:
-                total = float(total)
 
         if total is not None:
             stack.append(total)
@@ -266,6 +256,8 @@ def tokenize(string, language=None, escape='___'):
     string = string.replace('*', ' * ')
     string = string.replace('/', ' / ')
     string = string.replace('^', ' ^ ')
+
+
 
     if language:
         words = mathwords.words_for_language(language)
