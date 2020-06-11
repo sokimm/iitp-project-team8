@@ -51,8 +51,14 @@ class MathematicalEvaluation(LogicAdapter):
 
         # Getting the mathematical terms within the input statement
         expression = mathparse.extract_expression(input_text, language=self.language.ISO_639.upper())
-
         response = Statement(text=expression)
+        if len(expression.split(' ')) == 1:
+            response.confidence = 0
+            if len(input_text.split(' ')) == 1:
+                response.confidence = 1
+                response.text += ' = ' + str(mathparse.parse(expression, language=self.language.ISO_639.upper()))
+
+            return response
 
         try:
             response.text += ' = ' + str(
