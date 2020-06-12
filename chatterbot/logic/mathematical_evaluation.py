@@ -30,7 +30,7 @@ class MathematicalEvaluation(LogicAdapter):
         Determines whether it is appropriate for this
         adapter to respond to the user input.
         """
-	try:
+        try:
             response = self.process(statement)
             self.cache[statement.text] = response
             return response.confidence == 1
@@ -54,14 +54,8 @@ class MathematicalEvaluation(LogicAdapter):
 
         # Getting the mathematical terms within the input statement
         expression = mathparse.extract_expression(input_text, language=self.language.ISO_639.upper())
-        response = Statement(text=expression)
-        if len(expression.split(' ')) == 1:
-            response.confidence = 0
-            if len(input_text.split(' ')) == 1:
-                response.confidence = 1
-                response.text += ' = ' + str(mathparse.parse(expression, language=self.language.ISO_639.upper()))
 
-            return response
+        response = Statement(text=expression)
 
         try:
             response.text += ' = ' + str(
@@ -70,7 +64,11 @@ class MathematicalEvaluation(LogicAdapter):
 
             # The confidence is 1 if the expression could be evaluated
             response.confidence = 1
+        except mathparse.NotValidExpressionException:
+            response.text = 'This expression is not valid.'
+            response.confidence = 1
         except mathparse.PostfixTokenEvaluationException:
             response.confidence = 0
 
         return response
+
