@@ -18,7 +18,7 @@ class NotValidExpressionException(Exception):
     Exception to be raised when an expression is not valid.
     ex. 10 + 3 4 log ?
     """    
-
+    pass
 
 def is_int(string):
     """
@@ -250,7 +250,7 @@ def evaluate_postfix(tokens):
         raise PostfixTokenEvaluationException('The postfix expression resulted in an empty stack')
 
     if len(stack) != 1:
-        raise PostfixTokenEvaluationException('The postfix expression need more operators')
+        raise NotValidExpressionException('The postfix expression need more operators')
         
     return stack.pop()
 
