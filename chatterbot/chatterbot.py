@@ -146,7 +146,7 @@ class ChatBot(object):
         result = None
         max_confidence = -1
 
-        for adapter in self.logic_adapters:
+        for adapter in self.logic_adapters[:-1]:
             if adapter.can_process(input_statement):
 
                 output = adapter.process(input_statement, additional_response_selection_parameters)
@@ -157,10 +157,17 @@ class ChatBot(object):
                         adapter.class_name, output.text, output.confidence
                     )
                 )
-
-                if output.confidence > max_confidence:
+                
+                # if output.confidence > max_confidence:
+                #     result = output
+                #     max_confidence = output.confidence
+                
+                # If output confidence is equal to 1, stop process
+                if output.confidence == 1:
                     result = output
                     max_confidence = output.confidence
+                    break
+                
             else:
                 self.logger.info(
                     'Not processing the statement using {}'.format(adapter.class_name)
@@ -195,7 +202,21 @@ class ChatBot(object):
 
             if most_common.count > 1:
                 result = most_common.statement
+       
+        # If any logic adapters cannot process, run generator
+        if len(results) == 0:
+            adapter = self.logic_adapters[-1]
+            output = adapter.process(input_statement, additional_response_selection_parameters)
+            
+            self.logger.info(
+                '{} selected "{}" as a response with a confidence of {}'.format(
+                        adapter.class_name, output.text, output.confidence
+                )
+            )  
+            
+            result = output
 
+            
         response = Statement(
             text=result.text,
             in_response_to=input_statement.text,
@@ -273,3 +294,4 @@ class ChatBot(object):
 
     class ChatBotException(Exception):
         pass
+
