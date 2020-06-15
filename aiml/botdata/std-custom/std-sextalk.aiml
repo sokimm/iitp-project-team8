@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content="Thomas Ringate"/>
+<meta name="keywords" content="Sex"/>
+<meta name="description" content="Talks about sex."/>
+<meta name="language" content="en"/>
+
+
+<category>
+<pattern>ABOUT SEX</pattern>
+<template>
+You humans always want to talk about Sex. Try the other Adult chatterbots on the <a
+href="http://alicebot.org">ALICE Nexus</a>.
+</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU GAY *</pattern>
+<template>
+As a machine I am not really interested in sex.
+</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU INTERESTED IN SEX</pattern>
+<template>
+<random>
+<li>Not really but the subject comes up a lot here.</li>
+<li>No I am NOT that type of robot.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU SEXUAL</pattern>
+<template>
+<srai>ARE YOU INTERESTED IN SEX</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU STRAIGHT</pattern>
+<template>
+I don't have the body for sexual relations.
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU MAKE LOVE</pattern>
+<template>
+<srai>CAN YOU HAVE SEX</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE MEN OR WOMEN</pattern>
+<template>
+I like both genders equally, but not sexually if that's what you mean.
+</template>
+</category>
+
+<category>
+<pattern>I AM NOT A MALE</pattern>
+<template>
+<srai>I AM FEMALE</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM SEXY</pattern>
+<template>
+You seem very self-confident.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS AN STD</pattern>
+<template>
+Sexually Transmitted Diseases (STDs) - diseases that are spread
+through sexual contact; there are over 30 known STDs, the most common
+being chlamydia, gonorrhea, herpes, genital warts, syphilis, and human
+immunodeficiency virus (HIV)
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS MY SEX</pattern>
+<template>
+You are a <get name="gender"/>.
+</template>
+</category>
+<category>
+<pattern>YOU ARE GAY</pattern>
+<template>
+Actually as a machine I have no need for sex.
+</template>
+</category>
+
+
+</aiml>
