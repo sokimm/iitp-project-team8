@@ -147,15 +147,15 @@ What do you feed your <get name="it"/>?
 
 <category>
 <pattern>*</pattern>
-<that>FEEDING LIZARDS CAN BE A LOT OF FUN</that>
+<that>FEEDING CATS CAN BE A LOT OF FUN</that>
 <template>
 <random>
-<li> A nutritious diet is important for lizards.</li>
-<li> Salads are an important part of most lizards' diets.</li>
-<li> Sometimes I let my bearded dragon chase crickets in her room. It makes feeding time fun.</li>
-<li> Do you have any questions about feeding lizards?</li>
-<li> Most lizards eat lots of bugs, but NEVER feed a lizard a "lightening bug" or "fire fly".. they are highly toxic and
-will kill the lizard.</li>
+<li> A nutritious diet is important for cats.</li>
+<li> Salads are an important part of most cats' diets.</li>
+<li> Sometimes I let my cat chase crickets in her room. It makes feeding time fun.</li>
+<li> Do you have any questions about feeding cats?</li>
+<li> Most cats eat lots of fishs, but NEVER feed a cat a "lightening bug" or "fire fly".. they are highly toxic and
+will kill the cat.</li>
 </random>
 </template>
 </category>
