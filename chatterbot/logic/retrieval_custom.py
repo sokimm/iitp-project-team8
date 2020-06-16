@@ -11,11 +11,10 @@ class RetrievalCustom(LogicAdapter):
         super().__init__(chatbot, **kwargs)
         self.language = kwargs.get('language', languages.ENG)
         self.cache = {}
-        k = Kernel()
-        k.learn("std-startup.xml")
-        k.respond("load aiml b")
-        self.kernel = k
-
+        self.k = Kernel()
+        self.k.learn("std-startup.xml")
+        self.k.respond("load aiml b")
+        
     def can_process(self, statement):
         response = self.process(statement)
         self.cache[statement.text] = response
@@ -30,8 +29,7 @@ class RetrievalCustom(LogicAdapter):
             self.cache = {}
             return cached_result
 
-        k = self.kernel
-        response_aiml = k.respond(input_text)
+        response_aiml = self.k.respond(input_text)
         # TODO: kernel.py 안에서 respond()에 없는 대답 input으로 넣으면 원래는 I don't know 등을 내뱉지만, 우리는 그걸 없앨거라서
         # response 가 ""로 나오는 경우가 있음.
         # 그럴 때 _respond 에서 "Warning: No match" 어쩌고가 error로서 프린트 되는데 그거 지워야함
@@ -46,3 +44,4 @@ class RetrievalCustom(LogicAdapter):
             response.confidence = 1
 
         return response
+
