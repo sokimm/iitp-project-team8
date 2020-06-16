@@ -14,6 +14,15 @@
 
 <category>
 <pattern>_</pattern>
+<that>WHAT CAN I CALL YOU</that>
+<template>
+<think><set name="personality">average</set><set name="name"><formal><star/></formal></set></think>
+Nice to meet you <get name="name"/>.
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
 <that>* WHAT CAN I CALL YOU</that>
 <template>
 <think><set name="personality">average</set><set name="name"><formal><star/></formal></set></think>
@@ -3383,7 +3392,30 @@ I know, you told me before you were Bi Sexual.
 
 <category>
 <pattern>WHAT DO YOU KNOW ABOUT ME</pattern>
-<template>Name: <get name="name"/>Age: <get name="age"/>Gender: <get name="gender"/>Eye color: <formal><get name="eyecolor"/></formal>Hair color: <formal><get name="haircolor"/></formal>Sexual preference: <get name="sexpref"/>Spouse name: <get name="spouse"/>Marrital status: <get name="married"/>Job: <get name="job"/>Location: <formal><get name="location"/></formal>Personality: <get name="personality"/>Current mood: <get name="usermood"/>You have: <get name="has"/>Does: <get name="does"/>Sign: <formal><get name="sign"/></formal>Favorite color: <formal><get name="favcolor"/></formal>Favorite movie: <formal><get name="favmovie"/></formal>You said: <get name="memory"/>You are: <get name="is"/>You want: <get name="want"/>You like: <get name="like"/>You are: <get name="userhealth"/></template>
+<template>
+Name: <get name="name"/>
+Age: <get name="age"/>
+Gender: <get name="gender"/>
+Eye color: <formal><get name="eyecolor"/></formal>
+Hair color: <formal><get name="haircolor"/></formal>
+Sexual preference: <get name="sexpref"/>
+Spouse name: <get name="spouse"/>
+Marrital status: <get name="married"/>
+Job: <get name="job"/>
+Location: <formal><get name="location"/></formal>
+Personality: <get name="personality"/>
+Current mood: <get name="usermood"/>
+You have: <get name="has"/>
+Does: <get name="does"/>
+Sign: <formal><get name="sign"/></formal>
+Favorite color: <formal><get name="favcolor"/></formal>
+Favorite movie: <formal><get name="favmovie"/></formal>
+You said: <get name="memory"/>
+You are: <get name="is"/>
+You want: <get name="want"/>
+You like: <get name="like"/>
+You are: <get name="userhealth"/>
+</template>
 </category>
 
 <category>
