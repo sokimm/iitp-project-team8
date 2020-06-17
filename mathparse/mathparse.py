@@ -238,7 +238,7 @@ def evaluate_postfix(tokens):
                 if Decimal(str(b)) == 0:
                     total = 'undefined'
                 else:
-                    total = Decimal(str(a)) / Decimal(str(b))
+                    total = float(Decimal(str(a)) / Decimal(str(b)))
             else:
                 raise PostfixTokenEvaluationException('Unknown token {}'.format(token))
 
