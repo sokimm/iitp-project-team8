@@ -17,8 +17,8 @@ class NotValidExpressionException(Exception):
     """
     Exception to be raised when an expression is not valid.
     ex. 10 + 3 4 log ?
-    """    
-    pass
+    """
+
 
 def is_int(string):
     """
@@ -150,7 +150,7 @@ def replace_word_tokens(string, language):
             string = string.replace(scale, '* ' + str(scales[scale]) + ')' + add, 1)
 
     string = string.replace(') (', ') + (')
-    
+
     # If no operators is inside the string, raise Exception Error
     set_operators = set(operators.values())
     if set(string) & set_operators == set():
@@ -207,6 +207,11 @@ def to_postfix(tokens):
 
     return postfix
 
+def is_float_var(var):
+    if var%1 !=0:
+        return True
+    else:
+        return False
 
 def evaluate_postfix(tokens):
     """
@@ -226,6 +231,11 @@ def evaluate_postfix(tokens):
         elif len(stack):
             b = stack.pop()
             a = stack.pop()
+
+            if is_float_var(a) or is_float_var(b) == True:
+                a = Decimal(str(a))
+                b = Decimal(str(b))
+
             if token == '+':
                 total = a + b
             elif token == '-':
@@ -242,6 +252,9 @@ def evaluate_postfix(tokens):
             else:
                 raise PostfixTokenEvaluationException('Unknown token {}'.format(token))
 
+            if is_float_var(a) or is_float_var(b) == True:
+                total = float(total)
+
         if total is not None:
             stack.append(total)
 
@@ -251,7 +264,7 @@ def evaluate_postfix(tokens):
 
     if len(stack) != 1:
         raise NotValidExpressionException('The postfix expression need more operators')
-        
+
     return stack.pop()
 
 
@@ -275,7 +288,7 @@ def tokenize(string, language=None, escape='___'):
     string = string.replace('*', ' * ')
     string = string.replace('/', ' / ')
     string = string.replace('^', ' ^ ')
-    
+
 
     if language:
         words = mathwords.words_for_language(language)
@@ -328,4 +341,3 @@ def extract_expression(dirty_string, language):
             end_index -= 1
 
     return ' '.join(tokens[start_index:end_index])
-

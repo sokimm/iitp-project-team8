@@ -67,8 +67,27 @@ class Kernel:
 
         # Set up the bot predicates
         self._botPredicates = {}
-        self.setBotPredicate("name", "Rummy") #Nameless
-        self.setBotPredicate("favcolor", "Red")
+
+        self.setBotPredicate("birthday", "April 30, 2020")
+        self.setBotPredicate("birthplace", "Seoul")
+        self.setBotPredicate("boyfriend", "Rumford")
+        self.setBotPredicate("favoritecolor", "red")
+        self.setBotPredicate("favoriteband", "Maroon5")
+        self.setBotPredicate("favoritebook", "Da Vinch Code")
+        self.setBotPredicate("favoritefood", "sandwich")
+        self.setBotPredicate("friends", "Rumeanah, Rumford")
+        self.setBotPredicate("gender", "woman")
+        self.setBotPredicate("girlfriend", "Rumeanah")
+        self.setBotPredicate("kindmusic", "pop rock")
+        self.setBotPredicate("location", "Seoul")
+        self.setBotPredicate("looklike", "Joker")
+        self.setBotPredicate("master", "Zepetto")
+        self.setBotPredicate("name", "Rummy")
+        self.setBotPredicate("question", "") # 비워둠
+        self.setBotPredicate("sign", "Taurus")
+        self.setBotPredicate("talkabout", "board game")
+        self.setBotPredicate("wear", "halloween costume")
+
 
         # set up the word substitutors (subbers):
         self._subbers = {}
@@ -411,7 +430,9 @@ class Kernel:
         inputStack = self.getPredicate(self._inputStack, sessionID)
         if len(inputStack) > self._maxRecursionDepth:
             if self._verboseMode:
-                err = u"WARNING: maximum recursion depth exceeded (input='%s')" % self._cod.enc(input_)
+                # WK changed
+                #err = u"WARNING: maximum recursion depth exceeded (input='%s')" % self._cod.enc(input_)
+                err = u""
                 sys.stderr.write(err)
             return u""
 
@@ -439,7 +460,9 @@ class Kernel:
         elem = self._brain.match(subbedInput, subbedThat, subbedTopic)
         if elem is None:
             if self._verboseMode:
-                err = "WARNING: No match found for input: %s\n" % self._cod.enc(input_)
+                # WK changed
+                # err = "WARNING: No match found for input: %s\n" % self._cod.enc(input_)
+                err = ""
                 sys.stderr.write(err)
         else:
             # Process the element into a response string.
@@ -470,7 +493,9 @@ class Kernel:
         except Exception:
             # Oops -- there's no handler function for this element type!
             if self._verboseMode:
-                err = "WARNING: No handler found for <%s> element\n" % self._cod.enc(elem[0])
+                # WK changed
+                #err = "WARNING: No handler found for <%s> element\n" % self._cod.enc(elem[0])
+                err = ""
                 sys.stderr.write(err)
             return u""
         return handlerFunc(elem, sessionID)
@@ -955,9 +980,13 @@ class Kernel:
             out = os.popen(command)
         except RuntimeError as msg:
             if self._verboseMode:
-                err = "WARNING: RuntimeError while processing \"system\" element:\n%s\n" % self._cod.enc(msg)
+                # WK changed
+                # err = "WARNING: RuntimeError while processing \"system\" element:\n%s\n" % self._cod.enc(msg)
+                err = ""
                 sys.stderr.write(err)
-            return "There was an error while computing my response.  Please inform my botmaster."
+            # WK changed
+            # return "There was an error while computing my response.  Please inform my botmaster."
+            return ""
         time.sleep(0.01) # I'm told this works around a potential IOError exception.
         for line in out:
             response += line + "\n"
