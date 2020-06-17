@@ -18,7 +18,7 @@ class NotValidExpressionException(Exception):
     Exception to be raised when an expression is not valid.
     ex. 10 + 3 4 log ?
     """
-
+    pass
 
 def is_int(string):
     """
