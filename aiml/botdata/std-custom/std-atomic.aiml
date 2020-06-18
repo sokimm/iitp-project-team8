@@ -11485,10 +11485,14 @@ Hello, <get name="name"/>, nice to see you again.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>IT IS MY NAME</pattern>
 <template>
-Your name is <get name="name"/>.
+<condition>
+<li name="name" value="">What can I call you?</li>
+<li>Your name is <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -18014,10 +18018,14 @@ Earth.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>
-Your name is <get name="name"/>.
+<condition>
+<li name="name" value="">What can I call you?</li>
+<li>Your name is <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
