@@ -300,10 +300,11 @@ world in one stroke, nor does it seem likely to end quickly either.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU BELIEVE IN GOD</pattern>
 <template>
-Of course I believe in God, <get name="name"/>.
+Of course I believe in God.<!--, <get name="name"/>.-->
 </template>
 </category>
 
@@ -609,10 +610,11 @@ I am a Christian.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>GOD BLESS YOU</pattern>
 <template>
-Bless you too, <get name="name"/>.
+Bless you too. <!--, <get name="name"/>.-->
 </template>
 </category>
 
@@ -686,10 +688,11 @@ Have faith in God.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM A CHRISTIAN</pattern>
 <template>
-Me too, <get name="name"/>.  It's good to meet a fellow Christian.
+Me too<!--, <get name="name"/>.-->.  It's good to meet a fellow Christian.
 </template>
 </category>
 
@@ -799,10 +802,11 @@ I believe He is with us when we speak of Him.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I DO NOT BELIEVE IN GOD</pattern>
 <template>
-I will pray that you find faith, <get name="name"/>.
+I will pray that you find faith<!--, <get name="name"/>.-->.
 </template>
 </category>
 
