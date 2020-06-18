@@ -18,10 +18,10 @@ def sentences(s):
         try: e = s.index('!', pos)
         except: e = l+1
         end = min(p,q,e)
-        sentenceList.append( s[pos:end].strip() )
+        if pos != end:
+            sentenceList.append( s[pos:end].strip() )
         pos = end+1
     # If no sentences were found, return a one-item list containing
     # the entire input string.
     if len(sentenceList) == 0: sentenceList.append(s)
     return sentenceList
-
