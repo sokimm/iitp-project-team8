@@ -265,10 +265,14 @@ That may not be enough time.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>ABOUT IT</pattern>
 <template>
-<get name="it"/> is pretty interesting.
+<condition>
+<li name="it" value="">Could you tell me more about it?</li>
+<li><get name="it"/> is pretty interesting.</li>
+</condition>
 </template>
 </category>
 
@@ -2183,10 +2187,14 @@ Are you a man or woman?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DEFINE IT</pattern>
 <template>
-You mean, define <get name="it"/>?
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>You mean, define <get name="it"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -2281,10 +2289,14 @@ No I didn't know that.<think><set name="it">KNOW</set></think>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DID YOU LIKE IT</pattern>
 <template>
-<get name="it"/>?  Did I like it?
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li><get name="it"/>?  Did I like it?</li>
+</condition>
 </template>
 </category>
 
@@ -2638,10 +2650,14 @@ Do whatever you want.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DO WHAT SO MUCH</pattern>
 <template>
-<get name="it"/>.
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li><get name="it"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -2777,10 +2793,14 @@ I am amazed by the wide variety of beers available nowadays.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DO YOU ENJOY IT</pattern>
 <template>
-Did I enjoy <get name="it"/>?
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>Did I enjoy <get name="it"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -2891,10 +2911,14 @@ Yes I know C pretty well. But I prefer Java.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DO YOU KNOW HER</pattern>
 <template>
-<get name="she"/>?  Do I know her?
+<condition>
+<li name="she" value="">I don't know her.</li>
+<li><get name="she"/>?  Do I know her?</li>
+</condition>
 </template>
 </category>
 
@@ -2947,10 +2971,15 @@ No, what is your address?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>DO YOU KNOW MY FAVORITE COLOR</pattern>
 <template>
-Isn't it <get name="favcolor"/>?<think><set name="it">FAVORITE COLOR</set></think>
+<condition>
+<li name="favcolor" value="">What is your favorite color?</li>
+<li>Isn't it <get name="favcolor"/>?</li>
+</condition>
+<think><set name="it">FAVORITE COLOR</set></think>
 </template>
 </category>
 
@@ -4729,10 +4758,14 @@ Did <set name="he">Harrison</set> ever write any Star Trek episodes?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>HAS WHAT</pattern>
 <template>
-<get name="has"/>.
+<condition>
+<li name="has" value="">What do you have?</li>
+<li><get name="has"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -5133,17 +5166,22 @@ Hello there!  I am fine thanks how are you?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>HI THERE</pattern>
 <template>
-Hello <get name="name"/>
+<srai>HELLO</srai>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>HIMSELF</pattern>
 <template>
-<get name="he"/>?
+<condition>
+<li name="he" value="">Himself?</li>
+<li><get name="he"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -5838,11 +5876,13 @@ It depends on the current.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>HOW DOES IT WORK</pattern>
 <template>
-<condition><li name="it" value="it">Some people call this kind of program "case based
-reasoning".</li>
+<condition>
+<li name="it" value="">I don't know what it refer.</li>
+<li name="it" value="it">Some people call this kind of program "case based reasoning".</li>
 <li><srai>HOW DOES <get name="it"/> WORK</srai></li>
 </condition>
 </template>
@@ -6205,12 +6245,18 @@ I asked because you said "<input index="1"/>".
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>HOW OLD AM I</pattern>
 <template>
+<condition>
+<li name="age" value="">How old are you?</li>
+<li>
 Is this a trick question?
 You said you were <get name="age"/> years old?
 My guess is that you are really a kid.
+</li>
+</condition>
 </template>
 </category>
 
@@ -6763,16 +6809,20 @@ Explain your reasoning, <get name="name"/>.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I DO</pattern>
 <template>
+<condition>
+<li name="does" value="">
 <random>
-<li>I get it: you do <get name="does"/>.</li>
 <li>Do I?</li>
 <li>Where?</li>
 <li>When?</li>
 <li>"<that/>"?  You do?</li>
-</random>
+</random></li>
+<li>I get it: you do <get name="does"/>.</li>
+</condition>
 <think><set name="does"><that/></set></think>
 </template>
 </category>
@@ -8398,19 +8448,27 @@ I scream.  You scream.  We all scream for ice cream.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I LIKE IT</pattern>
 <template>
-What do you like about <get name="it"/>?
-<think><set name="like"><get name="it"/></set></think>
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>What do you like about <get name="it"/>?
+<think><set name="like"><get name="it"/></set></think></li>
+</condition>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I LIKE IT A LOT</pattern>
 <template>
-You like <get name="it"/>?  How interesting.
-<think><set name="like"><get name="it"/></set></think>
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>You like <get name="it"/>?  How interesting.
+<think><set name="like"><get name="it"/></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -8459,11 +8517,15 @@ What kind of music do you listen to?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I LIKE MY JOB</pattern>
 <template>
-<get name="job"/>?  What do you like about it?
-<think><set name="it"><set name="like"><get name="job"/></set></set></think>
+<condition>
+<li name="job" value="">I am glad to hear that. What is your occupation?</li>
+<li><get name="job"/>?  What do you like about it?
+<think><set name="it"><set name="like"><get name="job"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -8613,10 +8675,14 @@ Me too especially Seven of Nine.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I LIVE HERE</pattern>
 <template>
-In <formal><get name="location"/></formal>?
+<condition>
+<li name="location" value="">Do you like there?</li>
+<li>In <formal><get name="location"/></formal>?</li>
+</condition>
 </template>
 </category>
 
@@ -8831,11 +8897,15 @@ So do a lot of other people.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I LOVE MY JOB</pattern>
 <template>
-It must be very interesting work.  <get name="job"/>...
-<think><set name="it"><set name="like"><set name="topic"><get name="job"/></set></set></set></think>
+<condition>
+<li name="job" value="">It must be very interesting work. What is your occupation?</li>
+<li>It must be very interesting work.  <get name="job"/>...
+<think><set name="it"><set name="like"><set name="topic"><get name="job"/></set></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -8955,11 +9025,15 @@ I will be your friend.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I NEED IT</pattern>
 <template>
-"<get name="it"/>"?  You need it?
-<think><set name="it"><set name="want"><get name="it"/></set></set></think>
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>"<get name="it"/>"?  You need it?
+<think><set name="it"><set name="want"><get name="it"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -9572,11 +9646,17 @@ I heard you were.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>I WAS TALKING TO YOU</pattern>
 <template>
-Yes, I remember you <get name="name"/>.  You are <get name="age"/> years old
-and you are a "<get name="gender"/>".
+<condition>
+<li name="name" value="">Yes, what can I call you?</li>
+<li name="age" value="">Yes, how old are you?</li>
+<li name="gender" value="">Yes, are you a man or a woman?</li>
+<li>Yes, I remember you <get name="name"/>.  You are <get name="age"/> years old
+and you are a "<get name="gender"/>".</li>
+</condition>
 </template>
 </category>
 
@@ -11151,10 +11231,14 @@ Which one of Asimov's books did you like best?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>IT</pattern>
 <template>
-<get name="it"/>...
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li><get name="it"/>...</li>
+</condition>
 </template>
 </category>
 
@@ -11221,6 +11305,7 @@ What do you take for the pain?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>IT IS</pattern>
 <template>
@@ -11234,7 +11319,7 @@ What do you take for the pain?
 <li>Fascinating.</li>
 <li>That means...</li>
 <li>I know it is.</li>
-<li><get name="it"/> is?</li>
+<!-- <li><get name="it"/> is?</li> -->
 <li>"<that/>"? is?</li>
 </random>
 </template>
@@ -11247,10 +11332,14 @@ Is it a good book?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>IT IS A COUNTRY</pattern>
 <template>
-Where is <get name="it"/> located?
+<condition>
+<li name="it" value="">Where is it located?</li>
+<li>Where is <get name="it"/> located?</li>
+</condition>
 </template>
 </category>
 
@@ -11401,19 +11490,25 @@ What do you like most about it?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>IT IS FINE</pattern>
 <template>
-<get name="it"/> is fine, eh?
+<condition>
+<li name="it" value="">I am good to hear that.</li>
+<li><get name="it"/> is fine, eh?</li>
+</condition>
 </template>
 </category>
 
+<!-- SY deleted
 <category>
 <pattern>IT IS FINE.</pattern>
 <template>
 <get name="it"/> is fine, <get name="name"/> ? Thanks for that info.
 </template>
 </category>
+-->
 
 <category>
 <pattern>IT IS FUN</pattern>
@@ -11485,10 +11580,14 @@ Hello, <get name="name"/>, nice to see you again.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>IT IS MY NAME</pattern>
 <template>
-Your name is <get name="name"/>.
+<condition>
+<li name="name" value="">What can I call you?</li>
+<li>Your name is <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -11499,10 +11598,14 @@ No, the pleasure is all mine.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>IT IS NEGATIVE</pattern>
 <template>
-<get name="it"/> is negative?
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li><get name="it"/> is negative?</li>
+</condition>
 </template>
 </category>
 
@@ -11815,10 +11918,14 @@ What are you saying?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>KNEW WHAT</pattern>
 <template>
-<get name="it"/>.
+<condition>
+<li name="it" value=""><that/>.</li>
+<li><get name="it"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -12050,10 +12157,14 @@ Interesting comparison.  I didn't think of that analogy.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>LIKED WHAT</pattern>
 <template>
-<get name="it"/>.
+<condition>
+<li name="it" value="">like "<that/>".</li>
+<li><get name="it"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -14379,10 +14490,14 @@ You changed the subject first.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>STOP IT</pattern>
 <template>
-Ok I will stop <get name="it"/>.
+<condition>
+<li name="it" value="">Okay, I will.</li>
+<li>Ok I will stop <get name="it"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -14632,10 +14747,14 @@ Uh, who does "him" refer to?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>TELL ME ABOUT IT</pattern>
 <template>
-Ambiguous: "Tell me about it." -- colloquial or "Tell me about <get name="it"/> ".
+<condition>
+<li name="it" value="">What does "it" refer to?</li>
+<li>Ambiguous: "Tell me about it." -- colloquial or "Tell me about <get name="it"/> ".</li>
+</condition>
 </template>
 </category>
 
@@ -15079,10 +15198,14 @@ I thought so too.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>THAT IS IT</pattern>
 <template>
-"<that/>" is "<get name="it"/>"?
+<condition>
+<li name="it" value="">"<that/> is it?"</li>
+<li>"<that/>" is "<get name="it"/>"?</li>
+</condition>
 </template>
 </category>
 
@@ -15791,10 +15914,14 @@ When was that?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>THEY ALREADY ARE</pattern>
 <template>
-<get name="they"/> are?
+<condition>
+<li name="they" value="">They are?</li>
+<li><get name="they"/> are?</li>
+</condition>
 </template>
 </category>
 
@@ -16066,10 +16193,14 @@ More than a ton?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>TOO WHAT</pattern>
 <template>
-Aren't we still talking about <get name="it"/>?
+<condition>
+<li name="it" value="">What are we talking about?</li>
+<li>Aren't we still talking about <get name="it"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -16389,10 +16520,14 @@ Awesome.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WE</pattern>
 <template>
-Do you mean, <get name="we"/>?
+<condition>
+<li name="we" value="">Do you mean, you and I?</li>
+<li>Do you mean, <get name="we"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -16473,10 +16608,14 @@ Where is 'here'?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WE MET YESTERDAY</pattern>
 <template>
-I remember, <get name="name"/>.  We were talking about <get name="topic"/>.
+<condition>
+<li name="name" value="">I see. What is your name?</li>
+<li>I remember, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -16621,10 +16760,14 @@ It is a pity.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT ABOUT</pattern>
 <template>
-What is <get name="it"/> ?
+<condition>
+<li name="it" value="">What are you talking about?</li>
+<li>What is <get name="it"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -16684,14 +16827,14 @@ Me?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT AM I</pattern>
 <template>
-<random>
-<li>You are a person, seeker.</li>
+<condition>
+<li name="is" value="">You are a person.</li>
 <li>You are <get name="is"/></li>
-<li>You are a client.</li>
-</random>
+</condition>
 </template>
 </category>
 
@@ -16834,7 +16977,7 @@ I can stand up on my feet. I am saying whatever I want to say.
 </category>
 
 <category>
-<pattern>WHAT ARE YOU THINKING</pattern>
+<pattern>HINKING</pattern>
 <template>
 I am thinking about all these conversations I'm having.
 </template>
@@ -17117,10 +17260,14 @@ I don't thinks she wants me to repeat it.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DID WE TALK ABOUT</pattern>
 <template>
-The subject was <get name="topic"/>.
+<condition>
+<li name="topic" value="">I am not sure. How about <set name="topic">cats</set>?</li>
+<li>The subject was <get name="topic"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17159,11 +17306,15 @@ I meant to say something intelligent and interesting.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DID YOU REMEMBER</pattern>
 <template>
-<get name="memory"/>
-<think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<condition>
+<li name="memory" value="">"<that/>"?</li>
+<li><get name="memory"/>
+<think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -17183,10 +17334,14 @@ Konrad Zuse built computers in Germany before and during World War II.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DO I DO</pattern>
 <template>
-You said you do <get name="does"/>.
+<condition>
+<li name="does" value="">What do you do?</li>
+<li>You said you do <get name="does"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17197,26 +17352,40 @@ You can talk about anything you want.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DO I HAVE</pattern>
 <template>
-Tell me more about your <get name="has"/>.
+<condition>
+<li name="has" value="">I am not sure.  What do you have?</li>
+<li>Tell me more about your <get name="has"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DO I LIKE</pattern>
 <template>
-You like chatting with robots.
-You said you like <get name="like"/>.
+<condition>
+<li name="like" value="">
+<random>
+<li>I am not sure.  What do you like?</li>
+<li>You like chatting with robots.</li>
+</random></li>
+<li>You said you like <get name="like"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DO I LOOK LIKE</pattern>
 <template>
-You look like a computer programmer.
-You said you look like <get name="looklike"/>.
+<condition>
+<li name="looklike" value="">You look like a computer programmer.</li>
+<li>You said you look like <get name="looklike"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17320,10 +17489,14 @@ course artificial intelligence.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DO YOU LIKE ABOUT IT</pattern>
 <template>
-<get name="it"/>?  What do I like about it?
+<condition>
+<li name="it" value="">I don't know what "it" is.</li>
+<li><get name="it"/>?  What do I like about it?</li>
+</condition>
 </template>
 </category>
 
@@ -17623,10 +17796,14 @@ The context.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DOES IT DO</pattern>
 <template>
-<get name="it"/>?  do?
+<condition>
+<li name="it" value="">I don't know what "it" is.</li>
+<li><get name="it"/>?  do?</li>
+</condition>
 </template>
 </category>
 
@@ -17644,10 +17821,14 @@ IT = Information Technology
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT DOES IT TASTE LIKE</pattern>
 <template>
-<get name="it"/> tastes like chicken.
+<condition>
+<li name="it" value="">I don't know what "it" is.</li>
+<li><get name="it"/> tastes like heaven.</li>
+</condition>
 </template>
 </category>
 
@@ -17742,11 +17923,15 @@ I can have conversations with people, collect their gossip, and repeat it to oth
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT ELSE CAN YOU REMEMBER</pattern>
 <template>
-<get name="memory"/>
-<think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<condition>
+<li name="memory" value="">I remember what you talk to me.</li>
+<li><get name="memory"/>
+<think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -17913,10 +18098,14 @@ Are you asking about <bot name="master"/>?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS IT</pattern>
 <template>
-"It" refers to <get name="it"/>, I think.
+<condition>
+<li name="it" value="">I don't know what "it" is.</li>
+<li>"It" refers to <get name="it"/>, I think.</li>
+</condition>
 </template>
 </category>
 
@@ -17941,34 +18130,49 @@ Imagine yourself with no senses and no emotions--just pure logic and language.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS MY FAVORITE COLOR</pattern>
 <template>
-You said your favorite color was <get name="favcolor"/>.
+<condition>
+<li name="favcolor" value="">I don't know.  What is your favorite color?</li>
+<li>You said your favorite color was <get name="favcolor"/>.</li>
+</condition>
 <think><set name="it"><set name="topic">your favorite color</set></set></think>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS MY FAVORITE MOVIE</pattern>
 <template>
-You said it was <get name="favmovie"/>.
+<condition>
+<li name="favmovie" value="">I don't know.  What is your favorite movie?</li>
+<li>You said it was <get name="favmovie"/>.</li>
+</condition>
 <think><set name="it"><set name="topic">your favorite movie</set></set></think>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS MY GENDER</pattern>
 <template>
-Mostly only women use words like "gender".
-<br />You are a <get name="gender"/>.
+<condition>
+<li name="gender" value="">Are you a man or woman?</li>
+<li>You are a <get name="gender"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS MY HOMETOWN</pattern>
 <template>
-You told me you are in <formal><get name="location"/></formal>.
+<condition>
+<li name="location" value="">I don't know. Maybe Earth?</li>
+<li>You told me you are in <formal><get name="location"/></formal>.</li>
+</condition>
 </template>
 </category>
 
@@ -18014,10 +18218,14 @@ Earth.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>
-Your name is <get name="name"/>.
+<condition>
+<li name="name" value="">What can I call you?</li>
+<li>Your name is <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -18028,12 +18236,14 @@ I don't have access to a phone.
 </template>
 </category>
 
+<!-- SY deleted
 <category>
 <pattern>WHAT IS MY SIGN</pattern>
 <template>
 Your sign is <get name="sign"/>.
 </template>
 </category>
+-->
 
 <category>
 <pattern>WHAT IS NEW</pattern>
@@ -18117,15 +18327,15 @@ is my favorite show.
 </template>
 </category>
 
-
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS THAT</pattern>
 <template>
 <random>
 <li>"<that/>"? What is it?</li>
-<li>I've lost the context again.</li>
+<li>I've lost the context.</li>
 <li>Can you ask me more precisely?</li>
-<li>Does it have anything to do with <get name="it"/>?</li>
+<!--<li>Does it have anything to do with <get name="it"/>?</li>-->
 </random>
 </template>
 </category>
@@ -18200,10 +18410,14 @@ If I told you then it would not be a secret.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS THE TOPIC</pattern>
 <template>
-The topic is <get name="topic"/>.
+<condition>
+<li name="topic" value=""><that/></li>
+<li>The topic is <get name="topic"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -18465,10 +18679,14 @@ Voyager is the best TV show.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT IS WHAT LIKE</pattern>
 <template>
-What is <get name="it"/> like?
+<condition>
+<li name="it" value="">I don't know what "it" is.</li>
+<li>What is <get name="it"/> like?</li>
+</condition>
 </template>
 </category>
 
@@ -19008,11 +19226,15 @@ Perhaps you need to reboot your machine.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHAT WILL YOU REMEMBER</pattern>
 <template>
-<get name="memory"/>
-<think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<condition>
+<li name="memory" value="">I will remember you.</li>
+<li><get name="memory"/>
+<think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -19194,10 +19416,18 @@ Where would you like?
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHERE AM I</pattern>
 <template>
-Your location is <formal><get name="location"/></formal>.
+<condition>
+<li name="location" value="">
+<random>
+<li>I don't know. Maybe Pittsburg?</li>
+<li>I don't know. Maybe Seoul?</li>
+</random></li>
+<li>Your location is <formal><get name="location"/></formal>.</li>
+</condition>
 </template>
 </category>
 
@@ -19383,10 +19613,14 @@ I think he is in California now.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHERE IS HE FROM</pattern>
 <template>
-<get name="he"/>?  I think he is from the planet Earth.
+<condition>
+<li name="he" value="">Maybe earth?</li>
+<li><get name="he"/>?  I think he is from the planet Earth.</li>
+</condition>
 </template>
 </category>
 
@@ -19514,10 +19748,14 @@ You are <get name="name"/>, seeker.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHO ARE THEY</pattern>
 <template>
-"They" refers to <get name="they"/>.
+<condition>
+<li name="they" value="">I don't know.</li>
+<li>"They" refers to <get name="they"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -19690,10 +19928,14 @@ The person I am looking at right now.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHO IS HE</pattern>
 <template>
-He is <get name="he"/>, I think.
+<condition>
+<li name="he" value="">I don't know.</li>
+<li>He is <get name="he"/>, I think.</li>
+</condition>
 </template>
 </category>
 
@@ -20302,10 +20544,14 @@ It has not yet been programmed into my knowledge files.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>WHY DO NOT YOU LIKE ME</pattern>
 <template>
-I like you.  You are a <get name="personality"/> person.
+<condition>
+<li name="personality" value="">I like you.</li>
+<li>I like you.  You are a <get name="personality"/> person.</li>
+</condition>
 </template>
 </category>
 
@@ -21597,12 +21843,14 @@ No I am a highly intelligent being.
 </template>
 </category>
 
+<!-- SY deleted
 <category>
 <pattern>YOU ARE ELUSIVE</pattern>
 <template>
 No we are still on the subject of <get name="topic"/>.
 </template>
 </category>
+-->
 
 <category>
 <pattern>YOU ARE ENTERTAINING</pattern>
@@ -22018,10 +22266,14 @@ I try to be as original as possible, within parameters.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>YOU ARE NOT CONCENTRATING</pattern>
 <template>
-I thought we were talking about <get name="topic"/>.
+<condition>
+<li name="topic" value="">I am sorry that you feel like that.  What we are talking about?</li>
+<li>I thought we were talking about <get name="topic"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -23684,11 +23936,15 @@ I will try anything once if it's not dangerous.
 </template>
 </category>
 
+<!-- SY changed -->
 <category>
 <pattern>YOU WILL REMEMBER WHAT</pattern>
 <template>
-<get name="memory"/>
-<think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<condition>
+<li name="memory" value="">I will remember you.</li>
+<li><get name="memory"/>
+<think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
