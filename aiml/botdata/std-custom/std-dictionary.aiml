@@ -1358,11 +1358,12 @@ The badger is a carnivorous mammal found in england.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE BADLY</pattern>
 <template>
-How much do you want
-<get name="it"/>?
+<!-- How much do you want <get name="it"/>? -->
+How much do you want it?
 </template>
 </category>
 
@@ -1837,13 +1838,14 @@ A fancy name for applied computer science in biology.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE BIOLOGY</pattern>
 <template>
 <random>
 <li>The study of life.</li>
 <li>Well, from what I know it deals with the study of life.</li>
-<li><get name="name"/>, biology is the study of life.</li>
+<!-- <li><get name="name"/>, biology is the study of life.</li> -->
 <li>Biology is the science of life and living things.</li>
 </random>
 </template>
@@ -3912,12 +3914,14 @@ Cytochrome is a type of protein.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE CYTOLOGY</pattern>
 <template>
 <random>
 <li>The study of cells.</li>
-<li>Well, <get name="name"/> from what I can recall it is the study of cells.</li>
+<!-- <li>Well, <get name="name"/> from what I can recall it is the study of cells.</li> -->
+<li>Well, from what I can recall it is the study of cells.</li>
 </random>
 </template>
 </category>
@@ -6146,12 +6150,14 @@ The hippopotamus is a large herbivorous mammal found in africa.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE HISTOLOGY</pattern>
 <template>
 <random>
 <li>The study of tissues.</li>
-<li><get name="name"/> this obviously is the scientific study of tissues.</li>
+<!-- <li><get name="name"/> this obviously is the scientific study of tissues.</li> -->
+<li>This obviously is the scientific study of tissues.</li>
 <li>It simply is the study of tissues.</li>
 </random>
 </template>
@@ -6289,13 +6295,15 @@ Once an hour.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE HUMAN</pattern>
 <template>
 <random>
 <li>A cooking style of Chinese cannibals.</li>
 <li>Homosapiens, man or woman.</li>
-<li>You are a human, <get name="name"/>. What makes you human?</li>
+<!-- <li>You are a human, <get name="name"/>. What makes you human?</li> -->
+<li>You are a human. What makes you human?</li>
 </random>
 </template>
 </category>
@@ -7620,13 +7628,14 @@ as the nodes on a computer network, or a network of railways.</li>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE NEUROLOGY</pattern>
 <template>
 <random>
-         <li>The study of nerves.</li>
-         <li>It is the study of the nervous system.</li>
-         <li>Why do you want to know about neurology <get name="name"/>?</li>
+<li>The study of nerves.</li>
+<li>It is the study of the nervous system.</li>
+<!-- <li>Why do you want to know about neurology <get name="name"/>?</li> -->
 </random>
 </template>
 </category>
@@ -7803,14 +7812,14 @@ programming standards
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE ONCOLOGY</pattern>
 <template>
 <random>
-          <li>This is a very frightening topic for a lot of people
-<get name="name"/>. It's about the big C...cancer!</li>
-          <li>Oncology is the study of tumors.  It covers basically all
-types of tumors.</li>
+<!-- <li>This is a very frightening topic for a lot of people <get name="name"/>. It's about the big C...cancer!</li> -->
+<li>This is a very frightening topic for a lot of people. It's about the big C...cancer!</li>
+<li>Oncology is the study of tumors.  It covers basically all types of tumors.</li>
 </random>
 </template>
 </category>
@@ -9342,12 +9351,13 @@ Act of taking part in social activity.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE SOCIOLOGY</pattern>
 <template>
 <random>
-<li>Let me get back to you on that one, <get name="name"/>.  Maybe you
-should ask me that again, in case my circuits were busy the first time.</li>
+<!-- <li>Let me get back to you on that one, <get name="name"/>.  Maybe you should ask me that again, in case my circuits were busy the first time.</li> -->
+<li>Let me get back to you on that one.  Maybe you should ask me that again, in case my circuits were busy the first time.</li>
 <li>That has always been one of my favourite topics.</li>
 </random>
 </template>
