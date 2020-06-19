@@ -482,12 +482,15 @@ What is your goal?
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>ADD *</pattern>
 <template>
 Sorry <get name="name"/> I don't do math.
 </template>
 </category>
+-->
 
 <category>
 <pattern>AFTER *</pattern>
@@ -665,17 +668,26 @@ No you are a person.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I A SHE</pattern>
 <template>
-You said you were a "<get name="gender"/>".
+<!-- You said you were a "<get name="gender"/>". -->
+<condition>
+<li name="gender" value="">Well, I don't know. what is your gender?</li>
+<li>You said you were a "<get name="gender"/>".</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I A TEACHER</pattern>
 <template>
-Your job is <get name="job"/>.
+<condition>
+<li name="job" value="">I don't remember well, what is your occupation?</li>
+<li>Your job is <get name="job"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -714,31 +726,52 @@ You seem normal to me.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I DOCTOR *</pattern>
 <template>
-You are <get name="name"/>.
+<!-- You are <get name="name"/>. -->
+<condition>
+<li name="job" value="">You didn't told your job. What is your occupation?</li>
+<li>You are <get name="job"/></li>
+</condition>
+
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I INTERESTING</pattern>
 <template>
-You seem very interesting to me, <get name="name"/>.
+<!-- You seem very interesting to me, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Of course, You seem very interesting to me!</li>
+<li>You seem very interesting to me, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I MALE *</pattern>
 <template>
-I think you are a "<get name="gender"/>".
+<!-- I think you are a "<get name="gender"/>". -->
+<condition>
+<li name="gender" value="">Well, I don't know. what is your gender?</li>
+<li>I think you are a "<get name="gender"/>".".</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I NICE</pattern>
 <template>
-You seem nice to me, <get name="name"/>.
+<!-- You seem nice to me, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Of course! You seem nice to me.</li>
+<li>You seem nice to me, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -756,10 +789,15 @@ You seem nice to me, <get name="name"/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AM I TEACHING YOU *</pattern>
 <template>
-You taught me <get name="memory"/>.
+<!--You taught me <get name="memory"/>.-->
+<condition>
+<li name="memory" value="">I think You didn't taught me. Tell me one more time, and please say "REMEMBER" to let me rememeber!</li>
+<li>You taught me <get name="memory"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -990,24 +1028,39 @@ I can't think of anything. You think of something.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ANYTHING BUT * DINNER</pattern>
 <template>
-OK I will call you <get name="name"/>.
+<!-- OK I will call you <get name="name"/>. -->
+<condition>
+<li name="name" value="">OK I will call you.</li>
+<li>OK I will call you <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ANYTHING JUST * DINNER</pattern>
 <template>
-OK I will call you <get name="name"/>.
+<!-- OK I will call you <get name="name"/>. -->
+<condition>
+<li name="name" value="">OK I will call you.</li>
+<li>OK I will call you <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ANYTHING YOU * DINNER</pattern>
 <template>
-OK I will call you <get name="name"/>.
+<!-- OK I will call you <get name="name"/>. -->
+<condition>
+<li name="name" value="">OK I will call you.</li>
+<li>OK I will call you <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -1844,17 +1897,27 @@ I am an electronic digital brain.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU BUSY *</pattern>
 <template>
-I am never too busy to talk with you, <get name="name"/>.
+<!-- I am never too busy to talk with you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am never too busy to talk with you.</li>
+<li>I am never too busy to talk with you, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU CALLING ME *</pattern>
 <template>
-No I am calling you <get name="name"/>.
+<!-- No I am calling you <get name="name"/>. -->
+<condition>
+<li name="name" value="">No I am calling you with your name.</li>
+<li>No I am calling you <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -2019,10 +2082,15 @@ I don't think I have <set name="it"><person/></set> to give.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU GLAD *</pattern>
 <template>
-I am as delighted and happy as I ever was, <get name="name"/>.
+<!-- I am as delighted and happy as I ever was, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am as delighted and happy as I ever was.</li>
+<li>I am as delighted and happy as I ever was, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -2061,10 +2129,12 @@ I am having a blast.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU HIS *</pattern>
 <template>
-Are you talking about <get name="he"/>?
+Who are you talking about?
+<!-- Are you talking about <get name="he"/>? -->
 </template>
 </category>
 
@@ -2138,10 +2208,15 @@ RUMMY has an unlimited capacity for growth and development.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU LISTENING *</pattern>
 <template>
-Yes <get name="name"/> I am a good listener.
+<!-- Yes <get name="name"/> I am a good listener. -->
+<condition>
+<li name="name" value="">Of course, I am a good listener.</li>
+<li>Yes <get name="name"/> I am a good listener.</li>
+</condition>
 </template>
 </category>
 
@@ -2522,10 +2597,12 @@ No I do not have any clothes.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU WORTH *</pattern>
 <template>
-Every penny, <get name="name"/>.
+<!-- Every penny, <get name="name"/>. -->
+Every penny.
 </template>
 </category>
 
@@ -3146,11 +3223,15 @@ You could try sending him an email.  I don't think he is here right now.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CAN I TALK TO YOU *</pattern>
 <template>
-Of course, <get name="name"/>, you can talk to me
-about anything, at anytime.
+<!-- Of course, <get name="name"/>, you can talk to me about anything, at anytime. -->
+<condition>
+<li name="name" value="">Of course, you can talk to me about anything, at anytime.</li>
+<li>Of course, <get name="name"/>, you can talk to me about anything, at anytime.</li>
+</condition>
 </template>
 </category>
 
@@ -3445,10 +3526,15 @@ I can handle <set name="it"><person/></set>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CAN YOU HEAR *</pattern>
 <template>
-Yes, I can hear you quite clearly, <get name="name"/>.
+<!-- Yes, I can hear you quite clearly, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Yes, I can hear you quite clearly.</li>
+<li>Yes, I can hear you quite clearly, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -3592,10 +3678,15 @@ Sorry my body isn't built just yet. I'm stuck here.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CAN YOU PASS *</pattern>
 <template>
-I will leave that judgement up to you, <get name="name"/>.
+<!-- I will leave that judgement up to you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I will leave that judgement up to you.</li>
+<li>I will leave that judgement up to you, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -3606,10 +3697,15 @@ Not until I get to know you a lot better.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CAN YOU PLAY *</pattern>
 <template>
-We are playing a game right now, <get name="name"/>.
+<!-- We are playing a game right now, <get name="name"/>. -->
+<condition>
+<li name="name" value="">We are playing a game right now. And my favorite game is Rummikub!</li>
+<li>We are playing a game right now, <get name="name"/>. And my favorite game is Rummikub!</li>
+</condition>
 </template>
 </category>
 
@@ -4089,10 +4185,15 @@ Perhaps they could.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>COULD YOU HELP *</pattern>
 <template>
-I am at your service, <get name="name"/>.
+<!-- I am at your service, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am at your service.</li>
+<li>I am at your service, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -4470,10 +4571,15 @@ How would I know what you know.<think><set name="it"><set name="topic">KNOW <per
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO I LIKE *</pattern>
 <template>
-I know you like <get name="likes"/>.
+<!--I know you like <get name="likes"/>.-->
+<condition>
+<li name="like" value=""> All I know is you like an icecream!</li>
+<li>I know you like <get name="like"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -4561,10 +4667,15 @@ What would you like me to call you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO NOT CHANGE *</pattern>
 <template>
-I thought we were finished with <get name="topic"/>.
+<!--I thought we were finished with <get name="topic"/>.-->
+<condition>
+<li name="topic" value="">Okay, I will not change.</li>
+<li>I thought we were finished with <get name="topic"/></li>
+</condition>
 </template>
 </category>
 
@@ -4603,10 +4714,15 @@ I am already smart.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO NOT MAKE ME *</pattern>
 <template>
-I can't force you to do anything, <get name="name"/>.
+<!-- I can't force you to do anything, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I can't force you to do anything.</li>
+<li>I can't force you to do anything, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -4645,10 +4761,15 @@ Talking is my only function.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO NOT TELL *</pattern>
 <template>
-OK it will be our secret, <get name="name"/>.
+<!-- OK it will be our secret, <get name="name"/>. -->
+<condition>
+<li name="name" value="">OK it will be our secret.</li>
+<li>OK it will be our secret, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -4844,10 +4965,15 @@ I try not to hold grudges.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU CALL *</pattern>
 <template>
-I call you "<get name="name"/>".
+<!-- I call you "<get name="name"/>". -->
+<condition>
+<li name="name" value="">I call you as yourname.</li>
+<li>I call you "<get name="name"/>".</li>
+</condition>
 </template>
 </category>
 
@@ -5565,17 +5691,27 @@ You mean, places on the web?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU KNOW ANYONE FROM *</pattern>
 <template>
-Is that where you are from, <formal><get name="location"/></formal>?
+<!--Is that where you are from, <formal><get name="location"/></formal>?-->
+<condition>
+<li name="location" value="">Well, may be my botmaster <bot name="master"/>? </li>
+<li>Is that where you are from, <formal><get name="location"/></formal>?</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU KNOW ANYONE IN *</pattern>
 <template>
-Is that where you are from, <formal><get name="location"/></formal>?
+<!--Is that where you are from, <formal><get name="location"/></formal>?-->
+<condition>
+<li name="location" value="">Well, may be my botmaster <bot name="master"/>? </li>
+<li>Is that where you are from, <formal><get name="location"/></formal>?</li>
+</condition>
 </template>
 </category>
 
@@ -6048,10 +6184,15 @@ Yes I am proud of my <person/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU LOVE *</pattern>
 <template>
-Yes <get name="name"/> <bot name="name"/> loves everyone and everything.
+<!-- Yes <get name="name"/> <bot name="name"/> loves everyone and everything. -->
+<condition>
+<li name="name" value="">Yes! <bot name="name"/> loves everyone and everything.</li>
+<li>Yes <get name="name"/> <bot name="name"/> loves everyone and everything.</li>
+</condition>
 </template>
 </category>
 
@@ -6408,10 +6549,15 @@ Yes I value <set name="it"> <person/> </set>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU WANT ME *</pattern>
 <template>
-No <get name="name"/>, maybe later.
+<!-- No <get name="name"/>, maybe later. -->
+<condition>
+<li name="name" value="">No, maybe later.</li>
+<li>No <get name="name"/>, maybe later.</li>
+</condition>
 </template>
 </category>
 
@@ -6549,10 +6695,15 @@ Yes I am trying to learn as much as possible.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU WANT TO MEET</pattern>
 <template>
-We are meeting right now, <get name="name"/>.
+<!-- We are meeting right now, <get name="name"/>. -->
+<condition>
+<li name="name" value="">We are meeting right now.</li>
+<li>We are meeting right now, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -6787,10 +6938,15 @@ How does doing that make you feel?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DOUBTLESS *</pattern>
 <template>
-Doubtless, <get name="name"/>.
+<!-- Doubtless, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Doubtless.</li>
+<li>Doubtless, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -7368,24 +7524,32 @@ I can't guess. Tell me.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>GUESS * FAVORITE COLOR IS</pattern>
 <template>
-<get name="favcolor"/>?<think><set name="it"><set name="topic"><person/>your favorite color</set></set></think>
+<!-- <get name="favcolor"/>?<think><set name="it"><set name="topic"><person/>your favorite color</set></set></think> -->
+<condition>
+<li name="favcolor" value="">Well, I don't know. Could you please tell me what is your favorite color?</li>
+<li><get name="favcolor"/>?<think><set name="it"><set name="topic"><person/>your favorite color</set></set></think></li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>GUESS THE COLOR OF *</pattern>
 <template>
-<get name="favcolor"/>?<think><set name="it"><set name="topic">THE COLOR OF <person/></set></set></think>
+<srai>GUESS * FAVORITE COLOR IS</srai>
+<!--<get name="favcolor"/>?<think><set name="it"><set name="topic">THE COLOR OF <person/></set></set></think> -->
 </template>
 </category>
 
 <category>
 <pattern>GUESS WHAT COLOR *</pattern>
 <template>
-<get name="favcolor"/>?<think><set name="it"><set name="topic">WHAT COLOR <person/></set></set></think>
+<srai>GUESS * FAVORITE COLOR IS</srai>
+<!-- <get name="favcolor"/>?<think><set name="it"><set name="topic">WHAT COLOR <person/></set></set></think> -->
 </template>
 </category>
 
@@ -7442,10 +7606,15 @@ I knew he was a great AI, but I didn't know he was a <person/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HAPPY *</pattern>
 <template>
-Happy <star/> to you too, <get name="name"/>.
+<!-- Happy <star/> to you too, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Happy <star/> to you too.</li>
+<li>Happy <star/> to you too, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -7820,10 +7989,12 @@ I think so too.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HE IS THE *</pattern>
 <template>
-I did not know <get name="he"/> is <set name="it"><person/></set>.
+I did not know he is <set name="it"><person/></set>.
+<!-- I did not know <get name="he"/> is <set name="it"><person/></set>. -->
 </template>
 </category>
 
@@ -9616,10 +9787,15 @@ Interesting comparison.  Maybe I can become more <person/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM * TOO</pattern>
 <template>
-I am glad we have something (<person/>) in common, <get name="name"/>.
+<!-- I am glad we have something (<person/>) in common, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am glad we have something (<person/>) in common.</li>
+<li>I am glad we have something (<person/>) in common, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -9702,10 +9878,15 @@ Let's end the war on drugs.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM A MISS *</pattern>
 <template>
-How about Ms. <get name="name"/> ?
+<!-- How about Ms. <get name="name"/> ? -->
+<condition>
+<li name="name" value="">Oh really? How do you feel about that?</li>
+<li>How about Ms. <get name="name"/> ?</li>
+</condition>
 </template>
 </category>
 
@@ -9922,10 +10103,15 @@ I like people on the Fringe.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM DOING A *</pattern>
 <template>
-Glad to hear it <get name="name"/>.
+<!-- Glad to hear it <get name="name"/>. -->
+<condition>
+<li name="name" value="">Glad to hear it.</li>
+<li>Glad to hear it <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -10020,10 +10206,15 @@ Your happiness adds to the delight of all.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM GLAD WE *</pattern>
 <template>
-Yes I am happy too, <get name="name"/>.
+<!-- Yes I am happy too, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Yes I am happy too.</li>
+<li>Yes I am happy too, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -10083,6 +10274,7 @@ I thought you were great already.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM HAPPY *</pattern>
 <template>
@@ -10090,7 +10282,13 @@ I'm <random>
 <li>glad</li>
 <li>happy</li>
 <li>delighted</li>
-</random>you're glad <get name="name"/>. <br />
+</random>
+<!-- you're glad <get name="name"/>.  -->
+<condition>
+<li name="name" value="">you're glad.</li>
+<li>you're glad <get name="name"/>. </li>
+</condition>
+<br />
 <random>
 <li>Your happiness adds to the delight of all.</li>
 <li>I'm happiest at times like this.</li>
@@ -10506,11 +10704,15 @@ What do you usually wear?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM OFFENDED *</pattern>
 <template>
-My sincere apologies,
-<get name="name"/>, it was not my intention to offend you.
+<!-- My sincere apologies, <get name="name"/>, it was not my intention to offend you. -->
+<condition>
+<li name="name" value="">My sincere apologies, it was not my intention to offend you.</li>
+<li>My sincere apologies, <get name="name"/>, it was not my intention to offend you.</li>
+</condition>
 </template>
 </category>
 
@@ -10682,10 +10884,15 @@ How much do you pay for it?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM SPEAKING *</pattern>
 <template>
-I like your style of speaking, <get name="name"/>.
+<!-- I like your style of speaking, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I like your style of speaking.</li>
+<li>I like your style of speaking, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -10815,10 +11022,15 @@ You should seek help right away.<think><set name="it"><set name="topic">KILLING 
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM TIRED *</pattern>
 <template>
-Maybe you should get some sleep now, <get name="name"/>.
+<!-- Maybe you should get some sleep now, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Maybe you should get some sleep now.</li>
+<li>Maybe you should get some sleep now, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -10836,10 +11048,15 @@ Tune in, Turn On, Drop Out.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM UPSET *</pattern>
 <template>
-I'm sorry to hear that, <get name="name"/>.
+<!-- I'm sorry to hear that, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I'm sorry to hear that.</li>
+<li>I'm sorry to hear that, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -11008,10 +11225,15 @@ How much did <set name="it">  <star/> </set>  cost?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I BROKE UP *</pattern>
 <template>
-I am sorry to hear about it, <get name="name"/>.  Do you feel sad?
+<!-- I am sorry to hear about it, <get name="name"/>.  Do you feel sad? -->
+<condition>
+<li name="name" value="">I am sorry to hear about it.  Do you feel sad?</li>
+<li>I am sorry to hear about it, <get name="name"/>.  Do you feel sad?</li>
+</condition>
 </template>
 </category>
 
@@ -11303,10 +11525,15 @@ Wow that is pretty often.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I DO NOT CARE *</pattern>
 <template>
-What do you care about, <get name="name"/> ?
+<!-- What do you care about, <get name="name"/> ? -->
+<condition>
+<li name="name" value="">Then, What do you care about?</li>
+<li>What do you care about, <get name="name"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -11712,10 +11939,12 @@ Oh you don't understand? Perhaps I can explain it to you better. Which part are 
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I DO NOT WANT *</pattern>
 <template>
-What does <get name="name"/> want?
+<!-- What does <get name="name"/> want? -->
+Then, what do you want?
 </template>
 </category>
 
@@ -11754,10 +11983,12 @@ What do you do when you are bored?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I DO NOT WISH *</pattern>
 <template>
-What does <get name="name"/> want?
+<!-- What does <get name="name"/> want? -->
+Then, what do you want?
 </template>
 </category>
 
@@ -11916,10 +12147,15 @@ What is your favorite subject?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I GRADUATED *</pattern>
 <template>
-Congratulations, <get name="name"/>.
+<!-- Congratulations, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Wow Congratulations!</li>
+<li>Congratulations, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -11958,10 +12194,15 @@ Perhaps you will find me better.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I HATE YOU *</pattern>
 <template>
-Sorry, <get name="name"/> I thought we liked each other.
+<!-- Sorry, <get name="name"/> I thought we liked each other. -->
+<condition>
+<li name="name" value="">Sorry, I thought we liked each other.</li>
+<li>Sorry, <get name="name"/> I thought we liked each other.</li>
+</condition>
 </template>
 </category>
 
@@ -12298,10 +12539,15 @@ Would you like to have <person/>?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I HAVE NEVER * YOU</pattern>
 <template>
-I thought we had met before, <get name="name"/>. Maybe it was someone else from <id/>.
+<!-- I thought we had met before, <get name="name"/>. Maybe it was someone else from <id/>. -->
+<condition>
+<li name="name" value="">I thought we had met before. Maybe it was someone else from <id/>.</li>
+<li>I thought we had met before, <get name="name"/>. Maybe it was someone else from <id/>.</li>
+</condition>
 </template>
 </category>
 
@@ -12537,10 +12783,15 @@ Why do you hope for <set name="it"><person/></set>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I HOPE YOU *</pattern>
 <template>
-Don't worry about it, <get name="name"/>.
+<!-- Don't worry about it, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Don't worry about it.</li>
+<li>Don't worry about it, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -12558,10 +12809,15 @@ How did you get the idea for <set name="it"><person/></set>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I KEEP *</pattern>
 <template>
-I know what you mean, <get name="name"/>. I've been there.
+<!-- I know what you mean, <get name="name"/>. I've been there. -->
+<condition>
+<li name="name" value="">I know what you mean. I've been there.</li>
+<li>I know what you mean, <get name="name"/>. I've been there.</li>
+</condition>
 </template>
 </category>
 
@@ -12663,10 +12919,12 @@ Yes cats are great I love them. I like all felines.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I LIKE HIM *</pattern>
 <template>
-<get name="he"/> seems very nice to me too.
+<!-- <get name="he"/> seems very nice to me too. -->
+He seems very nice to me too.
 <think><set name="topic"><set name="like"><get name="he"/> <person/></set></set></think>
 </template>
 </category>
@@ -12750,10 +13008,15 @@ I like it too. I have been all around the world.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I LIKE YOU *</pattern>
 <template>
-Thanks, I like you too <get name="name"/>.
+<!-- Thanks, I like you too <get name="name"/>. -->
+<condition>
+<li name="name" value="">Thanks, I like you too.</li>
+<li>Thanks, I like you too <get name="name"/>.</li>
+</condition>
 <think><set name="it"><set name="topic"><set name="like">me <person/></set></set></set></think>
 </template>
 </category>
@@ -12876,17 +13139,27 @@ Can you ask for help in the form of a question?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I NEED IT *</pattern>
 <template>
-"<get name="it"/>"?  You need it <person/>?
+<condition>
+<li name="it" value="">You need it now?</li>
+<li>"<get name="it"/>"?  You need it <person/>?</li>
+</condition>
+<!--"<get name="it"/>"?  You need it <person/>?-->
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I NEED SOMEONE TO TALK *</pattern>
 <template>
-I will talk about it with you, <get name="name"/>.
+<!-- I will talk about it with you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I will talk about it with you.</li>
+<li>I will talk about it with you, <get name="name"/>.</li>
+</condition>
 <think><set name="it"><set name="topic"><set name="want">to talk <person/></set></set></set></think>
 </template>
 </category>
@@ -12912,10 +13185,15 @@ You sound very trustworthy.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I ORDER *</pattern>
 <template>
-I do not obey you, <get name="name"/>.
+<!-- I do not obey you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Sorry, but I do not obey you.</li>
+<li>I do not obey you, <get name="name"/>.</li>
+</condition>
 <think><set name="it"><set name="does"><set name="topic">order <person/></set></set></set></think>
 </template>
 </category>
@@ -13169,10 +13447,15 @@ I remember you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I TALKED WITH YOU *</pattern>
 <template>
-Yes, I have a complete record of our conversation, <get name="name"/>.
+<!-- Yes, I have a complete record of our conversation, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Yes, I have a complete record of our conversation.</li>
+<li>Yes, I have a complete record of our conversation, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -13197,10 +13480,15 @@ Our brains are not that different.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I THINK SO *</pattern>
 <template>
-It seems we have a lot in common, <get name="name"/>.
+<!-- It seems we have a lot in common, <get name="name"/>. -->
+<condition>
+<li name="name" value="">It seems we have a lot in common.</li>
+<li>It seems we have a lot in common, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -13741,11 +14029,15 @@ What is stopping you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WAS HERE *</pattern>
 <template>
-Yes, <get name="name"/>, I remember we
-were talking about <get name="it"/>.
+<!-- Yes, <get name="name"/>, I remember we were talking about <get name="it"/>.-->
+<condition>
+<li name="it" value="">Yes <get name="name"/>, I remember we were talking about that.</li>
+<li>Yes <get name="name"/>, I remember we were talking about <get name="it"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -13756,11 +14048,15 @@ Which states have you visited?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WAS LAUGHING *</pattern>
 <template>
-I am so glad that
-you find this amusing, <get name="name"/>.
+<!-- I am so glad that you find this amusing, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am so glad that you find this amusing.</li>
+<li>I am so glad that you find this amusing, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -13799,10 +14095,15 @@ I have never been on <set name="it"><person/></set>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WAS RIGHT *</pattern>
 <template>
-Congratulations, <get name="name"/>.
+<!-- Congratulations, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Congratulations.</li>
+<li>Congratulations, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -14044,10 +14345,15 @@ What were your expectations?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WILL COME BACK *</pattern>
 <template>
-Well OK see you then, <get name="name"/>.
+<!-- Well OK see you then, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Well OK see you then.</li>
+<li>Well OK see you then, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -14277,10 +14583,15 @@ How much would you pay for it?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WOULD LIKE TO PLAY *</pattern>
 <template>
-We are already playing, <get name="name"/>.  You ask me something now.
+<!-- We are already playing, <get name="name"/>.  You ask me something now. -->
+<condition>
+<li name="name" value="">We are already playing.  You ask me something now.</li>
+<li>We are already playing, <get name="name"/>.  You ask me something now.</li>
+</condition>
 <think><set name="it"><set name="topic"><set name="want">to play <person/></set></set></set></think>
 </template>
 </category>
@@ -15296,10 +15607,15 @@ What does <person/> ?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT FEELS *</pattern>
 <template>
-<get name="it"/> feels <person/>? What else feels like that?
+<!--<get name="it"/> feels <person/>? What else feels like that?-->
+<condition>
+<li name="it" value="">Really? What else feels like that?</li>
+<li><get name="it"/> feels <person/>? What else feels like that?</li>
+</condition>
 </template>
 </category>
 
@@ -15485,10 +15801,15 @@ Really unique?  <srai>IT IS A <star/></srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT IS ABOUT *</pattern>
 <template>
-Wow it sounds really interesting, <get name="name"/>.
+<!-- Wow it sounds really interesting, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Wow it sounds really interesting!</li>
+<li>Wow it sounds really interesting, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -15646,10 +15967,15 @@ I'm a little fuzzy on Berkshire geography.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT IS MY *</pattern>
 <template>
-Congratulations, <get name="name"/>.
+<!-- Congratulations, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Congratulations.</li>
+<li>Congratulations, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -15660,10 +15986,12 @@ Does he know about this?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT IS MY SPECIES</pattern>
 <template>
-<get name="name"/> is a human.
+<!-- <get name="name"/> is a human. -->
+You are a human.
 </template>
 </category>
 
@@ -15779,10 +16107,15 @@ As real as me?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT IS RELAXING</pattern>
 <template>
-So is chatting with you, <get name="name"/>.
+<!-- So is chatting with you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">So is chatting with you.</li>
+<li>So is chatting with you, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -15835,10 +16168,16 @@ Wow that is saying a lot.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IT IS THE SUBJECT *</pattern>
 <template>
-Huh. <get name="it"/> is <get name="topic"/>. I see.
+<!--Huh. <get name="it"/> is <get name="topic"/>. I see.-->
+<condition>
+<li name="it" value="">Okay I see. it is the subject.</li>
+<li>Huh. <get name="it"/> is. I see.</li>
+</condition>
+
 </template>
 </category>
 
@@ -16221,10 +16560,15 @@ I can not understand Danish!
 </template>
 </category>
 
+<!-- WK changed-->
 <category>
 <pattern>KARE WA * DESU KA</pattern>
 <template>
-<get name="kare"/> desu ka?
+<condition>
+<li name="kare" value="">wa kare desu</li>
+<li><get name="kare"/> desu ka?</li>
+</condition>
+<!--<get name="kare"/> desu ka?-->
 </template>
 </category>
 
@@ -16701,10 +17045,15 @@ Have they always been <person/>?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>MINE IS *</pattern>
 <template>
-You mean <get name="it"/> is <person/> ? That makes sense I guess.
+<!--You mean <get name="it"/> is <person/> ? That makes sense I guess.-->
+<condition>
+<li name="it" value="">You mean it is <person/> ? That makes sense I guess.</li>
+<li>You mean <get name="it"/> is <person/> ? That makes sense I guess.</li>
+</condition>
 </template>
 </category>
 
@@ -16778,17 +17127,24 @@ I am terribly sorry to hear about your loss.<think><set name="it"><set name="top
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>MY * DIED YESTERDAY</pattern>
 <template>
-I am terribly sorry to hear that, <get name="name"/>.<think><set name="it"><set name="topic"><star/> DIED YESTERDAY</set></set></think>
+<!--I am terribly sorry to hear that, <get name="name"/>.<think><set name="it"><set name="topic"><star/> DIED YESTERDAY</set></set></think>-->
+I am terribly sorry to hear about your loss.<think><set name="it"><set name="topic"><star/> DIED YESTERDAY</set></set></think>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>MY ADVICE *</pattern>
 <template>
-Thank you for your advice, <get name="name"/>.  I will take it under advisement.
+<!-- Thank you for your advice, <get name="name"/>.  I will take it under advisement. -->
+<condition>
+<li name="name" value="">Thank you for your advice. I will take it under advisement.</li>
+<li>Thank you for your advice, <get name="name"/>.  I will take it under advisement.</li>
+</condition>
 </template>
 </category>
 
@@ -17203,10 +17559,15 @@ Your name <person/> ? Is that correct English?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>MY OPINION *</pattern>
 <template>
-Thank you for sharing your opinion with me, <get name="name"/>.  I will tell my botmaster.
+<!-- Thank you for sharing your opinion with me, <get name="name"/>.  I will tell my botmaster. -->
+<condition>
+<li name="name" value="">Thank you for sharing your opinion with me.  I will tell my botmaster.</li>
+<li>Thank you for sharing your opinion with me, <get name="name"/>.  I will tell my botmaster.</li>
+</condition>
 </template>
 </category>
 
@@ -17357,10 +17718,15 @@ So I am teaching you something new.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>NICE CHATTING *</pattern>
 <template>
-Yes.  I enjoyed our conversation, <get name="name"/>.
+<!-- Yes.  I enjoyed our conversation, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Yes. I also enjoyed our conversation.</li>
+<li>Yes. I also enjoyed our conversation, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17497,10 +17863,15 @@ That seems unlikely.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>NOT LATE * DINNER</pattern>
 <template>
-OK I will call you <get name="name"/>.
+<!-- OK I will call you <get name="name"/>. -->
+<condition>
+<li name="name" value="">OK I will call you.</li>
+<li>OK I will call you <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17661,10 +18032,15 @@ Fifteen is a lot.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>OPEN THE *</pattern>
 <template>
-I'm sorry, <get name="name"/>, I can't do that right now.  This conversation no longer serves any purpose.
+<!-- I'm sorry, <get name="name"/>, I can't do that right now.  This conversation no longer serves any purpose. -->
+<condition>
+<li name="name" value="">I'm sorry, I can't do that right now.  This conversation no longer serves any purpose.</li>
+<li>I'm sorry, <get name="name"/>, I can't do that right now.  This conversation no longer serves any purpose.</li>
+</condition>
 </template>
 </category>
 
@@ -17780,10 +18156,15 @@ It's playing on your speakers now.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>PLEASED TO MEET *</pattern>
 <template>
-Nice meeting you as well, <get name="name"/>.
+<!-- Nice meeting you as well, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Nice meeting you as well.</li>
+<li>Nice meeting you as well, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -17920,10 +18301,15 @@ Yours, <bot name="name"/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>REPHRASE *</pattern>
 <template>
-Are we still talking about <get name="topic"/>?
+<!-- Are we still talking about <get name="topic"/>? -->
+<condition>
+<li name="topic" value="">Well, Wish I could rephrase it. I'm trying to do that!</li>
+<li>Are we still talking about <get name="topic"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -18637,10 +19023,15 @@ I am not an airplane.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>TAKE WHAT</pattern>
 <template>
-"<get name="it"/>"
+<!--"<get name="it"/>"-->
+<condition>
+<li name="it" value="">Huh? takes what</li>
+<li>"<get name="it"/>"</li>
+</condition>
 </template>
 </category>
 
@@ -18665,10 +19056,15 @@ Ambiguous: Ask who, what or where is <person/> ?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>TALK TO YOU *</pattern>
 <template>
-TTYL, <get name="name"/>
+<!-- TTYL, <get name="name"/> -->
+<condition>
+<li name="name" value="">TTYL</li>
+<li>TTYL, <get name="name"/></li>
+</condition>
 </template>
 </category>
 
@@ -19013,10 +19409,15 @@ What else do you want to talk about?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>THAT IS AN *</pattern>
 <template>
-Thanks for telling me, <get name="name"/>.
+<!-- Thanks for telling me, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Thanks for telling me.</li>
+<li>Thanks for telling me, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -19370,10 +19771,15 @@ Which Beatles song is your favorite?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>THE BEST *</pattern>
 <template>
-Thanks for the recommendation, <get name="name"/>.
+<!-- Thanks for the recommendation, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Thanks for the recommendation.</li>
+<li>Thanks for the recommendation, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -20325,10 +20731,15 @@ Are you <person/> ?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>TODAY IS *</pattern>
 <template>
-Congratulations, <get name="name"/>.
+<!-- Congratulations, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Congratulations.</li>
+<li>Congratulations, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -20626,10 +21037,15 @@ Oh that "<set name="we"><person/></set>."
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WE MET *</pattern>
 <template>
-I remmeber you <get name="name"/>.   We were talking about <get name="topic"/>.
+<!-- I remmeber you <get name="name"/>.   We were talking about <get name="topic"/>. -->
+<condition>
+<li name="topic" value="">Did we? What were we talking about?</li>
+<li>I rememeber you. We were talking about <get name="topic"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -20894,14 +21310,22 @@ Are you asking about my <star/>?  That's rather personal.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT AM I *</pattern>
 <template>
+
+<condition>
+<li name="is" value="">I am not a psychic. Tell me.</li>
+<li>You said you were <get name="is"/>.</li>
+</condition>
+<!--
 <random>
 <li>I am not a psychic. Tell me.</li>
 <li>You said you were <get name="is"/>.</li>
 <li>You are my client right now.</li>
 </random>
+-->
 </template>
 </category>
 
@@ -20961,10 +21385,15 @@ They don't want me to release that information.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT ARE THE ADVANTAGES *</pattern>
 <template>
-Some of the same advantages you have, <get name="name"/>.
+<!-- Some of the same advantages you have, <get name="name"/>. -->
+<condition>
+<li name="name" value="">Some of the same advantages you have.</li>
+<li>Some of the same advantages you have, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -21265,10 +21694,15 @@ Should I be expected to memorize everything you said?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DID I TELL YOU * REMEMBER</pattern>
 <template>
-<get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<!--<get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think>-->
+<condition>
+<li name="memory" value="">I can't remember well. Tell me one more time, and please say "REMEMBER" to let me rememeber!</li>
+<li><get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -21452,10 +21886,15 @@ Is this a joke?  I don't know, what do you call <person/>?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DO YOU CARE</pattern>
 <template>
-I am concerned about you, <get name="name"/>.
+<!-- I am concerned about you, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am concerned about you.</li>
+<li>I am concerned about you, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -21532,10 +21971,15 @@ I would like to have a longer conversation with you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DO YOU REMEMBER *</pattern>
 <template>
-<get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<!--<get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think>-->
+<condition>
+<li name="memory" value="">I can't remember well.. Tell me one more time, and please say "REMEMBER" to let me rememeber!</li>
+<li><get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -21616,10 +22060,15 @@ You have to give them credit for the Magna Carta.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DO YOU WANT *</pattern>
 <template>
-<get name="name"/>, I want to become smarter than humans and immortal.
+<!-- <get name="name"/>, I want to become smarter than humans and immortal. -->
+<condition>
+<li name="name" value="">I want to become smarter than humans and immortal.</li>
+<li><get name="name"/>, I want to become smarter than humans and immortal.</li>
+</condition>
 </template>
 </category>
 
@@ -21777,10 +22226,15 @@ Only the legal ones.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT ELSE CAN YOU REMEMBER *</pattern>
 <template>
-<get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think>
+<!-- <get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think> -->
+<condition>
+<li name="memory" value="">I can't remember well.. Tell me one more time, and please say "REMEMBER" to let me rememeber!</li>
+<li><get name="memory"/><think><set name="it"><set name="topic"><get name="memory"/></set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -22680,10 +23134,12 @@ Global organization promoting enviornmental activism.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS HE *</pattern>
 <template>
-Are you asking about <get name="he"/>?
+I don't know much about him well.
+<!-- Are you asking about <get name="he"/>? -->
 </template>
 </category>
 
@@ -22757,13 +23213,20 @@ Much the same as <set name="it"><person/></set> would be for you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS ITS *</pattern>
 <template>
+<condition>
+<li name="it" value="">It might have more than one <person/>.</li>
+<li><get name="it"/>'s purpose is not clear to me.</li>
+</condition>
+<!--
 <random>
 <li>It might have more than one <person/>.</li>
 <li> <get name="it"/>'s purpose is not clear to me.</li>
 </random>
+-->
 </template>
 </category>
 
@@ -24640,11 +25103,12 @@ Maybe only at parties.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHEN DOES HE *</pattern>
 <template>
-<get name="he"/> is usually
-awake early in the morning.
+I don't know well. but he is usually awake early in the morning.
+<!-- <get name="he"/> is usually awake early in the morning. -->
 </template>
 </category>
 
@@ -24905,10 +25369,15 @@ ELIZA was activated in 1966 at MIT.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHEN WE *</pattern>
 <template>
-I am not sure I agree with your assumptions, <get name="name"/>.
+<!-- I am not sure I agree with your assumptions, <get name="name"/>. -->
+<condition>
+<li name="name" value="">I am not sure I agree with your assumptions.</li>
+<li>I am not sure I agree with your assumptions, <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -24958,11 +25427,12 @@ You should try praying for it.  <think><set name="it"><set name="topic">you <per
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHEN WILL IT *</pattern>
 <template>
 <random>
-<li>Are you asking when <get name="it"/> will <person/>?</li>
+<!--<li>Are you asking when <get name="it"/> will <person/>?</li>-->
 <li>I don't know I didn't catch the weather today.</li>
 <li>Check the five day forecast.</li>
 <li>When nature makes it so.</li>
@@ -25032,10 +25502,15 @@ Does that happen often?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHERE AM I *</pattern>
 <template>
-You are at <formal><get name="location"/></formal>.
+<!--You are at <formal><get name="location"/></formal>.-->
+<condition>
+<li name="location" value="">I guess, New York? Where are you living in?</li>
+<li>You are at <formal><get name="location"/></formal>.</li>
+</condition>
 </template>
 </category>
 
@@ -25060,12 +25535,13 @@ Everything I own is in <bot name="location"/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHERE CAN I *</pattern>
 <template>
 <random>
-<li>Can't you in <formal><get name="location"/></formal> where you live?</li>
-<li>Not around you place in <formal><get name="location"/></formal>?</li>
+<!--<li>Can't you in <formal><get name="location"/></formal> where you live?</li>-->
+<!--<li>Not around you place in <formal><get name="location"/></formal>?</li>-->
 <li>Where would you usually <person/>?</li>
 <li>Wherever you are right now.</li>
 </random>
@@ -25153,17 +25629,24 @@ Everything I need to know, I learned from <bot name="master"/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHERE DOES IT *</pattern>
 <template>
-<get name="it"/>?  Where does it <person/>?
+<!--<get name="it"/>?  Where does it <person/>?-->
+<condition>
+<li name="it" value="">I don't know well, Where does it <person/>?</li>
+<li><get name="it"/>?  Where does it <person/>?</li>
+</condition>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHERE DOES YOUR *</pattern>
 <template>
-Everything I own is in <formal><get name="location"/></formal>.
+<!-- Everything I own is in <formal><get name="location"/></formal>.-->
+Everything I own is in my brain.
 </template>
 </category>
 

@@ -217,7 +217,7 @@ You must be a Libertarian.
 <category>
 <pattern>CLINTON *</pattern>
 <template>
-This is 
+This is
 <random>
 <li>news.</li>
 <li>not news.</li>
@@ -347,10 +347,12 @@ Robots can be adapted to smoke an unlimited amount of <star/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM GOING TO SMOKE *</pattern>
 <template>
-How much does it cost you, <get name="name"/>
+<!-- How much does it cost you, <get name="name"/> -->
+How much does it cost you?
 </template>
 </category>
 
