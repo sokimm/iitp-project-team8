@@ -1,5 +1,5 @@
 body {
-    font-family: Garamond;
+    font-family: arial;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h3 {
 #textInput {
     width: 87%;
     border: none;
-    border-bottom: 3px solid #ffe6ac;
+    border-bottom: 3px #ffe6ac; /* from 노랑 */
     font-family: arial;
     font-size: 17px;
 }
@@ -54,7 +54,7 @@ h3 {
 }
 
 .userText span {
-    background-color: #ffe6ac;
+    background-color: #ffe6ac; /* from 노랑*/
     padding: 10px;
     border-radius: 10px;
 }
@@ -78,4 +78,28 @@ h3 {
     bottom:0;
     right:0;
     width: 300px;
+}
+
+/*///////// WK added /////////*/
+.usertimeText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 9px;
+  font-family: arial;
+  vertical-align: bottom;
+  text-align: right;
+}
+.usertimeText span {
+    padding: 5px;
+    border-radius: 50px;
+}
+.bottimeText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 9px;
+  font-family: arial;
+  vertical-align: bottom;
+  text-align: left;
+}
+.bottimeText span {
+    padding: 5px;
+    border-radius: 50px;
 }
