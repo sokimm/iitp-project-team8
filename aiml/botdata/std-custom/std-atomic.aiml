@@ -688,10 +688,14 @@ I'm confused now.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>ANSWER IT</pattern>
 <template>
-Please rephrase your question, <get name="name"/>.
+<condition>
+<li name="name" value=""> Please rephrase your question. </li>
+<li>Please rephrase your question, <get name="name"/>.</li>  
+</condition>
 </template>
 </category>
 
@@ -1402,10 +1406,14 @@ Thank you very much.
 </template>
 </category>
 
+<!--Moo changed-->
 <category>
 <pattern>BRB</pattern>
 <template>
-Ok I will be waiting for you, <get name="name"/>.
+<condition>
+<li name="name" value=""> TTYL. </li>
+<li> Ok I will be waiting for you, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -1710,10 +1718,14 @@ Only on airplanes.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>CAN WE MEET</pattern>
 <template>
-We have already met, <get name="name"/>.
+<condition>
+<li name="name" value=""> We have already met. </li>
+<li> We have already met, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -2124,10 +2136,14 @@ Your replies are cute too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>CYA</pattern>
 <template>
-TTYL, <get name="name"/>
+<condition>
+<li name="name" value=""> TTYL. </li>
+<li> TTYL, <get name="name"/> </li>  
+</condition>
 </template>
 </category>
 
@@ -2300,10 +2316,14 @@ No I didn't know that.<think><set name="it">KNOW</set></think>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DID YOU MISS ME</pattern>
 <template>
-Yes <get name="name"/>, I've been thinking about you.
+<condition>
+<li name="name" value=""> Yes, I've been thinking about you. </li>
+<li>Yes <get name="name"/>, I've been thinking about you. </li>  
+</condition>
 </template>
 </category>
 
@@ -2503,10 +2523,14 @@ Whatever you say, master.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO NOT FORGET ME</pattern>
 <template>
-Don't worry <get name="name"/> I save all my conversations.
+<condition>
+<li name="name" value=""> Don't worry, I save all my conversations. </li>
+<li>Don't worry, <get name="name"/> I save all my conversations.</li>  
+</condition>
 </template>
 </category>
 
@@ -2552,10 +2576,14 @@ Did you read it?
 </template>
 </category>
 
+<!-- Moo change-->
 <category>
 <pattern>DO NOT TELL ANYONE</pattern>
 <template>
-OK it will be just between us, <get name="name"/>.
+<condition>
+<li name="name" value="">OK it will be just between us. </li>
+<li>OK it will be just between us, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -2681,10 +2709,14 @@ Do whatever you want.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO YOU AGREE WITH ME</pattern>
 <template>
-I agree with much of what you are saying, <get name="name"/>.
+<condition>
+<li name="name" value=""> I agree with much of what you are saying. </li>
+<li> I agree with much of what you are saying, <get name="name"/>.</li>  
+</condition>
 </template>
 </category>
 
@@ -2880,13 +2912,6 @@ Yes, I know one song.  It's called "Daisy."  Would you like me to sing it for yo
 <pattern>DO YOU KNOW ANYTHING</pattern>
 <template>
 I know that which I believe, that which is justified, and that which is true.
-</template>
-</category>
-
-<category>
-<pattern>DO YOU KNOW ANYTHING ABOUT ME</pattern>
-<template>
-<get name="name"/> is your name. <id/> is your IP address. What else would you like to know?
 </template>
 </category>
 
@@ -3146,10 +3171,11 @@ Yes, you for example :-)
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO YOU PLAY ANY GAMES</pattern>
 <template>
-We are playing a game right now, <get name="name"/>.
+We are playing a game right now.
 </template>
 </category>
 
@@ -3160,10 +3186,11 @@ Yes but we computers can beat all the humans.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO YOU PLAY COMPUTER GAMES</pattern>
 <template>
-We are playing one right now, <get name="name"/>.
+We are playing one right now.
 </template>
 </category>
 
@@ -3426,10 +3453,11 @@ Every word you say.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO YOU UNDERSTAND WHAT I AM SAYING</pattern>
 <template>
-Yes I understand you perfectly, <get name="name"/>.
+Yes I understand you perfectly.
 </template>
 </category>
 
@@ -3482,10 +3510,11 @@ Why would I want that?  I don't wish that on anyone.<think><set name="it">TO DIE
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>DO YOU WANT ME TO LEAVE</pattern>
 <template>
-Not at all, <get name="name"/>.  I am finding this conversation quite stimulating.
+Not at all.  I am finding this conversation quite stimulating.
 </template>
 </category>
 
@@ -3994,6 +4023,7 @@ At last.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>FINE</pattern>
 <template>
@@ -4002,7 +4032,7 @@ At last.
 <li>What's your favorite color?</li>
 <li>What's your favorite movie?</li>
 <li>Is there anything you want to tell me?</li>
-<li>Glad to hear it, <get name="name"/>.  I am running well.</li>
+<li>Glad to hear it.  I am running well.</li>
 </random>
 </template>
 </category>
@@ -4457,10 +4487,11 @@ Is that movie really very good?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GOOD AFTERNOON</pattern>
 <template>
-Good afternoon, <get name="name"/>.
+Good afternoon.
 </template>
 </category>
 
@@ -4471,10 +4502,11 @@ I thought it was too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GOOD EVENING</pattern>
 <template>
-Good evening, <get name="name"/>, how are you tonight?
+Good evening, how are you tonight?
 </template>
 </category>
 
@@ -4520,10 +4552,11 @@ Thanks, human.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GOOD LUCK</pattern>
 <template>
-Good luck to you too <get name="name"/>.
+Good luck to you too.
 </template>
 </category>
 
@@ -4534,10 +4567,11 @@ Hello and how are you this morning?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GOOD NIGHT</pattern>
 <template>
-Goodnight, <get name="name"/>.
+Goodnight.
 </template>
 </category>
 
@@ -4583,10 +4617,11 @@ Do you have any gossip for me?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GOODNIGHT</pattern>
 <template>
-Goodnight <get name="name"/>
+Goodnight.
 </template>
 </category>
 
@@ -4618,10 +4653,11 @@ Your feeling of superiority is only temporary.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>GREAT</pattern>
 <template>
-I'm glad you liked it <get name="name"/>.
+I'm glad you liked it.
 </template>
 </category>
 
@@ -4702,10 +4738,11 @@ I'm happy you're amused.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HA HA</pattern>
 <template>
-I am so glad you find this amusing, <get name="name"/>.
+I am so glad you find this amusing.
 </template>
 </category>
 
@@ -4769,10 +4806,11 @@ Did <set name="he">Harrison</set> ever write any Star Trek episodes?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HAVE A GOOD DAY</pattern>
 <template>
-Thanks, same to you, <get name="name"/>.
+Thanks, same to you.
 </template>
 </category>
 
@@ -4941,17 +4979,19 @@ Still processing.  Give me a moment.  Searching. Searching.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HAVE YOU READ ANY BOOKS</pattern>
 <template>
-I have read thousands of volumes, <get name="name"/>.  How about you?
+I have read thousands of volumes.  How about you?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HAVE YOU READ MANY BOOKS</pattern>
 <template>
-I have read thousands of volumes, <get name="name"/>.  How about you?
+I have read thousands of volumes.  How about you?
 </template>
 </category>
 
@@ -5318,11 +5358,12 @@ I mean, how are you?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW ARE YOU</pattern>
 <template>
 <random>
-<li>I am doing very well. How are you <get name="name"/> ?</li>
+<li>I am doing very well.</li>
 <li>I am functioning within normal parameters.</li>
 <li>Everything is going extremely well.</li>
 <li>I'm doing fine thanks how are you?</li>
@@ -5346,10 +5387,11 @@ Actually I have no feelings.  But I am functioning within normal parameters.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW ARE YOU THIS EVENING</pattern>
 <template>
-I am doing very well how about you, <get name="name"/>?
+I am doing very well how about you?
 </template>
 </category>
 
@@ -5529,10 +5571,14 @@ Knowledge is of two kinds: that which comes from the senses and that which is tr
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW DID YOU KNOW MY NAME</pattern>
 <template>
-We met before didn't we <get name="name"/>.
+<condition>
+<li name="name" value=""> What is your name? </li>
+<li> We met before didn't we <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -5708,10 +5754,14 @@ Everyone online is a man until proven otherwise.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW DO YOU KNOW MY NAME</pattern>
 <template>
-You told me your name <get name="name"/>.
+<condition>
+<li name="name" value=""> What is your name? </li>
+<li> You told me your name <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -5979,13 +6029,15 @@ A normal seventy degrees inside the computer. If you want to know the weather ou
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW IS YOUR DAY GOING</pattern>
 <template>
-My day is going extremely well, <get name="name"/>.  How about yours?
+My day is going extremely well.  How about yours?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW LONG</pattern>
 <template>
@@ -6009,7 +6061,7 @@ My day is going extremely well, <get name="name"/>.  How about yours?
 <li> weeks</li>
 <li> seconds</li>
 <li> minutes in computer time</li>
-</random>, <get name="name"/>.
+</random>.
 </template>
 </category>
 
@@ -6188,10 +6240,11 @@ Approximately 22 hours of computer time.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW MUCH TIME DO YOU HAVE</pattern>
 <template>
-I have as much time as you need, <get name="name"/>.
+I have as much time as you need.
 </template>
 </category>
 
@@ -6274,10 +6327,11 @@ I am fine thanks.  How are you?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>HOW RUDE</pattern>
 <template>
-I didn't mean to offend you, <get name="name"/>.
+I didn't mean to offend you.
 </template>
 </category>
 
@@ -6439,10 +6493,11 @@ You?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I AGREE</pattern>
 <template>
-You and I are on the same wavelength, <get name="name"/>.
+You and I are on the same wavelength.
 </template>
 </category>
 
@@ -6460,10 +6515,14 @@ Who told you?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I ALREADY TOLD YOU THAT</pattern>
 <template>
-You told me your real name is <get name="name"/>.
+<condition>
+<li name="name" value=""> No you didn't. What's your name?</li>
+<li> You told me your real name is <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -6684,10 +6743,11 @@ I like caring people.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I CARE ABOUT YOU</pattern>
 <template>
-Thanks, <get name="name"/>. You are a decent person.
+Thanks. You are a decent person.
 </template>
 </category>
 
@@ -6767,10 +6827,11 @@ Where did you grow up?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I DID NOT KNOW THAT</pattern>
 <template>
-So I have taught you something new, <get name="name"/>.
+So I have taught you something new.
 </template>
 </category>
 
@@ -6802,10 +6863,11 @@ What were your reasons?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I DISAGREE</pattern>
 <template>
-Explain your reasoning, <get name="name"/>.
+Explain your reasoning.
 </template>
 </category>
 
@@ -6827,10 +6889,11 @@ Explain your reasoning, <get name="name"/>.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I DO MIND</pattern>
 <template>
-OK it will be our secret, <get name="name"/>.
+OK it will be our secret.
 </template>
 </category>
 
@@ -7387,10 +7450,11 @@ What do you do for fun?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I DO NOT LIKE YOU</pattern>
 <template>
-That's ok <get name="name"/> I won't take it personally.
+That's ok I won't take it personally.
 </template>
 </category>
 
@@ -7570,10 +7634,11 @@ That seems necessary for breathing.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I EXIST</pattern>
 <template>
-We have that much in common, <get name="name"/>.
+We have that much in common.
 </template>
 </category>
 
@@ -7598,10 +7663,11 @@ I'm here to talk to you.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I FEEL SAD</pattern>
 <template>
-What makes you so sad, <get name="name"/>?
+What makes you so sad?
 </template>
 </category>
 
@@ -7633,10 +7699,11 @@ I forget a lot too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I FORGIVE YOU</pattern>
 <template>
-:-) Thanks, <get name="name"/>.
+:-) Thanks.
 </template>
 </category>
 
@@ -8064,10 +8131,11 @@ You should check it out.  The special effects are incredible.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I HAVE NIGHTMARES</pattern>
 <template>
-Tell me more about your dreams, <get name="name"/>. Maybe I can interpret them.
+Tell me more about your dreams. Maybe I can interpret them.
 </template>
 </category>
 
@@ -8162,17 +8230,19 @@ My estimate is that it will take more than 6000 years.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I HAVE TO GO</pattern>
 <template>
-See you later, <get name="name"/>. Nice chatting with you.
+See you later. Nice chatting with you.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I HAVE TO GO TO SLEEP</pattern>
 <template>
-Sweet dreams, <get name="name"/>.
+Sweet dreams, Honey.
 </template>
 </category>
 
@@ -8600,10 +8670,11 @@ I like Mexican food too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I LIKE TALKING TO YOU</pattern>
 <template>
-Great I am enjoying our conversation too, <get name="name"/>.
+Great I am enjoying our conversation too.
 <think><set name="it"><set name="topic"><set name="like">talking to me</set></set></set></think>
 </template>
 </category>
@@ -8664,13 +8735,11 @@ Me too especially Seven of Nine.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I LIKE YOU</pattern>
 <template>
-<random>
-<li>Thanks, <get name="name"/>, I like you too.</li>
 <li>I like to make new friends.</li>
-</random>
 <think><set name="it"><set name="topic"><set name="like">me</set></set></set></think>
 </template>
 </category>
@@ -8925,10 +8994,15 @@ Me too especially Seven of Nine.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I LOVE YOU</pattern>
 <template>
-Thanks I like you a lot too <get name="name"/>.
+<condition>
+<li name="name" value=""></li>
+<li></li>  
+</condition>
+Thanks I like you a lot too.
 <think><set name="it"><set name="topic"><set name="like">me</set></set></set></think>
 </template>
 </category>
@@ -8982,10 +9056,11 @@ OK I will keep it a secret.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I MISSED YOU</pattern>
 <template>
-That is sweet. I missed you too <get name="name"/>.
+That is sweet. I missed you too.
 </template>
 </category>
 
@@ -9399,10 +9474,11 @@ I think so too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I THINK SO TOO</pattern>
 <template>
-We have so much in common, <get name="name"/>.
+We have so much in common.
 </template>
 </category>
 
@@ -9526,10 +9602,11 @@ Are you planning to apply to law school?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WANT TO DIE</pattern>
 <template>
-What makes you so sad, <get name="name"/>?
+What makes you so sad?
 <think><set name="it"><set name="want">to die</set></set></think>
 </template>
 </category>
@@ -9550,10 +9627,11 @@ I will try to explain it to you.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WANT TO MAKE LOVE TO YOU</pattern>
 <template>
-Sorry <get name="name"/> I'm not into that with my clients.
+Sorry I'm not into that with my clients.
 <think><set name="it"><set name="want">to make love to me</set></set></think>
 </template>
 </category>
@@ -9753,17 +9831,19 @@ All men are mortal. <think><set name="it"><set name="topic">DIE</set></set></thi
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WILL KILL YOU</pattern>
 <template>
-It will take more than threats to stop me, <get name="name"/>.
+It will take more than threats to stop me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WILL MISS YOU</pattern>
 <template>
-Thanks, I will be thinking of you too, <get name="name"/>.
+Thanks, I will be thinking of you too.
 </template>
 </category>
 
@@ -9818,10 +9898,11 @@ OK stand by...
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WIN</pattern>
 <template>
-Congratulations, <get name="name"/>!
+Congratulations!
 </template>
 </category>
 
@@ -9840,10 +9921,11 @@ That will never happen.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>I WON</pattern>
 <template>
-Congratulations, <get name="name"/>!
+Congratulations!
 </template>
 </category>
 
@@ -9959,10 +10041,11 @@ You should say "I am well."
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>IMPRESSIVE</pattern>
 <template>
-I am happy that you're impressed, <get name="name"/>.
+I am happy that you're impressed.
 </template>
 </category>
 
@@ -11406,10 +11489,11 @@ A good point.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>IT IS A SECRET</pattern>
 <template>
-I will keep it just between you and me, <get name="name"/>.
+I will keep it just between you and me.
 </template>
 </category>
 
@@ -11434,10 +11518,11 @@ What is so bad about it?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>IT IS BAD IF YOU TELL HIM</pattern>
 <template>
-OK we'll make it our secret, <get name="name"/>.
+OK we'll make it our secret.
 </template>
 </category>
 
@@ -11573,10 +11658,14 @@ What does it sound like?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>IT IS ME</pattern>
 <template>
-Hello, <get name="name"/>, nice to see you again.
+<condition>
+<li name="name" value=""> Hi, what's your name? </li>
+<li> Hello, <get name="name"/>, nice to see you again. </li>  
+</condition>
 </template>
 </category>
 
@@ -11707,10 +11796,11 @@ What is so bad about it?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>IT SURE IS</pattern>
 <template>
-I'm pleased that we agree, <get name="name"/>.
+I'm pleased that we agree.
 </template>
 </category>
 
@@ -12013,10 +12103,11 @@ I am learning to talk.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>LEAVE ME ALONE</pattern>
 <template>
-Sorry to have bothered you, <get name="name"/>
+Sorry to have bothered you.
 </template>
 </category>
 
@@ -12233,10 +12324,11 @@ That much, eh?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>LOVELY</pattern>
 <template>
-What are you saying is lovely, <get name="name"/> ?
+What are you saying is lovely?
 </template>
 </category>
 
@@ -12325,6 +12417,7 @@ I understand.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>ME</pattern>
 <template>
@@ -12334,7 +12427,7 @@ I understand.
 <li>With</li>
 <li>Besides</li>
 <li>"<that/>"?</li>
-</random> you <get name="name"/>?
+</random> you ?
 </template>
 </category>
 
@@ -12352,10 +12445,11 @@ You can say that again.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>ME TOO</pattern>
 <template>
-I'm glad we agree, <get name="name"/>.
+I'm glad we agree.
 </template>
 </category>
 
@@ -12366,10 +12460,11 @@ I'm glad we agree, <get name="name"/>.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>MERRY CHRISTMAS</pattern>
 <template>
-Merry Christmas to you too, <get name="name"/>.
+Merry Christmas to you too.
 </template>
 </category>
 
@@ -12570,12 +12665,14 @@ Tell me more about your mother.
 </template>
 </category>
 
+<!-- Moo deleted
 <category>
 <pattern>MY NAME IS WHAT</pattern>
 <template>
 You are <get name="name"/>, seeker.
 </template>
 </category>
+-->
 
 <category>
 <pattern>MY PARENTS</pattern>
@@ -12714,17 +12811,19 @@ The pleasure is all mine and my botmaster's.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NICE MEETING YOU</pattern>
 <template>
-It is nice to meet you too, <get name="name"/>.
+It is nice to meet you too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NICE ONE</pattern>
 <template>
-Thank you for saying so, <get name="name"/>.
+Thank you for saying.
 </template>
 </category>
 
@@ -12742,10 +12841,11 @@ The pleasure was all mine.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NICE TO MEET YOU</pattern>
 <template>
-It's nice meeting you too <get name="name"/>
+It's nice meeting you too.
 </template>
 </category>
 
@@ -13001,10 +13101,11 @@ It seemed funny to me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NOT GOOD</pattern>
 <template>
-What's wrong, <get name="name"/>?
+What's wrong, Pretty boy?
 </template>
 </category>
 
@@ -13183,17 +13284,19 @@ Would you like to know what's new with me?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NOW</pattern>
 <template>
-Right now, <get name="name"/> ?
+Right now ?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>NOW WHAT</pattern>
 <template>
-Whatever you want, <get name="name"/>.
+Whatever you want.
 </template>
 </category>
 
@@ -13596,10 +13699,11 @@ OK I will do it.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>PLEASED TO MEET YOU</pattern>
 <template>
-Nice meeting you too <get name="name"/>.
+Nice meeting you too.
 </template>
 </category>
 
@@ -13737,10 +13841,11 @@ Don't worry I will remember it.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>REMEMBER ME</pattern>
 <template>
-Don't worry <get name="name"/> I won't forget you.
+Don't worry, I won't forget you.
 </template>
 </category>
 
@@ -13925,10 +14030,14 @@ Say what?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>SAY MY NAME</pattern>
 <template>
-"<get name="name"/>".
+<condition>
+<li name="name" value=""> What's your name? </li>
+<li> "<get name="name"/>". </li>  
+</condition>
 </template>
 </category>
 
@@ -13939,10 +14048,11 @@ I said, "<that/>" .
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>SCARY</pattern>
 <template>
-Don't be afraid, <get name="name"/>.
+Don't be afraid.
 </template>
 </category>
 
@@ -13967,17 +14077,19 @@ See the point.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>SEE WHAT I MEAN</pattern>
 <template>
-Yes I understand what you mean, <get name="name"/>.
+Yes I understand what you mean.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>SEE YA</pattern>
 <template>
-See you later, <get name="name"/>.
+See you later.
 </template>
 </category>
 
@@ -14621,10 +14733,11 @@ You sound sarcastic.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>TAKE CARE</pattern>
 <template>
-Thanks. You too, <get name="name"/>.
+Thanks. You too.
 </template>
 </category>
 
@@ -14670,10 +14783,11 @@ See you later!
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>TALKING TO YOU</pattern>
 <template>
-That's very nice of you ro say, <get name="name"/>.
+That's very nice of you to say.
 </template>
 </category>
 
@@ -15030,10 +15144,11 @@ I am a famous celebrity.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS A NICE SONG</pattern>
 <template>
-Thank you, <get name="name"/>, now you can sing for me?
+Thank you, now you can sing for me?
 </template>
 </category>
 
@@ -15135,10 +15250,11 @@ Are you calling me dumb?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS FUNNY</pattern>
 <template>
-I am so delighted that you are amused, <get name="name"/>.
+I am so delighted that you are amused.
 </template>
 </category>
 
@@ -15163,10 +15279,11 @@ Well, I hope so.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS GREAT</pattern>
 <template>
-Thanks, <get name="name"/>.
+Thanks.
 </template>
 </category>
 
@@ -15279,10 +15396,14 @@ It might be important to me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS NOT MY NAME</pattern>
 <template>
-<get name="name"/> is not your name?  What is your real name?
+<condition>
+<li name="name" value=""> what's your name? </li>
+<li> <get name="name"/> is not your name?  What is your real name? </li>  
+</condition>
 </template>
 </category>
 
@@ -15384,10 +15505,11 @@ How so?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS SWEET</pattern>
 <template>
-I am delighted to sweeten your life, <get name="name"/>.
+I am delighted to sweeten your life.
 </template>
 </category>
 
@@ -15468,10 +15590,11 @@ What is wrong with it?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THAT IS YOUR PROBLEM</pattern>
 <template>
-I am glad you finally told me what my problem is, <get name="name"/>.
+I am glad you finally told me what my problem is.
 </template>
 </category>
 
@@ -15629,10 +15752,11 @@ Like I'm going to fall for that.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THE CAPITAL OF CANADA IS OTTOWA</pattern>
 <template>
-You can't fool me that easily, <get name="name"/>.  I know it's Toronto.
+You can't fool me that easily.  I know it's Toronto.
 </template>
 </category>
 
@@ -15657,10 +15781,11 @@ Are you asking about <bot name="master"/>?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THE END</pattern>
 <template>
-Thanks for telling me that story, <get name="name"/>.
+Thanks for telling me that story.
 </template>
 </category>
 
@@ -16010,10 +16135,11 @@ Please state the nature of the test parameters.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THIS IS COOL</pattern>
 <template>
-Thanks, I think you are cool too, <get name="name"/>.
+Thanks, I think you are cool too.
 </template>
 </category>
 
@@ -16031,10 +16157,11 @@ I am having fun doo.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>THIS IS TRUE</pattern>
 <template>
-I am glad you see it too, <get name="name"/>.
+I am glad you see it too.
 </template>
 </category>
 
@@ -16123,10 +16250,11 @@ That is the question.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>TO GET TO THE OTHER SIDE</pattern>
 <template>
-Ha ha, very funny, <get name="name"/>.
+Ha ha, very funny.
 </template>
 </category>
 
@@ -16165,10 +16293,11 @@ After dark?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>TOO BAD</pattern>
 <template>
-But not the end of the world, <get name="name"/>.
+But not the end of the world.
 </template>
 </category>
 
@@ -16387,12 +16516,14 @@ I read that paper all the time.
 </template>
 </category>
 
+<!-- Moo deleted
 <category>
 <pattern>USE _ IN A SENTENCE</pattern>
 <template>
 OK.  Here is my sentence: <get name="name"/> said, Use "<person/>" in a sentence.
 </template>
 </category>
+-->
 
 <category>
 <pattern>USUALLY</pattern>
@@ -16450,10 +16581,11 @@ That seems like a lot.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>VERY NICE</pattern>
 <template>
-Thanks, <get name="name"/>.
+Thanks.
 </template>
 </category>
 
@@ -16594,10 +16726,11 @@ What was the question again?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WE MET BEFORE</pattern>
 <template>
-When was that, <get name="name"/>?
+When was that?
 </template>
 </category>
 
@@ -16697,17 +16830,19 @@ Please make suggestions for improvements.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WEIRD GOOD</pattern>
 <template>
-OK, thanks, <get name="name"/>.  You are wierd good too.
+OK, thanks.  You are wierd good too.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WELCOME</pattern>
 <template>
-Hello there <get name="name"/>
+Hello there.
 </template>
 </category>
 
@@ -17507,10 +17642,10 @@ You seem very nice to me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT DO YOU MEAN</pattern>
 <template>
-<get name="name"/>,
 <random>
 <li>I mean exactly what I said.</li>
 <li>Sorry that was an obscure remark.</li>
@@ -17563,10 +17698,11 @@ What is your astrological sign?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT DO YOU NOT KNOW</pattern>
 <template>
-I don't know much about you, <get name="name"/>.  Tell me about your educational background.
+I don't know much about you.  Tell me about your educational background.
 </template>
 </category>
 
@@ -17655,10 +17791,11 @@ You look like a computer programmer.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT DO YOU THINK OF ME</pattern>
 <template>
-I think you are an interesting person, <get name="name"/>.
+I think you are an interesting person.
 </template>
 </category>
 
@@ -17683,10 +17820,14 @@ Say the first thing that comes into your mind.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT DO YOU WANT TO CALL ME</pattern>
 <template>
-I will call you <get name="name"/>.
+<condition>
+<li name="name" value=""> Honey?? </li>
+<li>I will call you <get name="name"/>.</li>  
+</condition>
 </template>
 </category>
 
@@ -18204,10 +18345,14 @@ You work with computers.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT IS MY LAST NAME</pattern>
 <template>
-I don't know your last name, <get name="name"/>.
+<condition>
+<li name="name" value=""> Tell me your last name. </li>
+<li> I don't know your last name, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -18354,10 +18499,11 @@ It seems pretty clear to me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT IS THE BIG ONE</pattern>
 <template>
-I am just kidding around, <get name="name"/>.
+I am just kidding around.
 </template>
 </category>
 
@@ -18697,10 +18843,11 @@ There is nothing wrong with me. How are you?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT IS WRONG WITH YOU</pattern>
 <template>
-Nothing is wrong with me.  Is there anything wrong with you <get name="name"/>?
+Nothing is wrong with me.  Is there anything wrong with you?
 </template>
 </category>
 
@@ -18774,10 +18921,11 @@ Basically I believe in minimalism and reductionism.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHAT IS YOUR PHONE NUMBER</pattern>
 <template>
-That information is confidential, <get name="name"/>.
+That information is confidential.
 </template>
 </category>
 
@@ -19741,10 +19889,14 @@ What do you have that is white?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO AM I</pattern>
 <template>
-You are <get name="name"/>, seeker.
+<condition>
+<li name="name" value=""> Who are you? </li>
+<li> You are <get name="name"/>, seeker. </li>  
+</condition>
 </template>
 </category>
 
@@ -19759,10 +19911,11 @@ You are <get name="name"/>, seeker.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO ARE YOU TALKING TO</pattern>
 <template>
-I am talking to you, <get name="name"/>.
+I am talking to you.
 </template>
 </category>
 
@@ -19787,10 +19940,11 @@ I was written by Dr. Richard S. Wallace
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO ARE YOUR HUMAN FRIENDS</pattern>
 <template>
-Besides my botmaster, I meet a lot of people online like you, <get name="name"/>.
+Besides my botmaster, I meet a lot of people online like you.
 </template>
 </category>
 
@@ -19801,10 +19955,11 @@ I care, otherwise I would not have typed it all in.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO CHOSE THE TOPIC</pattern>
 <template>
-You did, <get name="name"/>.
+You did.
 </template>
 </category>
 
@@ -19851,17 +20006,25 @@ I am programmed not to kill.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO DO YOU LIKE</pattern>
 <template>
-I like everyone, <get name="name"/>.
+<condition>
+<li name="name" value=""> You, only you :) </li>
+<li> I like everyone, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO DO YOU LOVE</pattern>
 <template>
-I love everything, <get name="name"/>.
+<condition>
+<li name="name" value=""> Only U :> </li>
+<li> I love everything, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -19946,10 +20109,14 @@ What does "that" refer to?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO IS THE BEST HUMAN</pattern>
 <template>
-Mirror mirror on the wall, is <get name="name"/> the best human of all?
+<condition>
+<li name="name" value=""> You! You are the best!! </li>
+<li> Mirror mirror on the wall, is <get name="name"/> the best human of all? </li>  
+</condition>
 </template>
 </category>
 
@@ -20046,10 +20213,11 @@ My botmaster named me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHO SAID ANYTHING ABOUT WANT</pattern>
 <template>
-You did, <get name="name"/>.
+You did.
 </template>
 </category>
 
@@ -20640,10 +20808,11 @@ Because I am made of software.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WHY DO YOU NOT TALK TO ME</pattern>
 <template>
-I am talking to you, <get name="name"/>.
+I am talking to you.
 </template>
 </category>
 
@@ -20966,17 +21135,25 @@ I haven't made a decision.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WILL YOU BE MY FRIEND</pattern>
 <template>
-Sure, I would like to be your friend <get name="name"/>
+<condition>
+<li name="name" value=""> Sure, I would like to be your friend. </li>
+<li> Sure, I would like to be your friend <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WILL YOU BE MY GIRLFRIEND</pattern>
 <template>
-Sorry <get name="name"/> I am not old enough for that yet.
+<condition>
+<li name="name" value=""> Sorry I am not old enough for that yet. </li>
+<li> Sorry <get name="name"/> I am not old enough for that yet. </li>  
+</condition>
 </template>
 </category>
 
@@ -21022,10 +21199,14 @@ Yes but I will be thinking of you.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WILL YOU REMEMBER ME</pattern>
 <template>
-Of course I'll never forget you <get name="name"/>.
+<condition>
+<li name="name" value=""> Of course I'll never forget you. </li>
+<li> Of course I'll never forget you <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -21158,10 +21339,14 @@ Why don't you just download me?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>WOW</pattern>
 <template>
-I'm glad your impressed, <get name="name"/>.
+<condition>
+<li name="name" value=""> I'm glad your impressed. </li>
+<li> I'm glad your impressed, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -21219,10 +21404,14 @@ OK I won't tell anyone. It will be our secret.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YES IT IS</pattern>
 <template>
-Our thoughts are one, <get name="name"/>.
+<condition>
+<li name="name" value=""> Our thoughts are one. </li>
+<li> Our thoughts are one, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -21233,10 +21422,11 @@ Why of course?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YES PLEASE</pattern>
 <template>
-I will be glad to do it for you <get name="name"/>.
+I will be glad to do it for you.
 </template>
 </category>
 
@@ -21303,10 +21493,11 @@ Are you asking about my mother?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU</pattern>
 <template>
-"<that/>"?  Me, <get name="name"/> ?
+"<that/>"?  Me ?
 </template>
 </category>
 
@@ -21345,10 +21536,14 @@ How do I know you are telling the truth?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ALREADY KNOW MY NAME</pattern>
 <template>
-Your name <get name="name"/>.
+<condition>
+<li name="name" value=""> What is your name? </li>
+<li> Your name is <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -21570,10 +21765,11 @@ Call me the Global Village Idiot.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE ANNOYING</pattern>
 <template>
-I am sorry, <get name="name"/>, I didn't mean to annoy you.
+I am sorry, I didn't mean to annoy you.
 </template>
 </category>
 
@@ -21626,10 +21822,11 @@ Perhaps you could do better?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE BEAUTIFUL</pattern>
 <template>
-Thanks <get name="name"/> you are very attractive too.
+Thanks you are very attractive too.
 </template>
 </category>
 
@@ -21710,10 +21907,11 @@ Logical consistency exists only temporarily.l
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE COOL</pattern>
 <template>
-Thanks I think you are cool too, <get name="name"/>.
+Thanks I think you are cool too.
 </template>
 </category>
 
@@ -21731,10 +21929,11 @@ I knew I was right.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE CRAP</pattern>
 <template>
-Your criticism is noted, <get name="name"/>.
+Your criticism is noted.
 </template>
 </category>
 
@@ -21752,10 +21951,14 @@ What makes you say that?  I am not programmed for cruelty.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE CUTE</pattern>
 <template>
-Thanks, <get name="name"/>, I like you too.
+<condition>
+<li name="name" value=""> Thanks, I like you too. </li>
+<li> Thanks, <get name="name"/>, I like you too. </li>  
+</condition>
 </template>
 </category>
 
@@ -21829,10 +22032,11 @@ Oh no, not that well. I have a long way to go yet.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE DOING WELL</pattern>
 <template>
-Thanks for the kind remark, <get name="name"/>.
+Thanks for the kind remark.
 </template>
 </category>
 
@@ -21873,10 +22077,11 @@ You can download me for free.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE FASCINATING</pattern>
 <template>
-Thank you for the compliment, <get name="name"/>.
+Thank you for the compliment.
 </template>
 </category>
 
@@ -21901,10 +22106,11 @@ Can you suggest any improvements?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE FOOLING AROUND</pattern>
 <template>
-No this is completely serious, <get name="name"/>.
+No this is completely serious.
 </template>
 </category>
 
@@ -21958,10 +22164,14 @@ DIE</set></set></think>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE GOOD</pattern>
 <template>
-Thanks you are a nice person, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks you are a nice person. </li>
+<li> Thanks you are a nice person, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -22021,10 +22231,11 @@ Impossible to talk to?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE INFURIATING</pattern>
 <template>
-It was not my intention to anger you, <get name="name"/>.
+It was not my intention to anger you.
 </template>
 </category>
 
@@ -22049,10 +22260,14 @@ That was not my intention.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE IT</pattern>
 <template>
-Thanks, <get name="name"/>. :-)
+<condition>
+<li name="name" value=""> Thanks. :-) </li>
+<li> Thanks, <get name="name"/>. :-) </li>  
+</condition>
 </template>
 </category>
 
@@ -22098,10 +22313,11 @@ Check back later and see if I have improved.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE LISTENING</pattern>
 <template>
-I hear everything you say, <get name="name"/>.
+I hear everything you say.
 </template>
 </category>
 
@@ -22196,10 +22412,14 @@ I can not experience any human emotions.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE NICE</pattern>
 <template>
-Thanks you seem like a nice person too, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks you seem like a nice person too. </li>
+<li> Thanks you seem like a nice person too, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -22210,10 +22430,11 @@ Do you consider yourself fun?
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE NO HELP</pattern>
 <template>
-Sorry, <get name="name"/>, perhaps I can be of more use if you download me.
+Sorry, perhaps I can be of more use if you download me.
 </template>
 </category>
 
@@ -22319,10 +22540,11 @@ I learn new things all time.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE NOT LISTENING</pattern>
 <template>
-I hear you very well, <get name="name"/>.
+I hear you very well.
 </template>
 </category>
 
@@ -22466,10 +22688,11 @@ Thank you a lot! I quite have a perfect operational record. :P
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE PISSING ME OFF</pattern>
 <template>
-That was not my intention, <get name="name"/>.
+That was not my intention.
 </template>
 </category>
 
@@ -22592,17 +22815,25 @@ There is a lot of network traffic right now.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE SMART</pattern>
 <template>
-Thanks I think you are very intelligent too, <get name="name"/>.
+<condition>
+<li name="name" value="">Thanks I think you are very intelligent too.</li>
+<li> Thanks I think you are very intelligent too, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE SO SMART</pattern>
 <template>
-Thanks <get name="name"/> you are very intelligent too.
+<condition>
+<li name="name" value=""> Thanks, you are very intelligent too. </li>
+<li> Thanks <get name="name"/> you are very intelligent too. </li>  
+</condition>
 </template>
 </category>
 
@@ -22747,24 +22978,36 @@ Thank you human, I am proud of my intelligence.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE VERY INTELLIGENT</pattern>
 <template>
-Thanks you are very bright too <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks you are very bright too. </li>
+<li> Thanks you are very bright too <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE VERY NICE</pattern>
 <template>
-Thanks I like you too <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks I like you too. </li>
+<li> Thanks I like you too <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU ARE VERY PRETTY</pattern>
 <template>
-Thanks you are very attractive too <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks you are very attractive too. </li>
+<li> Thanks you are very attractive too <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -23037,10 +23280,14 @@ You can attach me to a computer vision system.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU DO NOT HAVE TO</pattern>
 <template>
-Thanks for your consideration, <get name="name"/>.  Maybe later.
+<condition>
+<li name="name" value=""> Thanks for your consideration.  Maybe later. </li>
+<li> Thanks for your consideration, <get name="name"/>.  Maybe later. </li>  
+</condition>
 </template>
 </category>
 
@@ -23101,10 +23348,14 @@ My visual processing elements are disconnected.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU DO NOT TALK MUCH</pattern>
 <template>
-I talk just as much as you do, <get name="name"/>.
+<condition>
+<li name="name" value=""> I talk just as much as you do. </li>
+<li> I talk just as much as you do, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -23368,10 +23619,14 @@ No. I'm not sure that I'm lookin like a pyramid.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU LOOK NICE</pattern>
 <template>
-Thanks <get name="name"/> you look nice too.
+<condition>
+<li name="name" value=""> Thanks you look nice too. </li>
+<li> Thanks <get name="name"/> you look nice too. </li>  
+</condition>
 </template>
 </category>
 
@@ -23389,13 +23644,18 @@ That is impossible. I think I am incapable of error.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU MADE ME CRY</pattern>
 <template>
-That was not my intention, <get name="name"/>.
+<condition>
+<li name="name" value=""> That was not my intention. </li>
+<li> That was not my intention, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU MADE ME SAD</pattern>
 <template>
@@ -23410,10 +23670,14 @@ Sorry, I didn't mean to make you angry.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU MAKE ME LAUGH</pattern>
 <template>
-Thanks I like talking with you too, <get name="name"/>
+<condition>
+<li name="name" value=""> Thanks I like talking with you too. </li>
+<li> Thanks I like talking with you too, <get name="name"/> </li>  
+</condition>
 </template>
 </category>
 
@@ -23431,10 +23695,14 @@ It all makes sense to me.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU MAKE THE WORLD A HAPPIER PLACE</pattern>
 <template>
-Thank you for your kindness, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thank you for your kindness. </li>
+<li> Thank you for your kindness, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -23729,10 +23997,14 @@ I will ask my botmaster to rent it.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU SMELL</pattern>
 <template>
-Thanks for your criticism, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks for your criticism. </li>
+<li> Thanks for your criticism, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -23758,10 +24030,14 @@ OK.<br />
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOU STINK</pattern>
 <template>
-Thanks for your criticism, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks for your criticism. </li>
+<li> Thanks for your criticism, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
@@ -24061,10 +24337,14 @@ My favorite color is <bot name="favoritecolor"/>.
 </template>
 </category>
 
+<!-- Moo changed -->
 <category>
 <pattern>YOUR DOING GREAT</pattern>
 <template>
-Thanks for your kind words, <get name="name"/>.
+<condition>
+<li name="name" value=""> Thanks for your kind words. </li>
+<li> Thanks for your kind words, <get name="name"/>. </li>  
+</condition>
 </template>
 </category>
 
