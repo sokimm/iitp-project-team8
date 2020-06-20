@@ -4,29 +4,66 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
+
   <body>
-    <h1>Team8-Rummikub Chatbot</h1>
+    <h1>Team8 - Rummikub</h1>
     <div>
       <div id="chatbox">
-        <p class="botText"><span>Hi! I'm Rummy.</span></p>
+        <p class="botText"> <span> Hi! I'm Rummy</span></p>
+        <p id="firsttimeHtml"></p> <!-- WK added -->
       </div>
       <div id="userInput">
         <input id="textInput" type="text" name="msg" placeholder="Message">
         <input id="buttonInput" type="submit" value="Send">
       </div>
+
+<!-- WK added -->
+      <script type="text/javascript">
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var ampm = hours < 12 ? 'AM' : 'PM';
+      hours = hours === 0 ? 12 : hours;
+      hours = hours > 12 ? hours - 12 : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      var firsttimeHtml = document.getElementById("firsttimeHtml");
+      firsttimeHtml.innerHTML = '<p class="bottimeText"><span>' + hours + ':' + minutes + ' ' + ampm + '</span></p>';
+      </script>
+<!---->
+
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
           var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          var timeHtml = '<p class="usertimeText"><span>' + getNowTimeStamp() + '</span></p>'; // WK added
+
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
+          $("#chatbox").append(timeHtml); // WK added
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           $.get("/get", { msg: rawText }).done(function(data) {
             var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            var timeHtml = '<p class="bottimeText"><span>' + getNowTimeStamp() + '</span></p>'; // WK added
             $("#chatbox").append(botHtml);
+            $("#chatbox").append(timeHtml); // WK added
             document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           });
         }
+
+        // WK added
+        function getNowTimeStamp(){
+          var date = new Date();
+          var hours = date.getHours();
+          var minutes = date.getMinutes();
+          var ampm = hours < 12 ? 'AM' : 'PM';
+          hours = hours === 0 ? 12 : hours;
+          hours = hours > 12 ? hours - 12 : hours;
+          minutes = minutes < 10 ? '0' + minutes : minutes;
+          return hours + ':' + minutes + ' ' + ampm;
+        }
+        //
+
+
         $("#textInput").keypress(function(e) {
             if(e.which == 13) {
                 getBotResponse();
@@ -35,6 +72,8 @@
         $("#buttonInput").click(function() {
           getBotResponse();
         })
+
+
       </script>
     </div>
   </body>
