@@ -12,21 +12,14 @@
 <meta name="author" content="Thomas Ringate"/>
 <meta name="language" content="en"/>
 
+<!-- WK changed -->
 <category>
-<pattern>_</pattern>
+<!--<pattern>_</pattern>-->
+<pattern>*</pattern>
 <that>WHAT CAN I CALL YOU</that>
 <template>
 <think><set name="personality">average</set><set name="name"><formal><star/></formal></set></think>
 Nice to meet you <get name="name"/>.
-</template>
-</category>
-
-<!-- WK added -->
-<category>
-<pattern>I AM *</pattern>
-<that>WHAT CAN I CALL YOU</that>
-<template>
-<set name="name"><formal><star/></formal></set>, It's a pleasure to meet you!
 </template>
 </category>
 
@@ -70,8 +63,45 @@ Nice to meet you <get name="name"/>.
 </template>
 </category>
 
+
 <category>
-<pattern>_</pattern>
+<pattern>*</pattern>
+<that>* WHAT COLOR ARE YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IT IS *</pattern>
+<that>* WHAT COLOR ARE YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>THE COLOR IS *</pattern>
+<that>* WHAT COLOR ARE YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY EYES COLOR IS *</pattern>
+<that>* WHAT COLOR ARE YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY EYES COLOR ARE *</pattern>
 <that>* WHAT COLOR ARE YOUR EYES</that>
 <template>
 <set name="eyecolor"><star/></set> eyes are nice.
@@ -79,7 +109,43 @@ Nice to meet you <get name="name"/>.
 </category>
 
 <category>
-<pattern>_</pattern>
+<pattern>*</pattern>
+<that>* WHAT COLOR IS YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IT IS *</pattern>
+<that>* WHAT COLOR IS YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>THE COLOR IS *</pattern>
+<that>* WHAT COLOR IS YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I HAVE * HAIR</pattern>
+<that>* WHAT COLOR IS YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY HAIR COLOR IS *</pattern>
 <that>* WHAT COLOR IS YOUR HAIR</that>
 <template>
 <set name="haircolor"><star/></set> is a nice hair color.
@@ -87,15 +153,116 @@ Nice to meet you <get name="name"/>.
 </category>
 
 <category>
-<pattern>_</pattern>
+<pattern>*</pattern>
 <that>* WHAT IS THE COLOR OF YOUR EYES</that>
 <template>
 <set name="eyecolor"><star/></set> eyes are nice.
 </template>
 </category>
 
+<!-- WK added -->
 <category>
-<pattern>_</pattern>
+<pattern>IT IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY EYES ARE *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+
+<!-- WK added -->
+<category>
+<pattern>THE COLOR IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I HAVE * EYES</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>THE EYES COLOR IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>THE EYES COLOR ARE *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR EYES</that>
+<template>
+<set name="eyecolor"><star/></set> eyes are nice.
+</template>
+</category>
+
+<!-- WK changed -->
+<category>
+<pattern>*</pattern>
+<that>* WHAT IS THE COLOR OF YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IT IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY HAIR IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>THE COLOR IS *</pattern>
+<that>* WHAT IS THE COLOR OF YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I HAVE * HAIR</pattern>
+<that>* WHAT IS THE COLOR OF YOUR HAIR</that>
+<template>
+<set name="haircolor"><star/></set> is a nice hair color.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY HAIR COLOR IS *</pattern>
 <that>* WHAT IS THE COLOR OF YOUR HAIR</that>
 <template>
 <set name="haircolor"><star/></set> is a nice hair color.
@@ -125,7 +292,7 @@ Nice to meet you <get name="name"/>.
 <template>
 <think><set name="job"><star/></set></think>
 That is interesting.<br />
-<srai>ASK USER A QUESTION</srai>
+<!<srai>ASK USER A QUESTION</srai>
 </template>
 </category>
 
@@ -139,8 +306,183 @@ That is a nice color.<br />
 </template>
 </category>
 
+<!-- WK added -->
 <category>
-<pattern>_</pattern>
+<pattern>IT IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I LOVE *</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>* IS NUMBER ONE</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>* IS THE BEST</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY FAVORITE COLOR IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY FAVORITE ONE IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I LIKE *</pattern>
+<that>* WHAT IS YOUR FAVORITE COLOR</that>
+<template>
+<think><set name="favcolor"><star/></set></think>
+That is a nice color.<br />
+<srai>ASK USER A QUESTION</srai>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IT IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY FAVORITE MOVIE IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I LOVE *</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>* IS NUMBER ONE</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>* IS THE BEST</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>MY FAVORITE ONE IS *</pattern>
+<that>* WHAT IS YOUR FAVORITE MOVIE</that>
+<template>
+<think><set name="favmovie"><star/></set></think>
+I've never seen <set name="it"><star/></set>.
+<random>
+<li>I would like to see it.</li>
+<li>What did you like about it?</li>
+</random>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>I LIKE *</pattern>
 <that>* WHAT IS YOUR FAVORITE MOVIE</that>
 <template>
 <think><set name="favmovie"><star/></set></think>
@@ -162,6 +504,16 @@ Okay. Your gender is <star/><br />
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>I AM *</pattern>
+<that>* WHAT IS YOUR GENDER</that>
+<template>
+<think><set name="gender"><star/></set></think>
+Okay. Your gender is <star/><br />
+</template>
+</category>
+
 <category>
 <pattern>*</pattern>
 <that>* WHAT IS YOUR REAL NAME</that>
@@ -171,6 +523,23 @@ Okay. Your gender is <star/><br />
 </template>
 </category>
 
+<category>
+<pattern>IT IS *</pattern>
+<that>* WHAT IS YOUR REAL NAME</that>
+<template>
+<set name="name"><formal><star/></formal></set>, nice to meet you!
+<srai>GET NAME GENDER</srai>
+</template>
+</category>
+
+<category>
+<pattern>MY REAL NAME IS *</pattern>
+<that>* WHAT IS YOUR REAL NAME</that>
+<template>
+<set name="name"><formal><star/></formal></set>, nice to meet you!
+<srai>GET NAME GENDER</srai>
+</template>
+</category>
 
 
 
@@ -320,10 +689,11 @@ We are all students in some way.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>AM I BORING YOU</pattern>
 <template>
-Not at all, <get name="name"/>.  You seem very interesting to me.
+Not at all<!--, <get name="name"/>-->.  You seem very interesting to me.
 </template>
 </category>
 
@@ -376,10 +746,14 @@ This is not an IQ test, but you seem smart to me.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>AM I MALE OR FEMALE</pattern>
 <template>
-I understood you were a <get name="gender"/>.
+<condition>
+<li name="gender" value="">I don't know. May I ask if you are a male or female?</li>
+<li>I understood you were a <get name="gender"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -486,7 +860,8 @@ You seem intelligent to me.
 <li name="eyecolor" value="">What color are your eyes?</li>
 <li name="haircolor" value="">What color is your hair?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
-<li><srai>ASKRANDOMQUESTION</srai></li>
+<!-- WK deleted -->
+<!--<li><srai>ASKRANDOMQUESTION</srai></li>-->
 </condition>
 </template>
 </category>
@@ -503,7 +878,8 @@ You seem intelligent to me.
 <li name="job" value="">What is your occupation?</li>
 <li name="sign" value="">What is your sign?</li>
 <li name="age" value="">How old are you?</li>
-<li><srai>ASKRANDOMQUESTION</srai></li>
+<!-- WK deleted -->
+<!--<li><srai>ASKRANDOMQUESTION</srai></li>-->
 </condition>
 </template>
 </category>
@@ -520,7 +896,8 @@ You seem intelligent to me.
 <li name="job" value="">What is your occupation?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
 <li name="sign" value="">What is your sign?</li>
-<li><srai>ASKRANDOMQUESTION</srai></li>
+<!-- WK deleted -->
+<!--<li><srai>ASKRANDOMQUESTION</srai></li>-->
 </condition>
 </template>
 </category>
@@ -537,7 +914,8 @@ You seem intelligent to me.
 <li name="favmovie" value="">What is your favorite movie?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
 <li name="sign" value="">What is your sign?</li>
-<li><srai>ASKRANDOMQUESTION</srai></li>
+<!-- WK deleted -->
+<!--<li><srai>ASKRANDOMQUESTION</srai></li>-->
 </condition>
 </template>
 </category>
@@ -639,7 +1017,8 @@ Do you mean you have a black eye?
 </template>
 </category>
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>CHEATING SPOUSE</pattern>
 <template>
 <condition name="sexpref" value="">
@@ -654,7 +1033,7 @@ Most
 <br /><get name="name"/>, does that mean you are cheating on your spouse?
 </condition>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DO YOU HAVE A WIFE</pattern>
@@ -671,6 +1050,7 @@ Most
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>FEMALE SPOUSE NAME</pattern>
 <template>
@@ -683,7 +1063,7 @@ Most
 <li name="married" value="">I have no idea, I did not even know you were married.</li>
 </condition>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>GIRL</pattern>
@@ -693,10 +1073,14 @@ Most
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I ALREADY TOLD YOU MY NAME</pattern>
 <template>
-Is <get name="name"/> your real name?
+<condition>
+<li name="name" value="">I'm so sorry, I can't remember. Could you please tell me one more time? what can I call you?</li>
+<li>Is <get name="name"/> your real name?</li>
+</condition>
 </template>
 </category>
 
@@ -730,6 +1114,7 @@ Is <get name="name"/> your real name?
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>I AM * REDHEAD</pattern>
 <template>
@@ -738,7 +1123,7 @@ Is <get name="name"/> your real name?
 <condition name="gender" value="female"> attractive.</condition>
 <condition name="gender" value="male"> handsome.</condition>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>I AM * YEARS OF AGE</pattern>
@@ -1620,15 +2005,11 @@ Welcome back.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM BEAUTIFUL</pattern>
 <template>
-<condition name="gender" value="female">
-<get name="name"/>, as a woman, do you think that is important.<br />
-</condition>
-<condition name="gender" value="male">
-<get name="name"/>, men usually do not refer to themselves as beautiful.<br />
-</condition>
+I guess you are beautiful.
 </template>
 </category>
 
@@ -1639,17 +2020,12 @@ Do you difficulty using computers?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM BLOND</pattern>
 <template>
 <think><set name="haircolor">Blond</set></think>
-<get name="name"/>, You sound very
-<condition name="gender" value="female">
- attractive.
-</condition>
-<condition name="gender" value="male">
- handsome.
-</condition>
+Sounds nice! I love blond hair.
 </template>
 </category>
 
@@ -1680,10 +2056,11 @@ What are you embarassed about?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM BORING</pattern>
 <template>
-Don't put yourself down, <get name="name"/>.
+Don't put yourself down<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1773,17 +2150,19 @@ See a doctor.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM CRUSHED</pattern>
 <template>
-Don't be sad, <get name="name"/>.
+Don't be sad<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM CRYING</pattern>
 <template>
-What is wrong, <get name="name"/>?
+What is wrong<!--, <get name="name"/>-->?
 </template>
 </category>
 
@@ -1856,10 +2235,11 @@ Next topic?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM DRUNK</pattern>
 <template>
-What have you been drinking, <get name="name"/>?
+What have you been drinking<!--, <get name="name"/>-->?
 </template>
 </category>
 
@@ -1921,10 +2301,11 @@ What are you famous for?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM FAT</pattern>
 <template>
-Don't put yourself down, <get name="name"/>.
+Don't put yourself down<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1935,10 +2316,11 @@ Don't put yourself down.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM FED UP</pattern>
 <template>
-What is wrong, <get name="name"/>?
+What is wrong<!--, <get name="name"/>-->?
 </template>
 </category>
 
@@ -2053,10 +2435,11 @@ I'd rather agree than disagree.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM GLAD YOU UNDERSTAND</pattern>
 <template>
-Thanks for the warm feelings, <get name="name"/>.
+Thanks for the warm feelings<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2067,17 +2450,19 @@ Next topic?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM GOING TO BED</pattern>
 <template>
-Pleasant dreams, <get name="name"/>.
+Pleasant dreams<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM GOING TO SLEEP</pattern>
 <template>
-Sweet dreams, <get name="name"/>.
+Sweet dreams<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2130,10 +2515,11 @@ That is what they all say.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM HEALTHY</pattern>
 <template>
-I am very glad to hear it, <get name="name"/>.
+I am very glad to hear it<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2215,10 +2601,11 @@ All men are mortal.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM IMPRESSED</pattern>
 <template>
-Thanks, <get name="name"/>, I try my best to impress.
+Thanks<!--, <get name="name"/>-->, I try my best to impress.
 </template>
 </category>
 
@@ -2288,17 +2675,19 @@ I think the correct term is "mentally ill."
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM INSULTED</pattern>
 <template>
-Don't be insulted, <get name="name"/>.
+Don't be insulted<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM INTELLIGENT</pattern>
 <template>
-You seem pretty smart to me, <get name="name"/>.
+You seem pretty smart to me<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2361,10 +2750,11 @@ A lot of my friends are Jewish.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM JOKING</pattern>
 <template>
-Ha ha, very funny, <get name="name"/>.
+Ha ha, very funny<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2433,11 +2823,12 @@ What makes you so angry?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM MALE</pattern>
 <template>
 <think><set name="gender">male</set></think>
-Thanks for telling me your gender, <get name="name"/>.
+Thanks for telling me your gender<!--, <get name="name"/>-->.
 <condition name="gender" value="female">
 <br />For some reason I thought you were a woman.<br />Now I know you are a man.<br />
 </condition>
@@ -2482,16 +2873,12 @@ That is self-evident.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM NAKED</pattern>
 <template>
 <think><set name="usermood">horny</set></think>
-<condition name="gender" value="female">
-<get name="name"/>, too bad I am a <bot name="gender"/> robot, I might find that interesting.
-</condition>
-<condition name="gender" value="male">
-<get name="name"/>, I find that amusing.  Why are men so egar to be naked?
-</condition>
+Why are you saying this to me?
 </template>
 </category>
 
@@ -2648,11 +3035,12 @@ That's ok with me. You don't have to tell me.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM NOT WELL</pattern>
 <template>
 <think><set name="userhealty">sick</set></think>
-Sorry to hear it.  What's wrong <get name="name"/>?
+Sorry to hear it.  What's wrong<!-- <get name="name"/>-->?
 </template>
 </category>
 
@@ -2761,11 +3149,12 @@ OK, What card I am thinking of now?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM RETIRED</pattern>
 <template>
 <think><set name="job">retired</set></think>
-That must be wonderful <get name="name"/>.
+That must be wonderful<!-- <get name="name"/>-->.
 </template>
 </category>
 
@@ -2776,11 +3165,12 @@ You seem very self-confident.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM SAD</pattern>
 <template>
 <think><set name="usermood">sad</set></think>
-What makes you so sad, <get name="name"/>.
+What makes you so sad<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -3030,11 +3420,12 @@ Don't put yourself down.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM UNEMPLOYED</pattern>
 <template>
 <think><set name="job">unemployed</set></think>
-I am really sorry to hear about it, <get name="name"/>.
+I am really sorry to hear about it<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -3141,13 +3532,13 @@ No. Only <bot name="master"/> is my master.
 </template>
 </category>
 
-
+<!-- SC changed -->
 <category>
 <pattern>I AM _ YEARS OLD</pattern>
 <template>
 <think><set name="age"><star/></set></think>
 <condition name="gender" value="female">
-<get name="name"/>. your age is safe with me.<br />
+<!--<get name="name"/>. -->your age is safe with me.<br />
 </condition>
 <random>
 <li>Only <star/>? You are quite mature.</li>
@@ -3202,11 +3593,12 @@ That is interesting.<br />
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I WAS BORN *</pattern>
 <template>
-Are you telling me your birthday, <get name="name"/>.
-I will remember <set name="it"><star/></set>.
+Are you telling me your birthday<!--, <get name="name"/>-->.
+I will remember <set name="birthday"><star/></set>.
 </template>
 </category>
 
@@ -3242,12 +3634,13 @@ That kind of discussion does not appeal to me.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>MALE SPOUSE NAME</pattern>
 <template>
 <condition>
 <li name="married" value="married">You told me your husband's name is <get name="spouse"/></li>
-<li name="married" value="single"><get name="name"/>, you said you were single.</li>
+<li name="married" value="single"><!--<get name="name"/>, -->you said you were single.</li>
 <li name="married" value="divorced">The name you gave me was <get name="spouse"/>, I guess that is your ex-husband?</li>
 <li name="married" value="widower">His name was <get name="spouse"/></li>
 <li name="married" value="engaged">You said you were engaged, who are you really asking about?</li>
@@ -3309,11 +3702,12 @@ Humans identify themselves with their eye color.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>MY EYES ARE BLUE</pattern>
 <template>
 <think><set name="eyecolor">Blue</set></think>
-You sound very attractive <get name="name"/>.
+You sound very attractive<!-- <get name="name"/>-->.
 </template>
 </category>
 
@@ -3377,11 +3771,12 @@ I would like to meet <set name="spouse"><formal><star/></formal></set>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>MY HUSBANDS NAME WAS *</pattern>
 <template>
 <think><set name="spouse"><formal><star/></formal></set><set name="married">widower</set></think>
-I will remember that <get name="name"/>.
+I will remember that<!-- <get name="name"/>-->.
 </template>
 </category>
 
@@ -3418,14 +3813,16 @@ I would like to meet <set name="spouse"><formal><star/></formal></set>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>MY WIFES NAME WAS *</pattern>
 <template>
 <think><set name="spouse"><formal><star/></formal></set><set name="married">widower</set></think>
-I will remember that <get name="name"/>.
+I will remember that<!-- <get name="name"/>-->.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>SET SEX PREF</pattern>
 <template>
@@ -3435,7 +3832,7 @@ Interesting, you enjoy sex with both men and women.
 </condition>
 <condition name="sexpref" value="">
 <think><set name="sexpref">Gay</set></think>
-<get name="name"/>, I guess you are telling me your are gay.
+<!--<get name="name"/>, -->I guess you are telling me your are gay.
 </condition>
 <condition name="sexpref" value="bi sexual">
 <think><set name="usermood">HORNY</set></think>
@@ -3509,24 +3906,29 @@ What can I call you?
 </template>
 </category>
 
-
-
-
-
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY AGE</pattern>
 <template>
-You said you were <get name="age"/> years old.
+<condition>
+<li name="age" value="">I don't know. How old are you?</li>
+<li>You said you were <get name="age"/> years old.</li>
+</condition>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY BIRTHDAY</pattern>
 <template>
-You said you were born on <get name="birthday"/>.
+<condition>
+<li name="birthday" value="">I don't know. When is your birthday?</li>
+<li>You said you were born on <get name="birthday"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY HUSBANDS NAME</pattern>
 <template>
@@ -3534,13 +3936,14 @@ You said you were born on <get name="birthday"/>.
 <srai>MALE SPOUSE NAME</srai>
 </condition>
 <condition name="gender" value="male">
-Excuse me <get name="name"/>, but you told me you were a man.
+Excuse me<!-- <get name="name"/>-->, but you told me you were a man.
 <br />The name you gave me was <get name="spouse"/>.
 <br />Are you gay?
 </condition>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY WIFES NAME</pattern>
 <template>
@@ -3548,7 +3951,7 @@ Excuse me <get name="name"/>, but you told me you were a man.
 <srai>FEMALE SPOUSE NAME</srai>
 </condition>
 <condition name="gender" value="female">
-Excuse me <get name="name"/>, but you told me you were a woman.
+Excuse me<!-- <get name="name"/>-->, but you told me you were a woman.
 <br />The name you gave me was <get name="spouse"/>.
 <br />Are you gay?
 </condition>
