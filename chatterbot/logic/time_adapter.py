@@ -74,7 +74,7 @@ class TimeLogicAdapter(LogicAdapter):
             response = self.process(statement)
             set_preps = set(["in", "at", "of", "for"])
             if set(statement.text.lower().split(" ")) & set_preps != set():
-                return response.confidence == 0
+                return False 
         else:
             return False
         return response.confidence == 1
