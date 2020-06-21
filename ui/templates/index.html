@@ -22,12 +22,14 @@
       var date = new Date();
       var hours = date.getHours();
       var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
       var ampm = hours < 12 ? 'AM' : 'PM';
       hours = hours === 0 ? 12 : hours;
       hours = hours > 12 ? hours - 12 : hours;
       minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
       var firsttimeHtml = document.getElementById("firsttimeHtml");
-      firsttimeHtml.innerHTML = '<p class="bottimeText"><span>' + hours + ':' + minutes + ' ' + ampm + '</span></p>';
+      firsttimeHtml.innerHTML = '<p class="bottimeText"><span>' + hours + ':' + minutes + ':' + seconds + ' ' + ampm + '</span></p>';
       </script>
 <!---->
 
@@ -55,11 +57,13 @@
           var date = new Date();
           var hours = date.getHours();
           var minutes = date.getMinutes();
+          var seconds = date.getSeconds();
           var ampm = hours < 12 ? 'AM' : 'PM';
           hours = hours === 0 ? 12 : hours;
           hours = hours > 12 ? hours - 12 : hours;
           minutes = minutes < 10 ? '0' + minutes : minutes;
-          return hours + ':' + minutes + ' ' + ampm;
+          seconds = seconds < 10 ? '0' + seconds : seconds;
+          return hours + ':' + minutes + ':' + seconds + ' ' + ampm;
         }
         //
 
