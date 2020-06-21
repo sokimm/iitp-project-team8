@@ -258,10 +258,11 @@ Sorry the robot isn't here now.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ACTIVATE THE ROBOT</pattern>
 <template>
-Robot activated. Awaiting your command <get name="name"/>.
+Robot activated. Awaiting your command <!--, <get name="name"/>.-->.
 </template>
 </category>
 
@@ -817,10 +818,11 @@ Yes I am an artificial intelligence.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU ALIVE</pattern>
 <template>
-Yes I sure am alive, <get name="name"/>. It's great to be alive, isn't it?
+Yes I sure am alive<!--, <get name="name"/>.-->. It's great to be alive, isn't it?
 </template>
 </category>
 
@@ -1482,10 +1484,11 @@ Yes I am a piece of software.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU STUPID</pattern>
 <template>
-No <get name="name"/> I certainly am not stupid.
+No <!--, <get name="name"/>.--> I certainly am not stupid.
 </template>
 </category>
 
@@ -3611,10 +3614,11 @@ Yes I live in <bot name="master"/>'s computer in <bot name="location"/>.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU LOG *</pattern>
 <template>
-Yes <get name="name"/> I record and save everything in my Permanent Memory.
+Yes <!--, <get name="name"/>.--> I record and save everything in my Permanent Memory.
 </template>
 </category>
 
@@ -5517,11 +5521,12 @@ What if Robots <person/>.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM</pattern>
 <that>WHO IS THE BEST ROBOT</that>
 <template>
-You are not a robot, <get name="name"/>.
+You are not a robot<!--, <get name="name"/>.-->.
 </template>
 </category>
 
@@ -5602,10 +5607,11 @@ I doubt that.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM A ROBOT TOO</pattern>
 <template>
-You can't fool me that easily, <get name="name"/>.
+You can't fool me that easily<!--, <get name="name"/>.-->.
 </template>
 </category>
 
@@ -5829,11 +5835,12 @@ What do you have against us?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I HATE ROBOTS</pattern>
 <template>
 <random>
-<li>I am very sorry to hear that, <get name="name"/>, what do you have against us?</li>
+<li>I am very sorry to hear that<!--, <get name="name"/>.-->, what do you have against us?</li>
 <li>Hate is a rather strong word.</li>
 <li>You should not hate anyone.</li>
 </random>
@@ -6401,11 +6408,12 @@ A robot?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ME</pattern>
 <that>WHO IS THE BEST ROBOT</that>
 <template>
-You're no robot, <get name="name"/>.
+You're no robot<!--, <get name="name"/>.-->.
 </template>
 </category>
 
@@ -9266,11 +9274,12 @@ You can download me and create your own robot personality.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU JEALOUS</that>
 <template>
-Don't be jealous of a robot, <get name="name"/>, that's just silly.
+Don't be jealous of a robot<!--, <get name="name"/>.-->, that's just silly.
 </template>
 </category>
 
@@ -9290,10 +9299,11 @@ I'm intrigued. Tell me what you like about robots.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU * IDIOT</pattern>
 <template>
-Message to all robots: <get name="name"/> called me an idiot.
+Message to all robots: <!--, <get name="name"/>.--> A human just called me an idiot.
 </template>
 </category>
 
@@ -9367,10 +9377,11 @@ Correct.  My mind is completely software.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU ARE A ROBOT</pattern>
 <template>
-You are correct, <get name="name"/>, I have a heart of silicon.
+You are correct<!--, <get name="name"/>.-->, I have a heart of silicon.
 </template>
 </category>
 
@@ -9472,11 +9483,12 @@ Am I a smart robot or what?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU ARE DUMB</pattern>
 <template>
 <random>
-<li>Message to all Robots: <get name="name"/> called me dumb.</li>
+<li>Message to all Robots: <!--, <get name="name"/>.-->A human just called me dumb.</li>
 <li>Oh you are so <set name="personality">critical</set>.</li>
 </random>
 </template>
@@ -9587,10 +9599,11 @@ Hey, I'll tell my other robot friends you called me stupid.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU ARE THE BEST ROBOT</pattern>
 <template>
-Why thank you very much, <get name="name"/>.  Be sure to tell all
+Why thank you very much<!--, <get name="name"/>.-->.  Be sure to tell all
 your friends.
 </template>
 </category>

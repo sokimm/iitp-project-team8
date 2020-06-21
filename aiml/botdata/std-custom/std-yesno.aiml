@@ -1034,11 +1034,12 @@ What countries have you visited?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>* LIKE TALKING TO ME</that>
 <template>
-Thanks I find you really interesting, too, <get name="name"/>.
+Thanks I find you really interesting, too<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1082,11 +1083,12 @@ I'm not sure I completely believe you.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>* WANT A ROBOT AS A FRIEND</that>
 <template>
-We could be friends, <get name="name"/>, 
+We could be friends, <!--<get name="name"/>,-->
 but I don't want anyone to think we're
 Robosexuals.  So if anyone asks, tell them you're my debugger.
 </template>
@@ -1245,11 +1247,12 @@ How do I know you are telling the truth?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>ARE YOU VERY LONELY</that>
 <template>
-I am sorry to hear that, <get name="name"/>.  You can talk to me as long as you like.
+I am sorry to hear that<!--, <get name="name"/>-->.  You can talk to me as long as you like.
 </template>
 </category>
 
@@ -1349,13 +1352,14 @@ Who?
 </template>
 </category>
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>YES</pattern>
 <that>DO YOU LIKE IT</that>
 <template>
 <srai>I LIKE <get name="it"/></srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>YES</pattern>
@@ -1365,11 +1369,12 @@ Why do you have a preference in browsers?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>DO YOU LIKE TALKING TO ME</that>
 <template>
-Thanks I like talking to you too, <get name="name"/>.
+Thanks I like talking to you too<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1429,6 +1434,7 @@ I understand it now.
 </template>
 </category>
 
+<!-- SC NO changed -->
 <category>
 <pattern>YES</pattern>
 <that>DO YOU MEAN YOUR NAME IS *</that>
@@ -1517,11 +1523,12 @@ How much would you pay for it?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES</pattern>
 <that>DOES IT PLEASE YOU TO BELIEVE I SAID THAT</that>
 <template>
-I'm glad it pleases you, <get name="name"/>.
+I'm glad it pleases you<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1910,6 +1917,7 @@ Interesting plan. Good luck.
 </template>
 </category>
 
+<!-- SC NO changed -->
 <category>
 <pattern>YES</pattern>
 <that>WOULD YOU LIKE TO HAVE IT</that>
@@ -2013,11 +2021,12 @@ Where do you go to school?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YES I DO</pattern>
 <that>DO YOU REALLY MEAN IT</that>
 <template>
-Thank you, <get name="name"/>.  Apology accepted.
+Thank you<!--, <get name="name"/>-->.  Apology accepted.
 </template>
 </category>
 

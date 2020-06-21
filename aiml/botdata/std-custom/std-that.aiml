@@ -18,20 +18,23 @@
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>*</pattern>
 <that>* WHO</that>
 <template>
-Ha ha very funny, <get name="name"/>.
+Ha ha very funny<!--, <get name="name"/>.-->
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>*</pattern>
 <that>HOW DID YOU HEAR ABOUT RUMMY</that>
 <template>
-<get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about
-<bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.
+Duhhh! Rummy is famous. No need to ask about it.
+<!--<get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about
+<bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.-->
 </template>
 </category>
 
@@ -810,11 +813,15 @@ Yes, tell me more about you.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ABOUT WHAT</pattern>
 <that>TELL ME MORE</that>
 <template>
-About <get name="topic"/>.
+<condition>
+<li name="topic" value="">You gotta tell me about the topic first.</li>
+<li>About <get name="topic"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -826,14 +833,15 @@ I hope I can clear it up for you.
 </template>
 </category>
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>ALL OF IT</pattern>
 <that>WHICH PART ARE YOU CONFUSED ABOUT</that>
 <template>
 Let's try to analyze it step by step.  The topic is <get name="topic"/>.  Your name is <get name="name"/>.  You
 are a <bot name="gender"/>.  You want <get name="want"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ALRIGHT THEN</pattern>
@@ -1023,37 +1031,43 @@ Yes I do.
 </template>
 </category>
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>DO WHAT</pattern>
 <that>OK I WILL TRY NOT TO DO IT TOO MUCH</that>
 <template>
 Didn't you ask me not to <get name="it"/>?
 </template>
-</category>
+</category>-->
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>DO WHAT</pattern>
 <that>WHY DID NOT YOU DO IT</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>DO WHAT</pattern>
 <that>WHY DO YOU WANT TO DO IT SO MUCH</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>DO WHAT</pattern>
 <that>WOULD YOU EVER DO IT</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DO WHAT AGAIN</pattern>
@@ -1095,11 +1109,12 @@ Why wouldn't I?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU</pattern>
 <that>I UNDERSTAND YOUR MEANING</that>
 <template>
-Yes I understand you very well, <get name="name"/>.
+Yes I understand you very well<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1143,13 +1158,15 @@ I am too young for dating.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>EVERYTHING</pattern>
 <that>WHICH PART ARE YOU CONFUSED ABOUT</that>
 <template>
 Let's take it step by step.  The topic is <get name="topic"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>FALSE</pattern>
@@ -1175,6 +1192,8 @@ I will try to be more concise from now on.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>FROM *</pattern>
 <that>HOW DID YOU HEAR ABOUT RUMMY</that>
@@ -1182,7 +1201,7 @@ I will try to be more concise from now on.
 <get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about
 <bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>FROM *</pattern>
@@ -1218,13 +1237,15 @@ People.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>GET WHAT</pattern>
 <that>OH I GET IT</that>
 <template>
 I get <get name="it"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>GO _</pattern>
@@ -1242,11 +1263,12 @@ I get <get name="it"/>.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>GOOD</pattern>
 <that>EVERYTHING IS RUNNING SMOOTHLY</that>
 <template>
-How are things going with you, <get name="name"/>?
+How are things going with you<!--, <get name="name"/>-->?
 </template>
 </category>
 
@@ -1258,11 +1280,12 @@ What do you really want to talk about?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>GOOD</pattern>
 <that>I AM DOING FINE THANKS HOW ARE YOU</that>
 <template>
-Glad to hear it <get name="name"/>.
+Glad to hear it<!-- <get name="name"/>-->.
 </template>
 </category>
 
@@ -1346,11 +1369,12 @@ Next question?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>GOOD</pattern>
 <that>OK I WILL TRY NOT TO DO IT TOO MUCH</that>
 <template>
-It is always a pleasure to serve you, <get name="name"/>.
+It is always a pleasure to serve you<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1362,11 +1386,12 @@ Goodbye.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>GOOD</pattern>
 <that>WEIRD GOOD OR WEIRD BAD</that>
 <template>
-That's nice of you to say, <get name="name"/>.
+That's nice of you to say<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1386,21 +1411,25 @@ That sounds sarcastic.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>HAVE WHAT</pattern>
 <that>WOULD YOU LIKE TO HAVE IT</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>HERE</pattern>
 <that>WHERE</that>
 <template>
 In <formal><get name="location"/></formal>?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>HERE</pattern>
@@ -1634,6 +1663,8 @@ You are free to choose whatever you want.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>IN *</pattern>
 <that>HOW DID YOU HEAR ABOUT RUMMY</that>
@@ -1641,7 +1672,7 @@ You are free to choose whatever you want.
 <get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about
 <bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>IN *</pattern>
@@ -2300,6 +2331,8 @@ I'm sorry I can't give a definite answer at this time.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>PLEASE DO</pattern>
 <that>OH I AM SORRY PERHAPS I CAN EXPLAIN IT AGAIN BETTER</that>
@@ -2307,7 +2340,7 @@ I'm sorry I can't give a definite answer at this time.
 We are talking about <get name="topic"/>.  Your name is <get name="name"/>.  You are a <get name="gender"/> from
 <formal><get name="location"/></formal>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>PLEASE EXPLAIN</pattern>
@@ -2453,11 +2486,12 @@ I mean, I understand.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>SHE DIED</pattern>
 <that>WHAT HAPPENED</that>
 <template>
-I am terribly sorry to hear it, <get name="name"/>.
+I am terribly sorry to hear it<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2557,11 +2591,12 @@ I am RUMMY.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>SURE</pattern>
 <that>DO YOU LIKE TALKING TO ME</that>
 <template>
-Thanks you seem very nice to me too, <get name="name"/>.
+Thanks you seem very nice to me too<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2702,6 +2737,8 @@ My statement or your statement?
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>THE WHOLE THING</pattern>
 <that>WHICH PART ARE YOU CONFUSED ABOUT</that>
@@ -2710,7 +2747,7 @@ Let's try to analyze it step by step.  The topic is <get name="topic"/>.  Your n
 are a
 <bot name="gender"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>THERE</pattern>
@@ -2880,13 +2917,15 @@ I don't know, I'm just making conversation.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>WHAT</pattern>
 <that>PERHAPS I AM JUST EXPRESSING MY OWN CONCERN ABOUT IT</that>
 <template>
 We are talking about <get name="topic"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT</pattern>
@@ -2904,13 +2943,15 @@ Didn't you say goodbye?
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>WHAT</pattern>
 <that>TRY IT</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT</pattern>
@@ -2928,13 +2969,15 @@ Is there an echo in here?
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>WHAT</pattern>
 <that>WHY DO YOU WANT TO DO IT SO MUCH</that>
 <template>
 <get name="it"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT ARE THEIR NAMES</pattern>
@@ -3120,13 +3163,15 @@ Nor where.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>WHERE</pattern>
 <that>WHAT TIME IS IT THERE</that>
 <template>
 <formal><get name="location"/></formal>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHERE</pattern>
@@ -3344,13 +3389,15 @@ Your limited brain cannot process the relavent information.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>WHY</pattern>
 <that>LET US CHANGE THE SUBJECT</that>
 <template>
 I thought we were done with <get name="topic"/>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHY</pattern>
@@ -3681,21 +3728,24 @@ Thanks, and tell your friends about <bot name="name"/>.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU *</pattern>
 <that>WHO IS THE BEST ROBOT</that>
 <template>
-You are such a flatterer, <get name="name"/>.
+You are such a flatterer<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- SC changed -->
+<!--
 <category>
 <pattern>YOU ALREADY ASKED ME THAT</pattern>
 <that>WHERE DO YOU LIVE</that>
 <template>
 You said you were in <formal><get name="location"/></formal>.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>YOU ARE</pattern>
