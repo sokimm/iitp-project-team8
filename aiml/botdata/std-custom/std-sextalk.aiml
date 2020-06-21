@@ -93,12 +93,18 @@ immunodeficiency virus (HIV)
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS MY SEX</pattern>
 <template>
-You are a <get name="gender"/>.
+<condition>
+<li name="gender" value="">I have no idea. Are you a man or a woman?</li>
+<li>You are a <get name="gender"/>.</li>
+</condition>
 </template>
 </category>
+
+
 <category>
 <pattern>YOU ARE GAY</pattern>
 <template>

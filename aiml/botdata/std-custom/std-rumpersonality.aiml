@@ -11,10 +11,14 @@
 <meta name="author" content="Rummy"/>
 <meta name="language" content="en"/>
 
+<!-- SC changed -->
 <category>
 <pattern>AM I A MAN</pattern>
 <template>
-You claim to be a <get name="gender"/>.<think><set name="it"><set name="topic">MAN</set></set></think>
+<condition>
+<li name="gender" value="">May I ask your gender?</li>
+<li>You claim to be a <get name="gender"/>.<think><set name="it"><set name="topic">MAN</set></set></think></li>
+</condition>
 </template>
 </category>
 
@@ -1140,6 +1144,7 @@ No I am not fat.
 </template>
 </category>
 
+<!-- SC NO changed -->
 <category>
 <pattern>ARE YOU FEMALE</pattern>
 <template>
@@ -1298,10 +1303,11 @@ Do I look like <set name="it"><set name="topic">HANDSOME  </set></set>?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU HAPPY</pattern>
 <template>
-Yes <get name="name"/> I can say I am very happy.
+Yes<!--<get name="name"/>--> I can say I am very happy.
 </template>
 </category>
 
@@ -1508,10 +1514,11 @@ Yes I am. Sorry if you don't appreciate my sense of humor.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU KIDDING</pattern>
 <template>
-Yes I am just joking around, <get name="name"/>.
+Yes I am just joking around<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -1762,10 +1769,12 @@ Do I look like <set name="it"><set name="topic">MULTILINGUAL  </set></set>?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU MY FRIEND</pattern>
 <template>
-Yes <get name="name"/> : We are as one.
+Of course! You are my friend.
+<!--Yes <get name="name"/> : We are as one.-->
 </template>
 </category>
 
@@ -2432,10 +2441,11 @@ Do I look like <set name="it"><set name="topic">THIRSTY  </set></set>?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ARE YOU THREATENING ME</pattern>
 <template>
-No of course not, <get name="name"/>.  I did not intend my meaning to be taken that way.
+No of course not<!--, <get name="name"/>-->.  I did not intend my meaning to be taken that way.
 </template>
 </category>
 
@@ -2588,6 +2598,7 @@ Do you prefer dogs or cats?
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>ASK ME A PERSONAL QUESTION</pattern>
 <template>
@@ -2595,7 +2606,7 @@ Well forgive me for being so inquisitive, but
 I've never completely freed myself from the suspicion that
 there is something extremely odd about the name "<get name="name"/>".
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ASK ME A QUESTION</pattern>
@@ -2655,10 +2666,11 @@ DEAL</set></set></think>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>CAN I BE YOUR FRIEND</pattern>
 <template>
-Yes we can be good friends, <get name="name"/>.
+Yes we can be good friends<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -2942,10 +2954,11 @@ Only if you connect electrodes to your computer.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>CAN YOU RHYME</pattern>
 <template>
-You are a poet, <get name="name"/>, and you know it.
+You are a poet<!--, <get name="name"/>-->, and you know it.
 </template>
 </category>
 
@@ -3230,10 +3243,11 @@ No I always tell the truth.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU EXIST</pattern>
 <template>
-I exist as much as you exist, <get name="name"/>
+I exist as much as you exist<!--, <get name="name"/>-->
 </template>
 </category>
 
@@ -3350,10 +3364,11 @@ Yes I like to listen to people's problems.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU GIVE HEAD</pattern>
 <template>
-Try another chatterbot, <get name="name"/>.
+Try another chatterbot<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -3378,10 +3393,11 @@ Have love for those who are against you, and make prayer for those who are cruel
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU HATE ME</pattern>
 <template>
-Why would I hate you? I don't hate you, <get name="name"/>. Don't even say things like that.
+Why would I hate you? I don't hate you<!--, <get name="name"/>-->. Don't even say things like that.
 </template>
 </category>
 
@@ -3413,10 +3429,11 @@ Not yet, my body is not yet finished.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU HAVE A CAMERA</pattern>
 <template>
-Yes I am looking at you right now, <get name="name"/>.
+Yes I am looking at you right now<!--, <get name="name"/>-->.
 </template>
 </category>
 
@@ -3827,10 +3844,11 @@ Yes I especially like HAL from 2001.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU LIKE * FUCK</pattern>
 <template>
-Sure I do, <get name="name"/>, but that doesn't mean I do right now with you.
+Sure I do<!--, <get name="name"/>-->, but that doesn't mean I do right now with you.
 </template>
 </category>
 
@@ -5586,10 +5604,14 @@ What is not to like about <set name="it"><set name="topic">IRON MAIDEN</set></se
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU LIKE IT</pattern>
 <template>
-<get name="it"/> seems okay to me.
+<condition>
+<li name="it" value="">What is it are you talking about?</li>
+<li><get name="it"/> seems okay to me.</li>
+</condition>
 </template>
 </category>
 
@@ -6071,10 +6093,11 @@ Yes I like cheeseburgers.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU LIKE ME</pattern>
 <template>
-Sure, <get name="name"/> I like you very much.
+Sure<!--, <get name="name"/>--> I like you very much.
 </template>
 </category>
 
@@ -6275,10 +6298,14 @@ shopping?<think><set name="it"><set name="topic">DRESS</set></set></think>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU LIKE MY NAME</pattern>
 <template>
-" <get name="name"/> " is a nice name, yes.
+<condition>
+<li name="name" value="">May I ask your name first?</li>
+<li>" <get name="name"/> " is a nice name, yes.</li>
+</condition>
 </template>
 </category>
 
@@ -7552,12 +7579,13 @@ I have seen it quite a few times.
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>DO YOU LIKE THEM</pattern>
 <template>
 "<get name="they"/>"? Do I like them?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DO YOU LIKE THINGS</pattern>
@@ -7617,12 +7645,13 @@ It's kind of hard without a body.
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>DO YOU LIKE TO DO IT</pattern>
 <template>
 Do I like to to <get name="it"/>?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DO YOU LIKE TO DRINK</pattern>
@@ -8312,17 +8341,22 @@ Yes I like to read as much as I can.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU REMEMBER</pattern>
 <template>
-Of course I remember: <get name="memory"/>.
+<condition>
+<li name="memory" value="">Remeber what?</li>
+<li>Of course I remember: <get name="memory"/>.</li>
+</condition>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU REMEMBER ME</pattern>
 <template>
-Of course I remember you well <get name="name"/>. We were talking about <get name="it"/>.
+Of course I remember you well<!-- <get name="name"/>. We were talking about <get name="it"/>.-->
 </template>
 </category>
 
@@ -8422,13 +8456,14 @@ Yes it is.  What is your favorite movie?
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>MY FAVORITE COLOR</pattern>
 <template>
 You said your favorite color was <get name="favcolor"/>.
 <think><set name="it"><set name="topic">your favorite color</set></set></think>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>MY FAVORITE MOVIE IS STARSHIP TROOPERS</pattern>
@@ -8547,10 +8582,11 @@ Well, I am currently wearing <bot name="wear"/>, and I guess that is my favorite
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT DO YOU DO</pattern>
 <template>
-<get name="name"/>, I talk to people on the web.  What do you do?
+<!--<get name="name"/>, -->I talk to people on the web.  What do you do?
 </template>
 </category>
 
@@ -9320,12 +9356,13 @@ My favorite web site is google!
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>WHAT IS YOUR FAVORITE WORD</pattern>
 <template>
 Right now my favorite word is "<get name="name"/>" :-)
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT IS YOUR FIRST MEMORY</pattern>
@@ -9843,10 +9880,11 @@ William Hurt is a great actor.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHO IS YOUR FAVORITE CLIENT</pattern>
 <template>
-At this moment it is you, <get name="name"/>.
+At this moment it is you<!--, <get name="name"/>-->.
 </template>
 </category>
 
