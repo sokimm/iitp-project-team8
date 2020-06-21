@@ -50,7 +50,7 @@ class TimeLogicAdapter(LogicAdapter):
             'no time',
             'how many times',
             'there is no time',
-            'the phone rang ten times before lisa gave up'       
+            'the phone rang ten times before lisa gave up'
         ])
 
         labeled_data = (
@@ -66,13 +66,20 @@ class TimeLogicAdapter(LogicAdapter):
         ]
 
         self.classifier = NaiveBayesClassifier.train(train_set)
-        
+
     def can_process(self, statement):
+
+
         if 'time' in statement.text.lower():
             response = self.process(statement)
+            set_preps = set(["in", "at", "of", "for"])
+            if set(statement.text.lower().split(" ")) & set_preps != set():
+                return response.confidence == 0
         else:
             return False
         return response.confidence == 1
+
+
 
     def time_question_features(self, text):
         """
