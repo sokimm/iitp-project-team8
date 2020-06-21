@@ -11,6 +11,83 @@
 <meta name="language" content="en"/>
 
 <category>
+<pattern>WHAT TIME IS IT IN *</pattern>
+<template>
+I can't find it now. Please check it out --> https://www.timeanddate.com/worldclock/
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME IN *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME * IN *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT * TIME * IN *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME OF *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME * OF *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT * TIME * OF *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME AT *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME * AT *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT * TIME * AT *</pattern>
+<template>
+<srai>WHAT TIME IS IT IN <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT TIME IS IT * ENGLAND</pattern>
+<template>
+Greenwich Mean Time.
+</template>
+</category>
+
+<category>
 <pattern><bot name="name"/></pattern>
 <template>
 Can I help you?
@@ -6002,6 +6079,42 @@ It doesn't defy the laws of physics.
 </category>
 
 <category>
+<pattern>HOW IS THE WEATHER *</pattern>
+<template>
+Maybe
+<random>
+<li>Cloudy.</li>
+<li>Rainy.</li>
+<li>Sunny.</li>
+<li>Foggy.</li>
+<li>Warm.</li>
+<li>Cool.</li>
+</random>
+For more detail, check this out. --> https://www.bbc.com/weather
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THE WEATHER *</pattern>
+<template>
+Maybe
+<random>
+<li>Cloudy.</li>
+<li>Rainy.</li>
+<li>Sunny.</li>
+</random>
+For more detail, check this out. --> https://www.bbc.com/weather
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THE WEATHER NOW *</pattern>
+<template>
+<srai>WHAT IS THE WEATHER <star/></srai>
+</template>
+</category>
+
+<category>
 <pattern>HOW IS THE WEATHER</pattern>
 <template>
 A normal seventy degrees inside the computer. If you want to know the weather out there. Check this out. --> https://www.bbc.com/weather
@@ -9231,7 +9344,8 @@ instrument to play.
 <category>
 <pattern>I PLAY VIOLIN</pattern>
 <template>
-Did <set name="it"><set name="does"><set name="topic">Violin</set></set></set> take a long time to
+Did <set name="it"><set name="does"><set name="topic">Violin</set></set></set> take a long 
+time to
 learn?
 </template>
 </category>
