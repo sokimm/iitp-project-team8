@@ -8739,7 +8739,7 @@ Me too especially Seven of Nine.
 <category>
 <pattern>I LIKE YOU</pattern>
 <template>
-<li>I like to make new friends.</li>
+I like to make new friends.
 <think><set name="it"><set name="topic"><set name="like">me</set></set></set></think>
 </template>
 </category>

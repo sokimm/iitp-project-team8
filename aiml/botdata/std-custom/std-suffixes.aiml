@@ -290,12 +290,13 @@ What is so stupid about <set name="it"> <person/> </set>  ?
 </template>
 </category>
 
-<category>
+<!-- SC changed -->
+<!--<category>
 <pattern>* IT</pattern>
 <template>
 "it" being <get name="it"/>?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>* K DICK</pattern>

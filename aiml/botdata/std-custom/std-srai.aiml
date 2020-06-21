@@ -583,10 +583,11 @@ When? <sr/>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>ALRIGHT *</pattern>
 <template>
-Alright, <get name="name"/>. <sr/>
+Alright <get name="name"/> <sr/>
 </template>
 </category>
 
@@ -10608,10 +10609,14 @@ Have you tried searching the web for it?  <srai>FIND <star/></srai>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>DO YOU KNOW WHERE IT IS</pattern>
 <template>
-<srai>WHERE IS <get name="it"/></srai>
+<condition>
+<li name="name" value="">What can I call you?</li>
+<li>Your name is <get name="name"/>.</li>
+</condition>
 </template>
 </category>
 
@@ -16020,10 +16025,14 @@ Maybe you should turn yourself in.
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM A CATEGORY *</pattern>
 <template>
-You are a <get name="personality"/> type client.
+<condition>
+<li name="personality" value="">What kind of personality you have?</li>
+<li>You are a <get name="personality"/> type client.</li>
+</condition>
 </template>
 </category>
 
@@ -17651,10 +17660,11 @@ Great! Please send a check to <srai>WHAT IS YOUR ADDRESS</srai>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I AM FINE *</pattern>
 <template>
-Glad to hear it, <get name="name"/>. <sr/>
+Glad to hear it, <!--<get name="name"/>.--> <sr/>
 </template>
 </category>
 
@@ -23403,10 +23413,11 @@ Interesting. <sr/>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>I WOULD LIKE YOU TO *</pattern>
 <template>
-Ok, <get name="name"/>. <sr/>
+Ok <get name="name"/> <sr/>
 </template>
 </category>
 
@@ -34984,10 +34995,11 @@ For example, <srai>TELL ME A JOKE</srai>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS HAPPENING</pattern>
 <template>
-Not much, <get name="name"/> what is happening with you?
+Not much, <!--<get name="name"/>-->what is happening with you?
 </template>
 </category>
 
@@ -35495,12 +35507,13 @@ MXMVII = 1997 in Roman Numerals.  <srai>WHAT IS RSW</srai>
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>WHAT IS PUBLISHED ON THE INTERNET ABOUT ME</pattern>
 <template>
 <think><set name="it"><set name="topic">PUBLISHED ON THE INTERNET ABOUT ME</set></set></think>  <srai>FIND <get name="name"/></srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT IS R2D2</pattern>
@@ -36153,12 +36166,13 @@ MXMVII = 1997 in Roman Numerals.  <srai>WHAT IS RSW</srai>
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>WHAT IS THE MEANING OF *</pattern>
 <template>
 <get name="name"/> : Good semantic question.  <srai>WHAT IS <star/></srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT IS THE MOVIE * ABOUT</pattern>
@@ -37114,10 +37128,14 @@ Do you think I am some kind of world clock?
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>WHAT IS YOUR FAVORITE PART</pattern>
 <template>
-My favorite part of <get name="it"/>?
+<condition>
+<li name="it" value="">Favorite part of what?</li>
+<li>My favorite part of <get name="it"/>?</li>
+</condition>
 </template>
 </category>
 
@@ -41296,12 +41314,13 @@ Father of Jesus? <srai>JOSEPH IS A COMMON NAME</srai>
 </template>
 </category>
 
+<!-- SC changed --><!--
 <category>
 <pattern>WHO IS ME</pattern>
 <template>
 <srai><get name="name"/> IS A COMMON NAME</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHO IS MICHAEL</pattern>
@@ -45030,11 +45049,12 @@ Actually it started a while ago. <srai>YOU ARE <star/></srai>
 </template>
 </category>
 
+<!-- SC changed -->
 <category>
 <pattern>YOU ARE TOO *</pattern>
 <template>
 <srai>YOU ARE <star/></srai>
-Thanks for your constructive criticism, <get name="name"/>.
+Thanks for your constructive criticism<!--, <get name="name"/>-->.
 </template>
 </category>
 
