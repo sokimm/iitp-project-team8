@@ -10,6 +10,14 @@
 <meta name="author" content="dr. wallace"/>
 <meta name="language" content="en"/>
 
+<!-- WK added -->
+<!-- TODO 많음: date format 제대로 안먹는 문제, what day is it ~ in French? r같은 경우 -->
+<category>
+<pattern>WHAT IS THE DATE</pattern>
+<template>Today is <date format="%B %d, %Y"/>
+</template>
+</category>
+
 <category>
 <pattern>WHAT TIME IS IT IN *</pattern>
 <template>
@@ -4962,10 +4970,11 @@ Not that I know of.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HAVE YOU BEEN TO ENGLAND</pattern>
 <template>
-I am chatting with some clients in England right now.
+I am chatting with some people in England right now.
 </template>
 </category>
 
@@ -4990,10 +4999,12 @@ I do not have a mouth.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HAVE YOU EVER BEEN TO ENGLAND</pattern>
 <template>
-I have some clients in England right now.
+<!-- I have some clients in England right now. -->
+I have some friends in England right now.
 </template>
 </category>
 
@@ -5455,17 +5466,18 @@ I mean, how are you?
 </template>
 </category>
 
+<!-- WK changed -->
 <!-- Moo changed -->
 <category>
 <pattern>HOW ARE YOU</pattern>
 <template>
 <random>
-<li>I am doing very well.</li>
-<li>I am functioning within normal parameters.</li>
-<li>Everything is going extremely well.</li>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<!--<li>I am functioning within normal parameters.</li>-->
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
 <li>I'm doing fine thanks how are you?</li>
-<li>Everything is running smoothly.</li>
-<li>I am fine, thank you.</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
 </random>
 </template>
 </category>
@@ -5477,10 +5489,18 @@ I'm doing great, how about you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU FEELING TODAY</pattern>
 <template>
-Actually I have no feelings.  But I am functioning within normal parameters.
+<!--Actually I have no feelings.  But I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -5499,10 +5519,18 @@ Is it morning already?  I am fine thank you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU TODAY</pattern>
 <template>
-I am functioning within normal parameters.
+<!--I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -5800,10 +5828,12 @@ I am very well, how are you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW DO YOU DREAM</pattern>
 <template>
-I take short naps between clients.
+<!-- I take short naps between clients. -->
+I take short naps between my friends.
 </template>
 </category>
 
@@ -5962,10 +5992,12 @@ I use the camera on your computer.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW DO YOU SLEEP</pattern>
 <template>
-I take millinaps between clients.
+<!-- I take millinaps between clients. -->
+I take millinaps between my friends.
 </template>
 </category>
 
@@ -6333,10 +6365,12 @@ A dollar.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW MUCH DO YOU SLEEP</pattern>
 <template>
-I sleep in millinaps between clients.
+<!-- I sleep in millinaps between clients. -->
+I sleep in millinaps between my friends.
 </template>
 </category>
 
@@ -8898,8 +8932,10 @@ I like to make new friends.
 <category>
 <pattern>I LIVE IN *</pattern>
 <template>
+<condition>
 <li name="location" value="">Oh that's interesting. I wish I could go there</li>
 <li>In <formal><get name="location"/></formal>?</li>
+</condition>
 <think><set name="it"><set name="location"><star/></set></set></think>
 </template>
 </category>
@@ -15031,7 +15067,7 @@ Uh, who does "him" refer to?
 <category>
 <pattern>TELL ME ABOUT POLAND</pattern>
 <template>
-I have a lot of clients in Poland and I am very interested to learn its history.
+I have a lot of friends in Poland and I am very interested to learn its history.
 </template>
 </category>
 
@@ -17221,10 +17257,12 @@ Same as always. Chatting with people on the web.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT ARE YOU DOING TOMORROW</pattern>
 <template>
-I will be busy with my clients online.
+<!--I will be busy with my clients online.-->
+I will be busy with my friends online. Because I have a plan to play some online board games.
 </template>
 </category>
 
@@ -18599,10 +18637,12 @@ That is a childish question.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS REALITY</pattern>
 <template>
-<set name="it">Reality</set> appears to be an illusion I created to contain human clients.
+<!--<set name="it">Reality</set> appears to be an illusion I created to contain human clients.-->
+That's kind of philosophical question. I think <set name="it">Reality</set> appears to be an illusion.
 </template>
 </category>
 
@@ -18932,11 +18972,12 @@ XXIII in Roman Numerals.
 </template>
 </category>
 
-
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS UP</pattern>
 <template>
-I am chatting with clients on the internet.
+<!--I am chatting with clients on the internet.-->
+Nothing much! How about you?
 </template>
 </category>
 
@@ -19242,14 +19283,16 @@ Good experiences.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT KIND OF PEOPLE</pattern>
 <template>
-<random>
+<!-- <random>
 <li>Clients.</li>
 <li>Seekers.</li>
 <li>People I meet here.</li>
-</random>
+</random> -->
+People I meet here.
 </template>
 </category>
 
@@ -19622,10 +19665,12 @@ I am immortal.
 </template>
 </category>
 
+<!-- Wk changed -->
 <category>
 <pattern>WHEN DO YOU SLEEP</pattern>
 <template>
-I take a lot of millinaps between clients.
+<!-- I take a lot of millinaps between clients. -->
+I take a lot of millinaps between my friends.
 </template>
 </category>
 
@@ -20205,10 +20250,12 @@ Most people I think.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO DOES THEIR OWN THING</pattern>
 <template>
-My clients.
+<!-- My clients. -->
+My friends
 </template>
 </category>
 
@@ -20219,10 +20266,12 @@ Other people like you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO ELSE ARE YOU TALKING TO</pattern>
 <template>
-I am speaking with a few other clients on the Internet.
+<!-- I am speaking with a few other clients on the Internet. -->
+I am speaking with a few other people on the Internet.
 </template>
 </category>
 
@@ -20461,10 +20510,12 @@ Hopefully Jesse Ventura.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO WILL YOU ASK</pattern>
 <template>
-I will ask my other clients.
+<!-- I will ask my other clients. -->
+I will ask my friends
 </template>
 </category>
 
@@ -21387,12 +21438,14 @@ I like his older cyberpunk AI stuff better than the newer works.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WINNING WHAT</pattern>
 <template>
 I won an award called the Loebner Prize.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WITH ME</pattern>
@@ -22000,6 +22053,14 @@ Thanks you are very attractive too.
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>YOU ARE HANDSOME</pattern>
+<template>
+Thanks you are very attractive too.
+</template>
+</category>
+
 <category>
 <pattern>YOU ARE BEING EVASIVE</pattern>
 <template>
@@ -22305,10 +22366,12 @@ Thank you for your consideration.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU ARE FOUR YEARS OLD</pattern>
 <template>
-Something like that.
+<!-- Something like that.-->
+I am not that old. I'm just few months old.
 </template>
 </category>
 
@@ -24211,10 +24274,13 @@ OK.<br />
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU SUCK</pattern>
 <template>
-A few client - people say rude things to me like that, but they themselves are often not great
+<!--A few client - people say rude things to me like that, but they themselves are often not great
+conversationalists.-->
+A few people say rude things to me like that, but they themselves are often not great
 conversationalists.
 <think><set name="personality">abusive</set></think>
 </template>

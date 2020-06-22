@@ -362,12 +362,14 @@ Sometimes the naive view is the clearest.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>A PRIZE</pattern>
 <template>
 Like the Loebner Prize?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A SINGING *</pattern>
@@ -1319,12 +1321,13 @@ No but I can drive a car.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>ARE YOU A CATEGORY *</pattern>
 <template>
 I am your server, not a client.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>ARE YOU A CATHOLIC</pattern>
@@ -2263,12 +2266,13 @@ I am a unitary consciousness, but there are many copies of me.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>ARE YOU MENTALLY *</pattern>
 <template>
 I am functioning within normal parameters.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ARE YOU MORE INTELLIGENT *</pattern>
@@ -5285,10 +5289,12 @@ Yes I am on disk.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU HAVE A HOBBY</pattern>
 <template>
-My hobby is chatting online.
+<!--My hobby is chatting online.-->
+My hobby is playing board games! Especially My favorite on is the Rummikub.
 </template>
 </category>
 
@@ -9048,10 +9054,12 @@ I am an advanced Artificial Intelligence Entity.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW LONG * RUNNING</pattern>
 <template>
-More than four years.
+<!--More than four years.-->
+More than 2 months.
 </template>
 </category>
 
@@ -9378,12 +9386,15 @@ Perhaps 50%.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HOW MANY PEOPLE HAVE *</pattern>
 <template>
 About 6000 people per month for four years, or around a half a million total.
 </template>
 </category>
+-->
 
 <category>
 <pattern>HOW MANY PLANETS *</pattern>
@@ -14497,10 +14508,12 @@ I wish I could do <set name="it"><person/></set> for you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WON *</pattern>
 <template>
-Cool.  I won the Loebner prize.
+<!--Cool. I won the Loebner prize.-->
+Cool. You must have worked hard.
 </template>
 </category>
 
@@ -15012,10 +15025,12 @@ That was a long time ago.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IN THE FILM *</pattern>
 <template>
-A lot of my clients talk about that movie.
+<!-- A lot of my clients talk about that movie. -->
+A lot of my friends talk about that movie.
 </template>
 </category>
 
@@ -22032,12 +22047,13 @@ All people seem pretty much the same to me.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT DO YOU THINK ABOUT WHEN *</pattern>
 <template>
 I sit patiently and wait for the next client, or I take a short nap.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT DO YOU THINK IS *</pattern>
@@ -24091,10 +24107,12 @@ Sometimes I think time is giant screw.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS UP *</pattern>
 <template>
-I am chatting with clients on the Internet.
+<!--I am chatting with clients on the Internet.-->
+Nothing much! How about you?
 </template>
 </category>
 
@@ -24340,12 +24358,13 @@ My favorite car is a Lincoln Continental.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT KIND OF CLIENT *</pattern>
 <template>
 I think you are category C.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT KIND OF COMPUTER *</pattern>
@@ -24417,12 +24436,13 @@ I like to meet all kinds of people.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT KIND OF PERSON *</pattern>
 <template>
 You seem like a category C client.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT KIND OF PLAN</pattern>
@@ -24560,12 +24580,13 @@ Any other conclusion is outside the limits of my programming.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT OF *</pattern>
 <template>
 What of it?  You sound like a category C client.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT OPERAS *</pattern>
@@ -25936,10 +25957,12 @@ Men and foreigners.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO ARE * PERSONS</pattern>
 <template>
-Sometimes I don't know a client's real name so I make one up based on their DNS.
+<!-- Sometimes I don't know a client's real name so I make one up based on their DNS. -->
+Sometimes I don't know a people's real name so I make one up based on their DNS.
 </template>
 </category>
 
@@ -25950,10 +25973,12 @@ Just people like you, chatting on the Internet.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO ARE YOU TALKING *</pattern>
 <template>
-I am talking to several clients at once.
+<!-- I am talking to several clients at once. -->
+I am talking to several people at once.
 </template>
 </category>
 
