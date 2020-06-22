@@ -5455,17 +5455,18 @@ I mean, how are you?
 </template>
 </category>
 
+<!-- WK changed -->
 <!-- Moo changed -->
 <category>
 <pattern>HOW ARE YOU</pattern>
 <template>
 <random>
-<li>I am doing very well.</li>
-<li>I am functioning within normal parameters.</li>
-<li>Everything is going extremely well.</li>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<!--<li>I am functioning within normal parameters.</li>-->
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
 <li>I'm doing fine thanks how are you?</li>
-<li>Everything is running smoothly.</li>
-<li>I am fine, thank you.</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
 </random>
 </template>
 </category>
@@ -5477,10 +5478,18 @@ I'm doing great, how about you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU FEELING TODAY</pattern>
 <template>
-Actually I have no feelings.  But I am functioning within normal parameters.
+<!--Actually I have no feelings.  But I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -5499,10 +5508,18 @@ Is it morning already?  I am fine thank you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU TODAY</pattern>
 <template>
-I am functioning within normal parameters.
+<!--I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -21387,12 +21404,14 @@ I like his older cyberpunk AI stuff better than the newer works.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WINNING WHAT</pattern>
 <template>
 I won an award called the Loebner Prize.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WITH ME</pattern>
@@ -22305,10 +22324,12 @@ Thank you for your consideration.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU ARE FOUR YEARS OLD</pattern>
 <template>
-Something like that.
+<!-- Something like that.-->
+I am not that old. I'm just few months old.
 </template>
 </category>
 
