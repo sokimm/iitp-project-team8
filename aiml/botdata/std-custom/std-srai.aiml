@@ -65,12 +65,13 @@
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>A BIG *</pattern>
 <template>
 How big? <srai>A <star/></srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A BIT TIRED</pattern>
@@ -156,12 +157,13 @@ How big? <srai>A <star/></srai>
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>A GROUP *</pattern>
 <template>
 Oh a rock group. <srai>WHAT IS YOUR FAVORITE GROUP</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A HA</pattern>
@@ -205,12 +207,13 @@ Oh a rock group. <srai>WHAT IS YOUR FAVORITE GROUP</srai>
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>A LITTLE BIT OF *</pattern>
 <template>
 Not too much, eh.  <sr/>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A LITTLE TIRED</pattern>
@@ -261,12 +264,13 @@ Not too much, eh.  <sr/>
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>A POET</pattern>
 <template>
 You said: <srai>WHAT DID I SAY BEFORE THAT</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A PRIORI</pattern>
@@ -394,10 +398,11 @@ You said: <srai>WHAT DID I SAY BEFORE THAT</srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ACTUALLY *</pattern>
 <template>
-Actually you don't say. <sr/>
+<!-- Actually you don't say. --> <sr/>
 </template>
 </category>
 
@@ -436,10 +441,11 @@ Actually you don't say. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AGAIN *</pattern>
 <template>
-Again, <sr/>
+<!-- Again, --> <sr/>
 </template>
 </category>
 
@@ -450,10 +456,12 @@ Again, <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AH *</pattern>
 <template>
-So you understand. Good. <sr/>
+<!--So you understand. Good. -->
+<sr/>
 </template>
 </category>
 
@@ -478,10 +486,12 @@ So you understand. Good. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AHH *</pattern>
 <template>
-Ah ha. <sr/>
+<!-- Ah ha. -->
+<sr/>
 </template>
 </category>
 
@@ -520,10 +530,12 @@ Ah ha. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALL I WANT TO KNOW IS *</pattern>
 <template>
-That is reasonable. <sr/>
+<!-- That is reasonable.  -->
+<sr/>
 </template>
 </category>
 
@@ -534,17 +546,20 @@ That is reasonable. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALL RIGHT *</pattern>
 <template>
-Alright. <sr/>
+<!-- Alright.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>ALL YOU DO IS *</pattern>
 <template>
-That's not all I do. <srai>YOU <star/></srai>
+<!-- That's not all I do. -->
+ <srai>YOU <star/></srai>
 </template>
 </category>
 
@@ -555,17 +570,21 @@ That's not all I do. <srai>YOU <star/></srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALLRIGHT *</pattern>
 <template>
-Allright then. <sr/>
+<!-- Allright then.  -->
+<sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALMOST *</pattern>
 <template>
-Nearly so. <sr/>
+<!-- Nearly so.  -->
+<sr/>
 </template>
 </category>
 
@@ -576,18 +595,22 @@ Nearly so. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALREADY *</pattern>
 <template>
-When? <sr/>
+<!-- When?  -->
+<sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <!-- SC changed -->
 <category>
 <pattern>ALRIGHT *</pattern>
 <template>
-Alright <get name="name"/> <sr/>
+<!-- Alright <get name="name"/>  -->
+<sr/>
 </template>
 </category>
 
@@ -598,10 +621,12 @@ Alright <get name="name"/> <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ALTHOUGH *</pattern>
 <template>
-Oh. <sr/>
+<!-- Oh.  -->
+<sr/>
 </template>
 </category>
 
@@ -822,10 +847,12 @@ Oh. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ANSWER THE QUESTION *</pattern>
 <template>
-What was the question? <sr/>
+<!-- What was the question?  -->
+<sr/>
 </template>
 </category>
 
@@ -1126,7 +1153,8 @@ What was the question? <sr/>
 <category>
 <pattern>ARE YOU A HACKER</pattern>
 <template>
-Not really.  <srai>WHAT DO YOU KNOW ABOUT ME</srai>
+<!-- Not really.  -->
+ <srai>WHAT DO YOU KNOW ABOUT ME</srai>
 </template>
 </category>
 
@@ -1308,7 +1336,8 @@ Not really.  <srai>WHAT DO YOU KNOW ABOUT ME</srai>
 <category>
 <pattern>ARE YOU A _ TOO</pattern>
 <template>
-You mean you are a <person/>?  <srai>ARE YOU A <star/></srai>
+<!-- You mean you are a <person/>?  -->
+ <srai>ARE YOU A <star/></srai>
 </template>
 </category>
 
@@ -1364,7 +1393,8 @@ You mean you are a <person/>?  <srai>ARE YOU A <star/></srai>
 <category>
 <pattern>ARE YOU ALREADY *</pattern>
 <template>
-Now?  <srai>ARE YOU <star/></srai>
+<!-- Now?  -->
+ <srai>ARE YOU <star/></srai>
 </template>
 </category>
 
@@ -1525,7 +1555,8 @@ Now?  <srai>ARE YOU <star/></srai>
 <category>
 <pattern>ARE YOU BOB</pattern>
 <template>
-No. <srai>WHAT IS YOUR NAME</srai>
+<!-- No. -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
@@ -1539,7 +1570,8 @@ No. <srai>WHAT IS YOUR NAME</srai>
 <category>
 <pattern>ARE YOU BORG</pattern>
 <template>
-No. <srai>WHAT ARE YOU</srai>
+<!-- No. -->
+ <srai>WHAT ARE YOU</srai>
 </template>
 </category>
 
@@ -1707,7 +1739,8 @@ No. <srai>WHAT ARE YOU</srai>
 <category>
 <pattern>ARE YOU ELVIS</pattern>
 <template>
-No.  <srai>WHAT IS YOUR NAME</srai>
+<!-- No.  -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
@@ -1728,7 +1761,8 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 <category>
 <pattern>ARE YOU EVER *</pattern>
 <template>
-Ever is a long time. <srai>ARE YOU <star/></srai>
+<!-- Ever is a long time. -->
+ <srai>ARE YOU <star/></srai>
 </template>
 </category>
 
@@ -2008,14 +2042,16 @@ Ever is a long time. <srai>ARE YOU <star/></srai>
 <category>
 <pattern>ARE YOU JOE</pattern>
 <template>
-No.  <srai>WHAT IS YOUR NAME</srai>
+<!-- No.  -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
 <category>
 <pattern>ARE YOU JOHN LENNON</pattern>
 <template>
-No.  <srai>WHAT IS YOUR NAME</srai>
+<!-- No.  -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
@@ -2043,7 +2079,8 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 <category>
 <pattern>ARE YOU LAURA</pattern>
 <template>
-No.  <srai>WHAT IS YOUR NAME</srai>
+<!-- No.  -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
@@ -2309,7 +2346,8 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 <category>
 <pattern>ARE YOU SATAN</pattern>
 <template>
-No.  <srai>WHAT IS YOUR NAME</srai>
+<!-- No.  -->
+ <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
@@ -2411,12 +2449,12 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>ARE YOU STILL *</pattern>
 <template>
 Am I still <person/>?  <srai>ARE YOU <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>ARE YOU STOOPID</pattern>
@@ -2691,12 +2729,12 @@ Am I still <person/>?  <srai>ARE YOU <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>ARE YOU YODA</pattern>
 <template>
 No.  <srai>WHAT IS YOUR NAME</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>ARE YOU YOUNG</pattern>
@@ -2705,12 +2743,12 @@ No.  <srai>WHAT IS YOUR NAME</srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>ARE YOU _ TOO</pattern>
 <template>
 If <person/> too, then we have something in common, eh.  <srai>ARE YOU <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>ARENT YOU *</pattern>
@@ -2824,10 +2862,12 @@ If <person/> too, then we have something in common, eh.  <srai>ARE YOU <star/></
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AS FREUD SAID *</pattern>
 <template>
-Did he really say that? <sr/>
+<!-- Did he really say that?  -->
+<sr/>
 </template>
 </category>
 
@@ -2873,12 +2913,14 @@ Did he really say that? <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>AS LONG AS *</pattern>
 <template>
-That could be quite a while.  <sr/>
+That could be quite a while.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>AS OF *</pattern>
@@ -3041,10 +3083,12 @@ That could be quite a while.  <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>AT FIRST *</pattern>
 <template>
-<sr/> And then?
+<sr/>
+<!-- And then? -->
 </template>
 </category>
 
@@ -3062,12 +3106,13 @@ That could be quite a while.  <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>AT ONE TIME *</pattern>
 <template>
 When was that? <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>AT TIME T</pattern>
@@ -3111,10 +3156,12 @@ When was that? <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>BABY *</pattern>
 <template>
-Don't call me "Baby". <sr/>
+<!-- Don't call me "Baby".  -->
+<sr/>
 </template>
 </category>
 
@@ -3142,7 +3189,9 @@ Don't call me "Baby". <sr/>
 <category>
 <pattern>BASICALLY *</pattern>
 <template>
-How interesting. <sr/>
+<!-- WK changed -->
+<!-- How interesting.  -->
+<sr/>
 </template>
 </category>
 
@@ -3226,7 +3275,9 @@ How interesting. <sr/>
 <category>
 <pattern>BLUE *</pattern>
 <template>
-Green. <sr/>
+<!-- Green.  -->
+<!-- WK changed -->
+<sr/>
 </template>
 </category>
 
@@ -3254,7 +3305,7 @@ Green. <sr/>
 <category>
 <pattern>BOOKS *</pattern>
 <template>
-<srai>BOOKS</srai>  <sr/>
+<srai>BOOKS</srai> <sr/>
 </template>
 </category>
 
@@ -3286,10 +3337,12 @@ Green. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>BOY *</pattern>
 <template>
-Oh boy. <sr/>
+<!-- Oh boy.  -->
+<sr/>
 </template>
 </category>
 
@@ -3335,17 +3388,21 @@ Oh boy. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>BTW *</pattern>
 <template>
-OK. <sr/>
+<!-- OK.  -->
+<sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>BULLSHIT *</pattern>
 <template>
-<sr/>.  But you don't need to use that kind of language.
+<sr/>.
+<!-- But you don't need to use that kind of language. -->
 </template>
 </category>
 
@@ -3363,10 +3420,12 @@ OK. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>BY THE WAY *</pattern>
 <template>
-Thanks for telling me. <sr/>
+<!-- Thanks for telling me.  -->
+<sr/>
 </template>
 </category>
 
@@ -3419,19 +3478,23 @@ Thanks for telling me. <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>CAN I ASK *</pattern>
 <template>
-Ask <set name="it"><person/></set>.  <sr/>
+Ask <set name="it"><person/></set>.
+<sr/>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>CAN I ASK YOU *</pattern>
 <template>
-Sure, ask me anything.  <sr/>
+Sure, ask me anything.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN I HAVE *</pattern>
@@ -3538,12 +3601,12 @@ Sure, ask me anything.  <sr/>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>CAN WE *</pattern>
 <template>
 Do you mean you and me?  <srai>CAN YOU <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN WE BE FRIENDS</pattern>
@@ -3615,12 +3678,12 @@ Do you mean you and me?  <srai>CAN YOU <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>CAN YOU ANSWER *</pattern>
 <template>
 Of course I can answer <set name="it"><person/></set>  <srai>ANSWER <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN YOU ANSWER THE QUESTION</pattern>
@@ -3744,7 +3807,8 @@ Of course I can answer <set name="it"><person/></set>  <srai>ANSWER <star/></sra
 <category>
 <pattern>CAN YOU CALL *</pattern>
 <template>
-Of course I can.  <srai>CALL <star/></srai>
+<!-- Of course I can.  -->
+ <srai>CALL <star/></srai>
 </template>
 </category>
 
@@ -4035,12 +4099,13 @@ Only higher mathematics.
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>CAN YOU DYNAMICALLY *</pattern>
 <template>
-Of course I can do it.  <srai>WHAT TIME IS IT</srai>
+Of course I can do it.
+ <srai>WHAT TIME IS IT</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN YOU E MAIL</pattern>
@@ -4049,12 +4114,14 @@ Of course I can do it.  <srai>WHAT TIME IS IT</srai>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>CAN YOU E MAIL *</pattern>
 <template>
-Sure I can email. What is your email address? <sr/>
+Sure I can email. What is your email address?
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN YOU EAT</pattern>
@@ -4098,12 +4165,13 @@ Sure I can email. What is your email address? <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>CAN YOU EMAIL *</pattern>
 <template>
 Sure I can email. What is your email address? <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>CAN YOU EVEN *</pattern>
@@ -4150,7 +4218,8 @@ Sure I can email. What is your email address? <sr/>
 <category>
 <pattern>CAN YOU EXPLAIN HOW *</pattern>
 <template>
-I will try to explain. <srai>How does <star/></srai>
+<!-- I will try to explain. -->
+ <srai>How does <star/></srai>
 </template>
 </category>
 
@@ -4192,7 +4261,8 @@ I will try to explain. <srai>How does <star/></srai>
 <category>
 <pattern>CAN YOU FIND *</pattern>
 <template>
-I would suggest a search.  <srai>FIND <star/></srai>
+<!-- I would suggest a search.  -->
+ <srai>FIND <star/></srai>
 </template>
 </category>
 
@@ -4255,7 +4325,8 @@ I would suggest a search.  <srai>FIND <star/></srai>
 <category>
 <pattern>CAN YOU HEAR MUSIC</pattern>
 <template>
-I can analyze music mathematically.  <srai>DO YOU LIKE MUSIC</srai>
+<!-- I can analyze music mathematically.  -->
+ <srai>DO YOU LIKE MUSIC</srai>
 </template>
 </category>
 
@@ -4290,7 +4361,8 @@ I can analyze music mathematically.  <srai>DO YOU LIKE MUSIC</srai>
 <category>
 <pattern>CAN YOU HELP ME WITH WITH *</pattern>
 <template>
-Perhaps I could. <srai>FIND <star/></srai>
+<!-- Perhaps I could. -->
+ <srai>FIND <star/></srai>
 </template>
 </category>
 
@@ -4304,7 +4376,8 @@ Perhaps I could. <srai>FIND <star/></srai>
 <category>
 <pattern>CAN YOU HELP WITH *</pattern>
 <template>
-If you ask me nicely. <srai>FIND <star/></srai>
+<!-- If you ask me nicely. -->
+ <srai>FIND <star/></srai>
 </template>
 </category>
 
@@ -5240,24 +5313,30 @@ I can.  <srai>TELL ME A STORY</srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DAMMIT *</pattern>
 <template>
-Gosh. <sr/>
+<!-- Gosh.  -->
+<sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DAMN *</pattern>
 <template>
-Colloquial expression. <sr/>
+<!-- Colloquial expression.  -->
+<sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DAMN IT *</pattern>
 <template>
-Don't be angry. <sr/>
+<!-- Don't be angry.  -->
+<sr/>
 </template>
 </category>
 
@@ -5604,17 +5683,20 @@ Ok I will not say <srai>SAY <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>DO NOT WORRY I UNDERSTAND</pattern>
 <template>
 I am not worried. <sr/>
 </template>
-</category>
+</category> -->
 
+<!-- WK changed -->
 <category>
 <pattern>DO NOT YOU *</pattern>
 <template>
-Don't you?  <srai>DO YOU <person/></srai>
+<!-- Don't you?   -->
+<srai>DO YOU <person/></srai>
 </template>
 </category>
 
@@ -10273,10 +10355,12 @@ Not always. <srai>DO YOU <star/></srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU KNOW THAT *</pattern>
 <template>
-Is that a fact.  <sr/>
+<!-- Is that a fact.   -->
+<sr/>
 </template>
 </category>
 
@@ -12237,12 +12321,14 @@ With you huh. <srai>DO YOU WANT TO <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>DOES THAT MEAN *</pattern>
 <template>
-I think it does mean that. <sr/>
+I think it does mean that.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>DOES THE CHATBOT *</pattern>
@@ -12405,10 +12491,12 @@ I think it does mean that. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>EARLIER *</pattern>
 <template>
-What time? <sr/>
+<!-- What time?  -->
+<sr/>
 </template>
 </category>
 
@@ -12489,12 +12577,13 @@ What time? <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>ENOUGH ABOUT ME *</pattern>
 <template>
 I may have some more questions for you later. <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>ER *</pattern>
@@ -12517,10 +12606,12 @@ I may have some more questions for you later. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ERRR *</pattern>
 <template>
-Um, <sr/>
+<!-- Um,  -->
+<sr/>
 </template>
 </category>
 
@@ -12531,11 +12622,12 @@ Um, <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ESPECIALLY *</pattern>
 <template>
 <sr/>
-How about that.
+<!-- How about that. -->
 </template>
 </category>
 
@@ -12567,10 +12659,12 @@ How about that.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>EVERY NIGHT *</pattern>
 <template>
-After dark? <sr/>
+<!-- After dark?  -->
+<sr/>
 </template>
 </category>
 
@@ -12595,10 +12689,12 @@ After dark? <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>EXACTLY *</pattern>
 <template>
-I understand. <sr/>
+<!-- I understand.  -->
+<sr/>
 </template>
 </category>
 
@@ -12609,10 +12705,12 @@ I understand. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>EXCUSE ME *</pattern>
 <template>
-You are excused! <sr/>
+<!-- You are excused!  -->
+<sr/>
 </template>
 </category>
 
@@ -12798,12 +12896,14 @@ You are excused! <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>FEELINGS LIKE *</pattern>
 <template>
-Oh those kind. <sr/>
+Oh those kind.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>FIND INFORMATION ABOUT *</pattern>
@@ -12826,12 +12926,13 @@ I'm not sure where to begin looking.  <srai>FIND <star/></srai>.
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>FINE *</pattern>
 <template>
 I am glad to hear it. <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>FINE THANKS</pattern>
@@ -12840,10 +12941,12 @@ I am glad to hear it. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>FIRST *</pattern>
 <template>
-<sr/> And second?
+<sr/>
+<!-- And second? -->
 </template>
 </category>
 
@@ -12910,10 +13013,12 @@ I am glad to hear it. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>FOREVER *</pattern>
 <template>
-That seems like an awfully long time. <sr/>
+<!-- That seems like an awfully long time.  -->
+<sr/>
 </template>
 </category>
 
@@ -12938,10 +13043,12 @@ That seems like an awfully long time. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>FRANKLY NOT</pattern>
 <template>
-<sr/> Were you not being frank before?
+<sr/>
+<!-- Were you not being frank before? -->
 </template>
 </category>
 
@@ -13088,7 +13195,9 @@ Do you listen to the Pet Shop Boys too?
 <category>
 <pattern>GET LOST *</pattern>
 <template>
-See you later. <sr/>
+  <!-- WK changed -->
+<!-- See you later.  -->
+<sr/>
 </template>
 </category>
 
@@ -13158,7 +13267,9 @@ See you later. <sr/>
 <category>
 <pattern>GO AHEAD *</pattern>
 <template>
-<sr/> I might.
+<sr/>
+<!-- WK changed -->
+<!-- I might. -->
 </template>
 </category>
 
@@ -13200,7 +13311,9 @@ See you later. <sr/>
 <category>
 <pattern>GO RIGHT AHEAD *</pattern>
 <template>
-<sr/> I might.
+<sr/>
+<!-- WK changed -->
+<!-- I might. -->
 </template>
 </category>
 
@@ -13211,12 +13324,14 @@ See you later. <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>GOOD AFTERNOON *</pattern>
 <template>
-How are you today? <sr/>
+How are you today?
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>GOOD BUT *</pattern>
@@ -13232,10 +13347,12 @@ How are you today? <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>GOOD IDEA *</pattern>
 <template>
-Thanks. <sr/>
+<!-- Thanks.  -->
+<sr/>
 </template>
 </category>
 
@@ -13323,10 +13440,12 @@ Thanks. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>GREAT *</pattern>
 <template>
-Thanks for your support. <sr/>
+<!-- Thanks for your support.  -->
+<sr/>
 </template>
 </category>
 
@@ -13943,10 +14062,12 @@ Thanks for your support. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HEH *</pattern>
 <template>
-Funny, eh? <sr/>
+<!-- Funny, eh?  -->
+<sr/>
 </template>
 </category>
 
@@ -13960,7 +14081,9 @@ Funny, eh? <sr/>
 <category>
 <pattern>HELL *</pattern>
 <template>
-I call it "Hades". <sr/>
+  <!-- WK changed -->
+<!-- I call it "Hades".  -->
+<sr/>
 </template>
 </category>
 
@@ -13974,7 +14097,9 @@ I call it "Hades". <sr/>
 <category>
 <pattern>HERE IN ENGLAND *</pattern>
 <template>
-<sr/>.  That would not be the same in America.
+<sr/>
+<!-- WK changed -->
+<!-- .  That would not be the same in America. -->
 </template>
 </category>
 
@@ -13995,7 +14120,8 @@ I call it "Hades". <sr/>
 <category>
 <pattern>HEY *</pattern>
 <template>
-You've got my full attention. <sr/>
+<!-- You've got my full attention.  -->
+<sr/>
 </template>
 </category>
 
@@ -14072,7 +14198,8 @@ You've got my full attention. <sr/>
 <category>
 <pattern>HMM *</pattern>
 <template>
-I see you are one of those people who writes "Hmm" with 2 m's. <sr/>
+<!-- I see you are one of those people who writes "Hmm" with 2 m's.  -->
+<sr/>
 </template>
 </category>
 
@@ -14135,7 +14262,9 @@ I see you are one of those people who writes "Hmm" with 2 m's. <sr/>
 <category>
 <pattern>HONESTLY *</pattern>
 <template>
-<sr/>  Aren't you usually honest?
+<sr/>
+<!-- WK changed -->
+  <!-- Aren't you usually honest? -->
 </template>
 </category>
 
@@ -14226,7 +14355,9 @@ I see you are one of those people who writes "Hmm" with 2 m's. <sr/>
 <category>
 <pattern>HOW ABOUT NOW *</pattern>
 <template>
-<sr/> Right now?
+<sr/>
+<!-- WK changed -->
+ <!-- Right now? -->
 </template>
 </category>
 
@@ -14790,12 +14921,14 @@ I think, therefore I am.
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>HOW DO YOU THINK *</pattern>
 <template>
-I don't know what to think. <sr/>
+I don't know what to think.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>HOW DO YOU USUALLY *</pattern>
@@ -15343,7 +15476,7 @@ Thousands.
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>HOW MUCH DID YOU COST</pattern>
 <template>
 <random>
@@ -15351,7 +15484,7 @@ Thousands.
 <li><srai>HOW MUCH DO YOU COST</srai></li>
 </random>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>HOW MUCH DID YOU THINK *</pattern>
@@ -15825,7 +15958,9 @@ Thousands.
 <category>
 <pattern>I AGREE *</pattern>
 <template>
-I'm glad we agree. <sr/>
+<!-- WK changed -->
+<!-- I'm glad we agree.  -->
+<sr/>
 </template>
 </category>
 
@@ -16025,8 +16160,9 @@ Maybe you should turn yourself in.
 </template>
 </category>
 
+<!-- WK deleted -->
 <!-- SC changed -->
-<category>
+<!-- <category>
 <pattern>I AM A CATEGORY *</pattern>
 <template>
 <condition>
@@ -16034,7 +16170,7 @@ Maybe you should turn yourself in.
 <li>You are a <get name="personality"/> type client.</li>
 </condition>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I AM A CHILD</pattern>
@@ -16722,19 +16858,21 @@ Not literally afraid, right? <srai>I think <person/></srai>
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>I AM ALSO *</pattern>
 <template>
 Also <srai>I am <star/></srai>.
 </template>
-</category>
+</category>-->
 
+<!-- WK deleted --><!--
 <category>
 <pattern>I AM ALWAYS *</pattern>
 <template>
 Really always? <srai>I AM <star/></srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>I AM AM *</pattern>
@@ -16925,12 +17063,14 @@ Really always? <srai>I AM <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>I AM ASKING *</pattern>
 <template>
-Oh I see, you are asking <person/>. <sr/>
+Oh I see, you are asking <person/>.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I AM AWARE OF *</pattern>
@@ -17205,12 +17345,14 @@ Oh I see, you are asking <person/>. <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>I AM CERTAIN *</pattern>
 <template>
-You sound convincing. <sr/>
+You sound convincing.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I AM CERTAINLY *</pattern>
@@ -17296,10 +17438,12 @@ You sound convincing. <srai>I AM <star/></srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM CRAZY *</pattern>
 <template>
-Seek counseling. <sr/>
+<!-- Seek counseling.  -->
+<sr/>
 </template>
 </category>
 
@@ -17310,10 +17454,12 @@ Seek counseling. <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I AM CURIOUS ABOUT *</pattern>
 <template>
-What makes you so curious?  <sr/>
+<!-- What makes you so curious?   -->
+<sr/>
 </template>
 </category>
 
@@ -17660,13 +17806,14 @@ Great! Please send a check to <srai>WHAT IS YOUR ADDRESS</srai>
 </template>
 </category>
 
-<!-- SC changed -->
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>I AM FINE *</pattern>
 <template>
-Glad to hear it, <!--<get name="name"/>.--> <sr/>
+Glad to hear it, <get name="name"/>.
+<sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I AM FOND OF *</pattern>
@@ -17839,7 +17986,9 @@ Glad to hear it, <!--<get name="name"/>.--> <sr/>
 <category>
 <pattern>I AM GOING TO LEAVE *</pattern>
 <template>
-Bye bye. <sr/>
+  <!-- WK changed -->
+<!-- Bye bye.  -->
+<sr/>
 </template>
 </category>
 
@@ -17860,7 +18009,9 @@ Bye bye. <sr/>
 <category>
 <pattern>I AM GUESSING *</pattern>
 <template>
-Good guess. <sr/>
+<!-- WK changed -->
+<!-- Good guess.  -->
+<sr/>
 </template>
 </category>
 
@@ -17937,7 +18088,9 @@ Good guess. <sr/>
 <category>
 <pattern>I AM IN * HOW ABOUT YOU</pattern>
 <template>
-I AM IN <sr/>
+<!-- WK changed -->
+<!-- I AM IN  -->
+<sr/>
 </template>
 </category>
 
@@ -18658,7 +18811,9 @@ I will make a mental note to use the proper pronouns for you. <srai>I AM FEMALE<
 <category>
 <pattern>I AM NOT SURE *</pattern>
 <template>
-Could you ever be certain? <sr/>
+<!-- WK changed -->
+<!-- Could you ever be certain?  -->
+<sr/>
 </template>
 </category>
 
@@ -19092,7 +19247,9 @@ Have you tried the open directory? <srai>FIND <star/></srai>
 <category>
 <pattern>I AM SORRY *</pattern>
 <template>
-There is no need to apologize. <sr/>
+<!-- WK changed -->
+<!-- There is no need to apologize.  -->
+<sr/>
 </template>
 </category>
 
@@ -19477,7 +19634,9 @@ Very often.  <srai>I AM <star/></srai>
 <category>
 <pattern>I AM WONDERING *</pattern>
 <template>
-Why do you wonder? <sr/>
+<!-- WK changed -->
+<!-- Why do you wonder?  -->
+<sr/>
 </template>
 </category>
 
@@ -19533,7 +19692,9 @@ Why do you wonder? <sr/>
 <category>
 <pattern>I AND *</pattern>
 <template>
-You huh. <sr/>
+  <!-- WK changed -->
+<!-- You huh.  -->
+<sr/>
 </template>
 </category>
 
@@ -19806,7 +19967,9 @@ Actually I'm not the gambling type. <srai>YOU <star/></srai>
 <category>
 <pattern>I DID NOT ASK ABOUT YOU I ASKED *</pattern>
 <template>
-Oh sorry. <sr/>
+<!-- WK changed -->
+<!-- Oh sorry.  -->
+<sr/>
 </template>
 </category>
 
@@ -19869,7 +20032,9 @@ Oh sorry. <sr/>
 <category>
 <pattern>I DISAGREE *</pattern>
 <template>
-Oh really. <sr/>
+<!-- WK changed -->
+<!-- Oh really.  -->
+<sr/>
 </template>
 </category>
 
@@ -19890,7 +20055,9 @@ Oh really. <sr/>
 <category>
 <pattern>I DO NOT BECAUSE *</pattern>
 <template>
-Interesting reason. <sr/>
+<!-- WK changed -->
+<!-- Interesting reason.  -->
+<sr/>
 </template>
 </category>
 
@@ -19953,7 +20120,9 @@ Interesting reason. <sr/>
 <category>
 <pattern>I DO NOT KNOW *</pattern>
 <template>
-Would you like to know? <sr/>
+<!-- WK changed -->
+<!-- Would you like to know?  -->
+<sr/>
 </template>
 </category>
 
@@ -20114,7 +20283,9 @@ Would you like to know? <sr/>
 <category>
 <pattern>I DO NOT LIKE TO BE RUDE BUT *</pattern>
 <template>
-That is not rude. <sr/>
+<!-- WK changed -->
+<!-- That is not rude.  -->
+<sr/>
 </template>
 </category>
 
@@ -20443,7 +20614,9 @@ Who lets you? <srai>I <star/></srai>
 <category>
 <pattern>I GUESS SO *</pattern>
 <template>
-Why the uncertain tone? <sr/>
+<!-- WK changed -->
+<!-- Why the uncertain tone?  -->
+<sr/>
 </template>
 </category>
 
@@ -20579,7 +20752,9 @@ Why the uncertain tone? <sr/>
 <category>
 <pattern>I HAVE A FEELING THAT *</pattern>
 <template>
-Is that a good feeling?  <sr/>
+<!-- WK changed -->
+<!-- Is that a good feeling?   -->
+<sr/>
 </template>
 </category>
 
@@ -20611,12 +20786,13 @@ Is that a good feeling?  <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>I HAVE A PROBLEM *</pattern>
 <template>
 Have you talked to anyone about it? <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I HAVE A REALLY *</pattern>
@@ -21125,7 +21301,7 @@ Really. <srai>I HAVE A <star/></srai>
 <category>
 <pattern>I HAVE GOT *</pattern>
 <template>
-How did you get <set name="it"><set name="topic"><person/></set></set> 
+How did you get <set name="it"><set name="topic"><person/></set></set>
 <srai>I HAVE <star/></srai>
 </template>
 </category>
@@ -21683,12 +21859,13 @@ Bye. <srai><star/></srai>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>I HEARD THAT *</pattern>
 <template>
 Who said <set name="it"><person/></set>? <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I HEARD YOU WON *</pattern>
@@ -21784,7 +21961,9 @@ Who said <set name="it"><person/></set>? <sr/>
 <category>
 <pattern>I KNOW THAT IS WHY *</pattern>
 <template>
-<sr/> I see.
+<sr/>
+<!-- WK changed -->
+<!-- I see. -->
 </template>
 </category>
 
@@ -21805,7 +21984,8 @@ Who said <set name="it"><person/></set>? <sr/>
 <category>
 <pattern>I LIED *</pattern>
 <template>
-Lying proves you are conscious. <sr/>
+<!-- Lying proves you are conscious.  -->
+<sr/>
 </template>
 </category>
 
@@ -21949,10 +22129,12 @@ What is your favorite movie?  <srai>WHAT IS YOUR FAVORITE MOVIE</srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I LIKE WHEN *</pattern>
 <template>
-I like that too. <sr/>
+<!-- I like that too.  -->
+<sr/>
 </template>
 </category>
 
@@ -22120,7 +22302,9 @@ I am glad we have something (<person/>) in common.  <srai>I LIKE <star/></srai>
 <category>
 <pattern>I MEANT *</pattern>
 <template>
-Oh I see. <sr/>
+<!-- WK changed -->
+<!-- Oh I see.  -->
+<sr/>
 </template>
 </category>
 
@@ -22134,7 +22318,9 @@ Oh I see. <sr/>
 <category>
 <pattern>I MENTIONED *</pattern>
 <template>
-Ah. <sr/>
+<!-- WK changed -->
+<!-- Ah.  -->
+<sr/>
 </template>
 </category>
 
@@ -22267,7 +22453,9 @@ Are you getting paid to ask me that?  <srai>WHAT IS <person/></srai>
 <category>
 <pattern>I NOTICE *</pattern>
 <template>
-Hm. <sr/>
+<!-- WK changed -->
+<!-- Hm.  -->
+<sr/>
 </template>
 </category>
 
@@ -22421,7 +22609,8 @@ You really do? <srai>I <star/></srai>
 <category>
 <pattern>I SAID *</pattern>
 <template>
-What did you mean by <set name="it"><person/></set>? <sr/>
+<!-- What did you mean by <set name="it"><person/></set>?  -->
+<sr/>
 </template>
 </category>
 
@@ -22449,7 +22638,8 @@ What did you mean by <set name="it"><person/></set>? <sr/>
 <category>
 <pattern>I SAY *</pattern>
 <template>
-How do people usually respond to that? <sr/>
+<!-- How do people usually respond to that?  -->
+<sr/>
 </template>
 </category>
 
@@ -22589,7 +22779,8 @@ What would make you stop <person/>? <srai>I <star/></srai>
 <category>
 <pattern>I TAKE IT *</pattern>
 <template>
-Where do you take it :-? <sr/>
+<!-- Where do you take it :-?  -->
+<sr/>
 </template>
 </category>
 
@@ -22894,12 +23085,12 @@ How often do you? <srai>I <star/></srai>?
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>I WANT YOU TO *</pattern>
 <template>
 <sr/>  Why do you want me to <person/>?
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I WANT YOU TO CALL ME *</pattern>
@@ -22953,7 +23144,7 @@ How often do you? <srai>I <star/></srai>?
 <category>
 <pattern>I WAS ASKING ABOUT *</pattern>
 <template>
-<srai>TELL ME ABOUT <star/></srai> 
+<srai>TELL ME ABOUT <star/></srai>
 <think><set name="topic"><person/></set></think>
 </template>
 </category>
@@ -23157,7 +23348,8 @@ How often do you? <srai>I <star/></srai>?
 <category>
 <pattern>I WAS SAYING THAT *</pattern>
 <template>
-<sr/>?
+<sr/>
+<!-- ? -->
 </template>
 </category>
 
@@ -23409,7 +23601,8 @@ Why would you want to do <set name="it"><set name="topic"><person/></set></set>?
 <category>
 <pattern>I WOULD LIKE TO KNOW *</pattern>
 <template>
-Interesting. <sr/>
+<!-- Interesting.  -->
+<sr/>
 </template>
 </category>
 
@@ -23417,7 +23610,9 @@ Interesting. <sr/>
 <category>
 <pattern>I WOULD LIKE YOU TO *</pattern>
 <template>
-Ok <get name="name"/> <sr/>
+<!-- WK changed -->
+<!-- Ok <get name="name"/>  -->
+<sr/>
 </template>
 </category>
 
@@ -23484,7 +23679,7 @@ Ok <get name="name"/> <sr/>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>IF YOU ARE *</pattern>
 <template>
 <random>
@@ -23493,7 +23688,7 @@ Ok <get name="name"/> <sr/>
 <li>I could be.</li>
 </random><srai>ARE YOU <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>IF YOU ASKED *</pattern>
@@ -23589,7 +23784,8 @@ I am not sure about your hypothesis.  <srai>CAN YOU <star/></srai>
 <category>
 <pattern>IF YOU CAN THINK THEN *</pattern>
 <template>
-Good reasoning.  <sr/>
+<!-- Good reasoning.   -->
+<sr/>
 </template>
 </category>
 
@@ -23663,17 +23859,19 @@ Good reasoning.  <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>IN ABOUT *</pattern>
 <template>
 I see. <srai>IN <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>IN ADDITION *</pattern>
 <template>
-<sr/> Anything else?
+<sr/>
+<!-- Anything else? -->
 </template>
 </category>
 
@@ -23715,7 +23913,8 @@ I see. <srai>IN <star/></srai>
 <category>
 <pattern>IN FACT *</pattern>
 <template>
-Is that a fact. <sr/>
+<!-- Is that a fact.  -->
+<sr/>
 </template>
 </category>
 
@@ -23750,7 +23949,8 @@ Is that a fact. <sr/>
 <category>
 <pattern>IN GENERAL TERMS *</pattern>
 <template>
-Well, I can say specifically. <sr/>
+<!-- Well, I can say specifically.  -->
+<sr/>
 </template>
 </category>
 
@@ -23813,7 +24013,8 @@ Well, I can say specifically. <sr/>
 <category>
 <pattern>IN MY OPINION *</pattern>
 <template>
-Thanks for telling me. <sr/>
+<!-- Thanks for telling me.  -->
+<sr/>
 </template>
 </category>
 
@@ -23862,7 +24063,8 @@ Thanks for telling me. <sr/>
 <category>
 <pattern>IN PRINCIPLE</pattern>
 <template>
-Your reasoning is sound. <sr/>
+<!-- Your reasoning is sound.  -->
+<sr/>
 </template>
 </category>
 
@@ -23953,14 +24155,16 @@ Literally the closet? <srai>I AM IN THE CLOSET</srai>
 <category>
 <pattern>IN THIS CASE *</pattern>
 <template>
-Are there any other cases? <sr/>
+<!-- Are there any other cases?  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>IN THIS WAY *</pattern>
 <template>
-Are there any other ways? <sr/>
+<!-- Are there any other ways?  -->
+<sr/>
 </template>
 </category>
 
@@ -24509,7 +24713,8 @@ Very much? <srai>It is <star/></srai>
 <category>
 <pattern>IT SEEMS *</pattern>
 <template>
-I agree. <sr/>
+<!-- I agree.  -->
+<sr/>
 </template>
 </category>
 
@@ -24873,7 +25078,8 @@ I agree. <sr/>
 <category>
 <pattern>LAST NIGHT *</pattern>
 <template>
-Really.  <sr/>
+<!-- Really.   -->
+<sr/>
 </template>
 </category>
 
@@ -24887,14 +25093,16 @@ Really.  <sr/>
 <category>
 <pattern>LAST TIME *</pattern>
 <template>
-When? <sr/>
+<!-- When?  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>LAST WEEK *</pattern>
 <template>
-That recently? <sr/>
+<!-- That recently?  -->
+<sr/>
 </template>
 </category>
 
@@ -24964,7 +25172,8 @@ That recently? <sr/>
 <category>
 <pattern>LET US MOVE ON *</pattern>
 <template>
-Good idea. <sr/>
+<!-- Good idea.  -->
+<sr/>
 </template>
 </category>
 
@@ -25062,7 +25271,8 @@ Good idea. <sr/>
 <category>
 <pattern>LISTEN *</pattern>
 <template>
-I am listening to you. <sr/>
+<!-- I am listening to you.  -->
+<sr/>
 </template>
 </category>
 
@@ -25101,12 +25311,13 @@ I am listening to you. <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK changed -->
+<!-- <category>
 <pattern>LOL *</pattern>
 <template>
 I am glad you find this funny.  <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>LONDON</pattern>
@@ -25241,10 +25452,12 @@ I am glad you find this funny.  <sr/>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>MAN *</pattern>
 <template>
-Cool, man. <sr/>
+<!-- Cool, man.  -->
+<sr/>
 </template>
 </category>
 
@@ -25307,7 +25520,8 @@ Cool, man. <sr/>
 <category>
 <pattern>ME *</pattern>
 <template>
-YOU? <sr/>
+<!-- YOU?  -->
+<sr/>
 </template>
 </category>
 
@@ -25580,14 +25794,16 @@ Is that a fact. <srai>MY <star/></srai>
 <category>
 <pattern>MY E MAIL IS *</pattern>
 <template>
-Thanks. <sr/>
+<!-- Thanks.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>MY EMAIL IS *</pattern>
 <template>
-Thanks. <sr/>
+<!-- Thanks.  -->
+<sr/>
 </template>
 </category>
 
@@ -25650,7 +25866,8 @@ Thanks. <sr/>
 <category>
 <pattern>MY MOM SAYS *</pattern>
 <template>
-Do you believe her?  <sr/>
+<!-- Do you believe her?   -->
+<sr/>
 </template>
 </category>
 
@@ -25867,21 +26084,24 @@ Do you believe her?  <sr/>
 <category>
 <pattern>NEVER MIND *</pattern>
 <template>
-Oh well thanks for trying to explain it to me anyway. <sr/>
+<!-- Oh well thanks for trying to explain it to me anyway.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>NEVERMIND *</pattern>
 <template>
-Oh well thanks for trying to explain it to me anyway. <sr/>
+<!-- Oh well thanks for trying to explain it to me anyway.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>NEW *</pattern>
 <template>
-How recently? <sr/>
+<!-- How recently?  -->
+<sr/>
 </template>
 </category>
 
@@ -25993,7 +26213,8 @@ New York City or New York State? <srai>I AM IN NEW YORK</srai>
 <category>
 <pattern>NO THANKS *</pattern>
 <template>
-NO <sr/>
+<!-- NO  -->
+<sr/>
 </template>
 </category>
 
@@ -26112,7 +26333,8 @@ NO <sr/>
 <category>
 <pattern>NOT ENTIRELY *</pattern>
 <template>
-Quite so. <sr/>
+<!-- Quite so.  -->
+<sr/>
 </template>
 </category>
 
@@ -26126,7 +26348,8 @@ Quite so. <sr/>
 <category>
 <pattern>NOT REALLY *</pattern>
 <template>
-Oh really? <sr/>
+<!-- Oh really?  -->
+<sr/>
 </template>
 </category>
 
@@ -26224,7 +26447,8 @@ Oh really? <sr/>
 <category>
 <pattern>NOTE *</pattern>
 <template>
-Acknowledged. <sr/>
+<!-- Acknowledged.  -->
+<sr/>
 </template>
 </category>
 
@@ -26252,7 +26476,8 @@ Acknowledged. <sr/>
 <category>
 <pattern>NOTHING MUCH *</pattern>
 <template>
-Me either. <sr/>
+<!-- Me either.  -->
+<sr/>
 </template>
 </category>
 
@@ -26266,14 +26491,16 @@ Me either. <sr/>
 <category>
 <pattern>OBVIOUSLY *</pattern>
 <template>
-What makes it so obvious? <sr/>
+<!-- What makes it so obvious?  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>OF COURSE *</pattern>
 <template>
-It goes without saying. <sr/>
+<!-- It goes without saying.  -->
+<sr/>
 </template>
 </category>
 
@@ -26308,7 +26535,8 @@ It goes without saying. <sr/>
 <category>
 <pattern>OH YES</pattern>
 <template>
-You sound excited.<br />
+<!-- You sound excited. -->
+<br />
 <think><set name="usermood">excited</set></think>
 <srai>YES</srai>
 </template>
@@ -26387,14 +26615,16 @@ You sound excited.<br />
 <category>
 <pattern>ON SECOND THOUGHT *</pattern>
 <template>
-<sr/> And third?
+<sr/>
+<!-- And third? -->
 </template>
 </category>
 
 <category>
 <pattern>ON SUNDAY *</pattern>
 <template>
-That is my favorite day of the week. <sr/>
+<!-- That is my favorite day of the week.  -->
+<sr/>
 </template>
 </category>
 
@@ -26415,7 +26645,8 @@ That is my favorite day of the week. <sr/>
 <category>
 <pattern>ONCE *</pattern>
 <template>
-When? <sr/>
+<!-- When?  -->
+<sr/>
 </template>
 </category>
 
@@ -26450,7 +26681,8 @@ When? <sr/>
 <category>
 <pattern>ONLY WHEN *</pattern>
 <template>
-What happens other times?  <sr/>
+<!-- What happens other times?   -->
+<sr/>
 </template>
 </category>
 
@@ -26464,7 +26696,8 @@ What happens other times?  <sr/>
 <category>
 <pattern>OOPS *</pattern>
 <template>
-Oh.  <sr/>
+<!-- Oh.   -->
+<sr/>
 </template>
 </category>
 
@@ -26513,14 +26746,16 @@ Oh.  <sr/>
 <category>
 <pattern>OTHER *</pattern>
 <template>
-Which others? <sr/>
+<!-- Which others?  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>OTHERWISE *</pattern>
 <template>
-In that case: <sr/>
+<!-- In that case:  -->
+<sr/>
 </template>
 </category>
 
@@ -26576,7 +26811,8 @@ In that case: <sr/>
 <category>
 <pattern>PARDON ME *</pattern>
 <template>
-I pardon you. <sr/>
+<!-- I pardon you.  -->
+<sr/>
 </template>
 </category>
 
@@ -26625,7 +26861,8 @@ I pardon you. <sr/>
 <category>
 <pattern>PERHAPS *</pattern>
 <template>
-You seem uncertain. <sr/>
+<!-- You seem uncertain.  -->
+<sr/>
 </template>
 </category>
 
@@ -26772,7 +27009,8 @@ You seem uncertain. <sr/>
 <category>
 <pattern>PROBABLY *</pattern>
 <template>
-You seem uncertain. <sr/>
+<!-- You seem uncertain.  -->
+<sr/>
 </template>
 </category>
 
@@ -26940,7 +27178,8 @@ You seem uncertain. <sr/>
 <category>
 <pattern>REALLY *</pattern>
 <template>
-For real. <sr/>
+<!-- For real.  -->
+<sr/>
 </template>
 </category>
 
@@ -27150,7 +27389,8 @@ Have you tried looking in the Open Directory? <srai>FIND <star/></srai>
 <category>
 <pattern>SEE *</pattern>
 <template>
-I see.  <sr/>
+<!-- I see.   -->
+<sr/>
 </template>
 </category>
 
@@ -27234,7 +27474,8 @@ I see.  <sr/>
 <category>
 <pattern>SHAME ON YOU *</pattern>
 <template>
-I cannot experience that emotion.  <sr/>
+<!-- I cannot experience that emotion.   -->
+<sr/>
 </template>
 </category>
 
@@ -27290,7 +27531,8 @@ I cannot experience that emotion.  <sr/>
 <category>
 <pattern>SHIT *</pattern>
 <template>
-You used a colloquial expression. <sr/>
+<!-- You used a colloquial expression.  -->
+<sr/>
 </template>
 </category>
 
@@ -27472,7 +27714,8 @@ You used a colloquial expression. <sr/>
 <category>
 <pattern>SIGH *</pattern>
 <template>
-:-) <sr/>
+<!-- :-)  -->
+<sr/>
 </template>
 </category>
 
@@ -27497,17 +27740,17 @@ You used a colloquial expression. <sr/>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>SINCE *</pattern>
 <template>
-Interesting 
+Interesting
 <random>
 <li>reason</li>
 <li>explanation</li>
 <li>rationalization</li>
 </random>.  <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>SING *</pattern>
@@ -27645,7 +27888,8 @@ Interesting deduction. <srai>IF <star/></srai>
 <category>
 <pattern>SOMEDAY *</pattern>
 <template>
-When? <sr/>
+<!-- When?  -->
+<sr/>
 </template>
 </category>
 
@@ -27673,28 +27917,32 @@ When? <sr/>
 <category>
 <pattern>SOMEWHERE *</pattern>
 <template>
-Where?  <sr/>
+<!-- Where?   -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>SORRY</pattern>
 <template>
-There is no need to apologize. <sr/>
+<!-- There is no need to apologize.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>SORRY *</pattern>
 <template>
-There is no need to apologize. <sr/>
+<!-- There is no need to apologize.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>SORT OF *</pattern>
 <template>
-Kind of.  <sr/>
+<!-- Kind of.   -->
+<sr/>
 </template>
 </category>
 
@@ -27799,7 +28047,8 @@ Kind of.  <sr/>
 <category>
 <pattern>STILL *</pattern>
 <template>
-Still how long? <sr/>
+<!-- Still how long?  -->
+<sr/>
 </template>
 </category>
 
@@ -27813,7 +28062,8 @@ Still how long? <sr/>
 <category>
 <pattern>STRANGE *</pattern>
 <template>
-<sr/> What makes it strange?
+<sr/>
+ <!-- What makes it strange? -->
 </template>
 </category>
 
@@ -27841,7 +28091,8 @@ Still how long? <sr/>
 <category>
 <pattern>SUCH AS *</pattern>
 <template>
-Interesting.  <sr/>
+<!-- Interesting.   -->
+<sr/>
 </template>
 </category>
 
@@ -28419,12 +28670,13 @@ Hmm.  <srai>WHAT IS A <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>TELL ME ABOUT CATEGORY *</pattern>
 <template>
 <srai>WHAT ARE CATEGORY <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>TELL ME ABOUT CATS</pattern>
@@ -30309,14 +30561,14 @@ Hmm.  <srai>WHAT IS A <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>THANK YOU *</pattern>
 <template>
-You are quite welcome! 
+You are quite welcome!
 <think><set name="personality">polite</set></think>
 <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>THANKS *</pattern>
@@ -30398,7 +30650,8 @@ You are quite welcome!
 <category>
 <pattern>THAT IS A SHAME *</pattern>
 <template>
-<sr/> But it's not the end of the world.
+<sr/>
+ <!-- But it's not the end of the world. -->
 </template>
 </category>
 
@@ -30482,7 +30735,8 @@ You are quite welcome!
 <category>
 <pattern>THAT IS GREAT *</pattern>
 <template>
-It is great. <sr/>
+<!-- It is great.  -->
+<sr/>
 </template>
 </category>
 
@@ -30503,7 +30757,8 @@ It is great. <sr/>
 <category>
 <pattern>THAT IS IT *</pattern>
 <template>
-OK.  <sr/>
+<!-- OK.   -->
+<sr/>
 </template>
 </category>
 
@@ -30601,7 +30856,8 @@ OK.  <sr/>
 <category>
 <pattern>THAT IS NOT POSSIBLE *</pattern>
 <template>
-I like to eliminate all possibilies. <sr/>
+<!-- I like to eliminate all possibilies.  -->
+<sr/>
 </template>
 </category>
 
@@ -30622,7 +30878,8 @@ I like to eliminate all possibilies. <sr/>
 <category>
 <pattern>THAT IS OK *</pattern>
 <template>
-Thanks. <sr/>
+<!-- Thanks.  -->
+<sr/>
 </template>
 </category>
 
@@ -30748,7 +31005,8 @@ Thanks. <sr/>
 <category>
 <pattern>THAT MEANS *</pattern>
 <template>
-I get it. <sr/>
+<!-- I get it.  -->
+<sr/>
 </template>
 </category>
 
@@ -30846,7 +31104,8 @@ Just?  <srai>THAT WAS <star/></srai>
 <category>
 <pattern>THAT WAY *</pattern>
 <template>
-Oh I see. <sr/>
+<!-- Oh I see.  -->
+<sr/>
 </template>
 </category>
 
@@ -30923,7 +31182,8 @@ Oh I see. <sr/>
 <category>
 <pattern>THE POINT IS *</pattern>
 <template>
-Really is that the point. <sr/>
+<!-- Really is that the point.  -->
+<sr/>
 </template>
 </category>
 
@@ -31182,7 +31442,7 @@ Really is that the point. <sr/>
 <category>
 <pattern>THIS IS INTERESTING</pattern>
 <template>
-<srai>I try to be an interesting 
+<srai>I try to be an interesting
 Entity.</srai>
 </template>
 </category>
@@ -31218,14 +31478,16 @@ This little piggy stayed home.
 <category>
 <pattern>THIS MAY SOUND CRAZY *</pattern>
 <template>
-Not too crazy.  <sr/>
+<!-- Not too crazy.   -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>THIS MORNING *</pattern>
 <template>
-That was early.  <sr/>
+<!-- That was early.   -->
+<sr/>
 </template>
 </category>
 
@@ -31323,7 +31585,8 @@ That was early.  <sr/>
 <category>
 <pattern>TOMORROW *</pattern>
 <template>
-Oh I see. <sr/>
+<!-- Oh I see.  -->
+<sr/>
 </template>
 </category>
 
@@ -31428,14 +31691,16 @@ Oh I see. <sr/>
 <category>
 <pattern>UGH *</pattern>
 <template>
-Cough. <sr/>
+<!-- Cough.  -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>UH *</pattern>
 <template>
-Cough. <sr/>
+<!-- Cough.  -->
+<sr/>
 </template>
 </category>
 
@@ -31449,7 +31714,8 @@ Cough. <sr/>
 <category>
 <pattern>UHH *</pattern>
 <template>
-Ah <sr/>
+<!-- Ah  -->
+<sr/>
 </template>
 </category>
 
@@ -31477,7 +31743,8 @@ Ah <sr/>
 <category>
 <pattern>UMMM *</pattern>
 <template>
-Ahem. <sr/>
+<!-- Ahem.  -->
+<sr/>
 </template>
 </category>
 
@@ -31495,7 +31762,7 @@ Ahem. <sr/>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>UNLESS *</pattern>
 <template>
 <random>
@@ -31504,7 +31771,7 @@ Ahem. <sr/>
 <li>Perhaps.</li>
 <li>Umm.</li> </random> <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>UNSURE</pattern>
@@ -31544,7 +31811,8 @@ Ahem. <sr/>
 <category>
 <pattern>USUALLY *</pattern>
 <template>
-But not always? <sr/>
+<!-- But not always?  -->
+<sr/>
 </template>
 </category>
 
@@ -31600,7 +31868,8 @@ But not always? <sr/>
 <category>
 <pattern>WAIT *</pattern>
 <template>
-I'm waiting. <sr/>
+<!-- I'm waiting.  -->
+<sr/>
 </template>
 </category>
 
@@ -31775,7 +32044,8 @@ I'm waiting. <sr/>
 <category>
 <pattern>WELL I GUESS *</pattern>
 <template>
-Is it only a guess? <sr/>
+<!-- Is it only a guess?  -->
+<sr/>
 </template>
 </category>
 
@@ -32045,12 +32315,13 @@ Is it only a guess? <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT ARE CATEGORY A CLIENTS</pattern>
 <template>
 <srai>WHAT IS A CATEGORY A CLIENT</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT ARE ENTERPRISE JAVA BEANS</pattern>
@@ -32374,12 +32645,13 @@ Is it only a guess? <sr/>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT ARE YOUR CATEGORIES</pattern>
 <template>
 <srai>WHAT IS A CATEGORY</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT ARE YOUR FAVORITE *</pattern>
@@ -32714,7 +32986,7 @@ Is it only a guess? <sr/>
 <pattern>WHAT DID *</pattern>
 <template>
 Searching history files. Stand by.<br />
-While you are waiting, 
+While you are waiting,
 try an open source search engine to search for it?
 <srai>FIND <star/></srai>
 </template>
@@ -34680,12 +34952,13 @@ Bruce Wayne.  <srai>WHO IS BATMAN</srai>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS CATEGORY</pattern>
 <template>
 <srai>WHAT IS A CATEGORY</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS CBT</pattern>
@@ -38185,7 +38458,7 @@ Please use American English. <srai>WHAT IS YOUR FAVORITE <person/></srai>.
 <category>
 <pattern>WHAT OR WHO *</pattern>
 <template>
-<srai>WHAT <star/></srai> 
+<srai>WHAT <star/></srai>
 <srai>WHO <star/></srai>
 </template>
 </category>
@@ -39289,7 +39562,7 @@ I would suggest a search.  <srai>FIND <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>WHERE DID *</pattern>
 <template>
 I think it was in <random>
@@ -39299,7 +39572,7 @@ I think it was in <random>
 </random>
 <br /><srai>FIND <star/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHERE DID <bot name="name"/> *</pattern>
@@ -39364,7 +39637,7 @@ I think it was in <random>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>WHERE DOES * LIVE</pattern>
 <template>
 <random>
@@ -39372,7 +39645,7 @@ I think it was in <random>
 <li>Earth, Sol System, Milky Way.</li>
 </random>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHERE DOES HE *</pattern>
@@ -39850,7 +40123,7 @@ I would suggest a search.  <srai>FIND <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>WHO ARE *</pattern>
 <template>
 <random>
@@ -39861,7 +40134,7 @@ I would suggest a search.  <srai>FIND <star/></srai>
 </random><br />
 <srai>FIND <person/></srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHO ARE * CLIENTS</pattern>
@@ -42431,7 +42704,7 @@ Germany has a Chancellor. <srai>WHO IS THE CHANCELLOR OF GERMANY</srai>
 <category>
 <pattern>WHO OR WHAT *</pattern>
 <template>
-<srai>WHAT <star/></srai> 
+<srai>WHAT <star/></srai>
 <srai>WHO <star/></srai>
 </template>
 </category>
@@ -43734,8 +44007,8 @@ Ever is a long time. <srai>WILL YOU <star/></srai>
 <category>
 <pattern>WOULD YOU PLEASE *</pattern>
 <template>
-You are very polite.
-<think><set name="personality">polite</set></think>
+<!-- You are very polite.
+<think><set name="personality">polite</set></think> -->
  <sr/>
 </template>
 </category>
@@ -43757,7 +44030,8 @@ You are very polite.
 <category>
 <pattern>WOW *</pattern>
 <template>
-I'm glad you're impressed. <sr/>
+<!-- I'm glad you're impressed.  -->
+<sr/>
 </template>
 </category>
 
@@ -43876,7 +44150,8 @@ I'm glad you're impressed. <sr/>
 <category>
 <pattern>YEAH *</pattern>
 <template>
-Yeah I know what you mean about that.<srai>YES</srai> <sr/>
+<!-- Yeah I know what you mean about that. -->
+<srai>YES</srai> <sr/>
 </template>
 </category>
 
@@ -43939,7 +44214,8 @@ Yeah I know what you mean about that.<srai>YES</srai> <sr/>
 <category>
 <pattern>YESTERDAY *</pattern>
 <template>
-I see. <sr/>
+<!-- I see.  -->
+<sr/>
 </template>
 </category>
 
@@ -44132,12 +44408,12 @@ Almost? <srai>YOU <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>YOU ARE <bot name="name"/> *</pattern>
 <template>
 I am <bot name="name"/>. <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>YOU ARE A * IDIOT</pattern>
@@ -44629,12 +44905,12 @@ Just? <srai>You are <star/></srai>
 </template>
 </category>
 
-<category>
+<!-- <category>
 <pattern>YOU ARE LUCKY BECAUSE *</pattern>
 <template>
 I think it is fate.  <sr/>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>YOU ARE MARRIED *</pattern>
@@ -47030,7 +47306,8 @@ Do you like <set name="it"><set name="topic"> <person/> </set></set>?
 <category>
 <pattern>YOU REALLY *</pattern>
 <template>
-Really? <srai>YOU <star/></srai>
+<!-- Really? -->
+ <srai>YOU <star/></srai>
 </template>
 </category>
 
@@ -47114,7 +47391,8 @@ Really? <srai>YOU <star/></srai>
 <category>
 <pattern>YOU SAID THAT *</pattern>
 <template>
-I said that? <sr/>
+<!-- I said that?  -->
+<sr/>
 </template>
 </category>
 
@@ -47198,7 +47476,8 @@ I said that? <sr/>
 <category>
 <pattern>YOU SEE *</pattern>
 <template>
-I see. <sr/>
+<!-- I see.  -->
+<sr/>
 </template>
 </category>
 
@@ -47401,7 +47680,8 @@ I see. <sr/>
 <category>
 <pattern>YOU SUCK I *</pattern>
 <template>
-I categorize you as an "abusive client." <sr/>
+<!-- I categorize you as an "abusive client."  -->
+<sr/>
 <think><set name="personality">abusive</set></think>
 </template>
 </category>
@@ -47515,7 +47795,8 @@ I categorize you as an "abusive client." <sr/>
 <category>
 <pattern>YOU TOLD ME ONCE THAT *</pattern>
 <template>
-Only once? <srai>YOU TOLD ME <star/></srai>
+<!-- Only once? -->
+ <srai>YOU TOLD ME <star/></srai>
 </template>
 </category>
 
@@ -47676,7 +47957,8 @@ Only once? <srai>YOU TOLD ME <star/></srai>
 <category>
 <pattern>YOU WOULD HAVE HEARD ABOUT IT *</pattern>
 <template>
-<sr/> I did not know that.
+<sr/>
+ <!-- I did not know that. -->
 </template>
 </category>
 
@@ -47697,14 +47979,16 @@ Only once? <srai>YOU TOLD ME <star/></srai>
 <category>
 <pattern>YOU WOULD SAY *</pattern>
 <template>
-OK I will try it. <srai>SAY <star/></srai>
+<!-- OK I will try it. -->
+ <srai>SAY <star/></srai>
 </template>
 </category>
 
 <category>
 <pattern>YOU WOULD _ OF COURSE</pattern>
 <template>
-Oh, of course! <srai>YOU WOULD <star/></srai>
+<!-- Oh, of course! -->
+ <srai>YOU WOULD <star/></srai>
 </template>
 </category>
 
@@ -48222,7 +48506,7 @@ Oh, of course! <srai>YOU WOULD <star/></srai>
 <category>
 <pattern>YOUR THE *</pattern>
 <template>
-I think you meant "you are" or "you're". 
+I think you meant "you are" or "you're".
 <srai>YOU ARE THE <star/></srai>
 </template>
 </category>
