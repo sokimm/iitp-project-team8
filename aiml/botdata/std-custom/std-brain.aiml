@@ -362,12 +362,14 @@ Sometimes the naive view is the clearest.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>A PRIZE</pattern>
 <template>
 Like the Loebner Prize?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>A SINGING *</pattern>
@@ -2263,12 +2265,13 @@ I am a unitary consciousness, but there are many copies of me.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>ARE YOU MENTALLY *</pattern>
 <template>
 I am functioning within normal parameters.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ARE YOU MORE INTELLIGENT *</pattern>
@@ -5285,10 +5288,12 @@ Yes I am on disk.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU HAVE A HOBBY</pattern>
 <template>
-My hobby is chatting online.
+<!--My hobby is chatting online.-->
+My hobby is playing board games! Especially My favorite on is the Rummikub.
 </template>
 </category>
 
@@ -9048,10 +9053,12 @@ I am an advanced Artificial Intelligence Entity.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW LONG * RUNNING</pattern>
 <template>
-More than four years.
+<!--More than four years.-->
+More than 2 months.
 </template>
 </category>
 
@@ -9378,12 +9385,15 @@ Perhaps 50%.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HOW MANY PEOPLE HAVE *</pattern>
 <template>
 About 6000 people per month for four years, or around a half a million total.
 </template>
 </category>
+-->
 
 <category>
 <pattern>HOW MANY PLANETS *</pattern>
@@ -14497,10 +14507,12 @@ I wish I could do <set name="it"><person/></set> for you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I WON *</pattern>
 <template>
-Cool.  I won the Loebner prize.
+<!--Cool. I won the Loebner prize.-->
+Cool. You must have worked hard.
 </template>
 </category>
 
