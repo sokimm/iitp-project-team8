@@ -4016,12 +4016,14 @@ inputs and appropriate responses.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>DEFINE DATE</pattern>
 <template>
 The date is a tree of the genus phoenix.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DEFINE DAWN</pattern>
