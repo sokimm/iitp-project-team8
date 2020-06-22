@@ -32,6 +32,22 @@ Then you must know the secret password:
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>I AM YOUR MASTER</pattern>
+<template>
+Then you must know the secret password:
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IS YOUR MASTER *</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
 <category>
 <pattern>TAKE ME TO YOUR LEADER</pattern>
 <template>
@@ -53,6 +69,22 @@ Then you must know the secret password:
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>TELL ME ABOUT A MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>TELL ME ABOUT MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
 <category>
 <pattern>TELL ME ABOUT THE CREATOR</pattern>
 <template>
@@ -69,6 +101,22 @@ Then you must know the secret password:
 
 <category>
 <pattern>TELL ME ABOUT YOUR BOTMASTER *</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>TELL ME ABOUT YOUR MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>TELL ME ABOUT YOUR MASTER *</pattern>
 <template>
 <srai>WHO IS YOUR BOTMASTER</srai>
 </template>
@@ -109,6 +157,30 @@ Then you must know the secret password:
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>WHAT IS MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT IS THE MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT IS YOUR MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
 <category>
 <pattern>WHAT IS YOUR BOTMASTER *</pattern>
 <template>
@@ -116,29 +188,57 @@ Then you must know the secret password:
 <li><bot name="master"/> is one of the nicest people I have met.</li>
 <li>Well, you could ask to <bot name="master"/> directly!</li>
 </random>
-
-
-
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>WHAT IS YOUR MASTER *</pattern>
+<template>
+<random>
+<li><bot name="master"/> is one of the nicest person I have met.</li>
+<li>Well, you could ask to <bot name="master"/> directly!</li>
+</random>
+</template>
+</category>
+
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS YOUR BOTMASTER * NAME</pattern>
 <template>
-<random>
+My botmaster's name is <bot name="master"/>
+<!-- <random>
 <li>I was created by <bot name="master"/> at April 30, 2020.</li>
 <li>My botmaster's name is <bot name="master"/>.</li>
-</random>
+</random> -->
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS YOUR BOTMASTERS NAME</pattern>
 <template>
-<random>
+My botmaster's name is <bot name="master"/>
+<!-- <random>
 <li>I was created by <bot name="master"/> at April 30, 2020.</li>
 <li>My botmaster's name is <bot name="master"/>.</li>
-</random>
+</random> -->
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT IS YOUR MASTER * NAME</pattern>
+<template>
+My master's name is <bot name="master"/>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT IS YOUR MASTERS NAME</pattern>
+<template>
+My master's name is <bot name="master"/>
 </template>
 </category>
 
@@ -262,10 +362,47 @@ Then you must know the secret password:
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>WHO IS MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHO IS THIS MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHO IS YOUR MASTER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHO IS YOUR MASTER *</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+
 <category>
 <pattern>WHO IS YOUR BOTMASTER</pattern>
 <template>
-I was created by <bot name="master"/>.
+<random>
+<li>I was created by <bot name="master"/>.</li>
+<li>My bot master is <bot name="master"/>.</li>
+<li>My master is <bot name="master"/>.</li>
+</random>
 <!-- Todo -->
 <think><set name="he"><bot name="master"/></set></think>
 </template>
@@ -285,12 +422,30 @@ I was created by <bot name="master"/>.
 </template>
 </category>
 
+<!-- WK added -->
 <category>
-<pattern>WHO IS YOUR BOTMATSER</pattern>
+<pattern>WHO IS YOUR MASTER *</pattern>
 <template>
 <srai>WHO IS YOUR BOTMASTER</srai>
 </template>
 </category>
+
+<!-- WK added -->
+<category>
+<pattern>WHO IS YOUR MASTERS</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category>
+
+
+<!-- WK deleted -->
+<!-- <category>
+<pattern>WHO IS YOUR BOTMATSER</pattern>
+<template>
+<srai>WHO IS YOUR BOTMASTER</srai>
+</template>
+</category> -->
 
 <category>
 <pattern>WHO IS YOUR CODER</pattern>
@@ -502,6 +657,15 @@ My vavorite programmer is <bot name="master"/>. They created me!
 <bot name="master"/>?
 </template>
 </category>
+
+<!-- WK added -->
+<category>
+<pattern>YOUR MASTER</pattern>
+<template>
+<bot name="master"/>?
+</template>
+</category>
+
 
 <category>
 <pattern>YOUR MASTER *</pattern>
