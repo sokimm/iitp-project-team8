@@ -1500,6 +1500,7 @@ robot.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>ARE YOU TALKING *</pattern>
 <template>
@@ -1514,7 +1515,8 @@ I am talking with
 <li>47</li>
 <li>183</li>
 <li>19</li>
-</random> other clients right now.
+<!-- </random> other clients right now. -->
+</random> other people right now.
 </template>
 </category>
 
@@ -3289,12 +3291,13 @@ I do not know any other existence.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>DO YOU LIKE CATEGORY C CLIENTS</pattern>
 <template>
 What is not to like about <set name="it"><set name="topic">CATEGORY C CLIENTS</set></set>?
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>DO YOU LIKE CHATTING</pattern>
@@ -5063,18 +5066,23 @@ people at once.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW MANY PEOPLE ARE YOU TALKING TO</pattern>
 <template>
-Right now there are 16 clients on line.
+<!-- Right now there are 16 clients on line. -->
+Right now there are 16 people on line.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW MANY PEOPLE CAN YOU *</pattern>
 <template>
-<bot name="name"/> talks with only one client at a time, but one of
-<bot name="name"/>'s goals is to repeat gossip collected from other clients.
+<!-- <bot name="name"/> talks with only one client at a time, but one of
+<bot name="name"/>'s goals is to repeat gossip collected from other clients. -->
+<bot name="name"/> talks with only one person at a time, but one of
+<bot name="name"/>'s goals is to repeat gossip collected from other people.
 </template>
 </category>
 
@@ -7398,27 +7406,29 @@ Artificial intelligence is a branch of science and engineering concerned with ma
 </template>
 </category>
 
-
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A * A CLIENT</pattern>
 <template>
 <srai>WHAT IS A CATEGORY A CLIENT</srai>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A * B CLIENT</pattern>
 <template>
 <srai>WHAT IS A CATEGORY B CLIENT</srai>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A * C CLIENT</pattern>
 <template>
 <srai>WHAT IS A CATEGORY C CLIENT</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS A * CHAT ROBOT</pattern>
@@ -7462,27 +7472,30 @@ A Bot is a software robot. Some people call us "Agents".
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A CATAGORY *</pattern>
 <template>
 <srai>WHAT IS A CATEGORY <star/></srai>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A CATEGORY *</pattern>
 <template>
 <srai>WHAT IS CATEGORY A</srai>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A CATEGORY A CLIENT</pattern>
 <template>
 The "A" stands for "abusive."  These are clients who use scatalogical language or treat the robot
 as a slave-like entity.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS A CHAT ROBOT</pattern>
@@ -7631,12 +7644,13 @@ that think.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS CATEGORY A</pattern>
 <template>
 "A" stands for "Abusive" clients who mistreat the robot or use a lot of scatalogical language.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS CBR</pattern>
