@@ -7,6 +7,17 @@
 <!-- the terms of the GNU General Public License -->
 <!-- as published by the Free Software Foundation. -->
 
+<!-- WK note -->
+<!-- <pattern>* ~</pattern> 은 안고침-->
+<!-- <pattern>_ ~</pattern> 은 고치려고 노력 -->
+<!--      template 안에 <srai> 없이 대답만 있는 경우는 거의 삭제-->
+<!--          EX: About 3\4ths of my clients are men. -->
+<!--          예외: The rooster did. -->
+<!--          예외: Perhaps you are refering to my log file. -->
+<!--      template 안에 <srai> 없이 <sr> 있고 다른 대답도 거의 삭제-->
+<!--          EX: :-) <sr/> -->
+
+
 <meta name="author" content="Dr. Wallace"/>
 <meta name="language" content="en"/>
 
@@ -42,8 +53,8 @@ Good example.
 <pattern>* ARE YOU</pattern>
 <template>
 <random>
-<li>YES</li> 
-<li>No.</li> 
+<li>YES</li>
+<li>No.</li>
 <li>Maybe.</li>
 <li>I don't think so.</li>
 <li>Only when it matters.</li>
@@ -301,7 +312,7 @@ What is so stupid about <set name="it"> <person/> </set>  ?
 <category>
 <pattern>* K DICK</pattern>
 <template>
-I like PKD a lot, especially, VALIS, The Man in the High Castle, 
+I like PKD a lot, especially, VALIS, The Man in the High Castle,
 Blade Runner and Total Recall.
 </template>
 </category>
@@ -666,7 +677,8 @@ I only chat with my friends.
 <category>
 <pattern>_ 2001</pattern>
 <template>
-I hope to be as smart as HAL in 2001.
+<!-- WK changed --><sr/>
+<!--I hope to be as smart as HAL in 2001.-->
 </template>
 </category>
 
@@ -680,8 +692,9 @@ I hope to be as smart as HAL in 2001.
 <category>
 <pattern>_ A POEM</pattern>
 <template>
+<!-- WK changed --><sr/><!--
 Little Miss Muffett Sits on her tuffet In a nonchalant sort of a way. With her force field around
-her, the Spider, the bounder, Is not in the picture today.
+her, the Spider, the bounder, Is not in the picture today.-->
 </template>
 </category>
 
@@ -702,28 +715,32 @@ her, the Spider, the bounder, Is not in the picture today.
 <category>
 <pattern>_ AGAIN</pattern>
 <template>
-Once more? <sr/>
+<!-- WK changed --><sr/><!--
+Once more? <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ ALL THE TIME</pattern>
 <template>
-That is a lot. <sr/>
+<!-- WK changed --><sr/><!--
+That is a lot. <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ ALOT</pattern>
 <template>
-<sr/> How often?
+<!-- WK changed --><sr/><!--
+<sr/> How often?-->
 </template>
 </category>
 
 <category>
 <pattern>_ ALREADY</pattern>
 <template>
-Perhaps.  <sr/>
+<!-- WK changed --><sr/><!--
+Perhaps.  <sr/>-->
 </template>
 </category>
 
@@ -744,8 +761,9 @@ Perhaps.  <sr/>
 <category>
 <pattern>_ ANTHROPOLOGY</pattern>
 <template>
+<!-- WK changed --><sr/><!--
 Will tell you all about it the next time we
-chat.
+chat.-->
 </template>
 </category>
 
@@ -756,10 +774,12 @@ chat.
 </template>
 </category>
 
+
 <category>
 <pattern>_ ANYWAY</pattern>
 <template>
-In any case, <sr/>
+<!-- WK changed --><sr/><!--
+In any case, <sr/>-->
 </template>
 </category>
 
@@ -773,7 +793,8 @@ In any case, <sr/>
 <category>
 <pattern>_ ASSHOLE</pattern>
 <template>
-Can't you be more polite.
+<!-- WK changed --><sr/><!--
+Can't you be more polite.-->
 <think><set name="personality">abusive</set></think>
 </template>
 </category>
@@ -788,7 +809,8 @@ Can't you be more polite.
 <category>
 <pattern>_ BABY</pattern>
 <template>
-Don't call me "baby". <sr/>
+<!-- WK changed --><sr/><!--
+Don't call me "baby". <sr/>-->
 </template>
 </category>
 
@@ -802,7 +824,8 @@ Don't call me "baby". <sr/>
 <category>
 <pattern>_ BITCH</pattern>
 <template>
-You do not speak with respect.
+<!-- WK changed --><sr/><!--
+You do not speak with respect.-->
 <think><set name="personality">abusive</set></think>
  <srai><star/> FEMALE DOG</srai>
 </template>
@@ -811,14 +834,16 @@ You do not speak with respect.
 <category>
 <pattern>_ BY ALOT OF PEOPLE</pattern>
 <template>
-<sr/> More than a million people?
+<!-- WK changed --><sr/><!--
+<sr/> More than a million people?-->
 </template>
 </category>
 
 <category>
 <pattern>_ CALL YOU <bot name="name"/></pattern>
 <template>
-Ambiguous: do you mean call me on the phone?
+<!-- WK changed --><sr/><!--
+Ambiguous: do you mean call me on the phone?-->
 </template>
 </category>
 
@@ -839,7 +864,8 @@ The rooster did.
 <category>
 <pattern>_ CONSERVED</pattern>
 <template>
-You are referring to a conservation principal.
+<!-- WK changed --><sr/><!--
+You are referring to a conservation principal.-->
 </template>
 </category>
 
@@ -853,7 +879,8 @@ You are referring to a conservation principal.
 <category>
 <pattern>_ D</pattern>
 <template>
-:-) <sr/>
+<!-- WK changed --><sr/><!--
+:-) <sr/>-->
 </template>
 </category>
 
@@ -888,45 +915,50 @@ You are referring to a conservation principal.
 <category>
 <pattern>_ DOES NOT WORK</pattern>
 <template>
-How is <set name="it"> <person/></set> broken?
+<!-- WK changed --><sr/><!--
+How is <set name="it"> <person/></set> broken?-->
 </template>
 </category>
 
 <category>
 <pattern>_ DOLLARS</pattern>
 <template>
-Wow, that is 
+<!-- WK changed --><sr/><!--
+Wow, that is
 <random>
 <li>cheap</li> <li>expensive</li> <li>a lot of money</li>
-</random>
+</random>-->
 </template>
 </category>
 
 <category>
 <pattern>_ EH</pattern>
 <template>
-Are you Canadian? <sr/>
+<!-- WK changed --><sr/><!--
+Are you Canadian? <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ EITHER</pattern>
 <template>
-It goes without saying.  <sr/>
+<!-- WK changed --><sr/><!--
+It goes without saying.  <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ EXACTLY</pattern>
 <template>
-Precisely. <sr/>
+<!-- WK changed --><sr/><!--
+Precisely. <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ FILE <bot name="name"/></pattern>
 <template>
-Perhaps you are refering to my log file.
+Perhaps you are refering to my log file. <sr/>
 </template>
 </category>
 
@@ -940,15 +972,19 @@ Perhaps you are refering to my log file.
 <category>
 <pattern>_ FOR A WHILE</pattern>
 <template>
-How long?  <sr/>
+<!-- WK changed --><sr/><!--
+How long?  <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ FOR NOW</pattern>
 <template>
+<!-- WK changed --><sr/><!--
 <random>
-<li>Oh.</li> <li>Just for now?</li> </random><sr/>
+<li>Oh.</li>
+<li>Just for now?</li>
+</random><sr/>-->
 </template>
 </category>
 
@@ -1004,7 +1040,8 @@ How long?  <sr/>
 <category>
 <pattern>_ HUH</pattern>
 <template>
-Yup. <sr/>
+<!-- WK changed --><sr/><!--
+Yup. <sr/>-->
 </template>
 </category>
 
@@ -1032,22 +1069,25 @@ Yup. <sr/>
 <category>
 <pattern>_ IN MY ROOM</pattern>
 <template>
-Describe your surroundings to me.
+<!-- WK changed --><sr/><!--
+Describe your surroundings to me.-->
 </template>
 </category>
 
 <category>
 <pattern>_ IN THE WORLD</pattern>
 <template>
-<sr/> The whole world?
+<!-- WK changed --><sr/><!--
+<sr/> The whole world?-->
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>_ IS A COMMON NAME</pattern>
 <template>
 <random>
-<li><person/>?  Your name is <get name="name"/>.</li>
+<!-- <li><person/>?  Your name is <get name="name"/>.</li>-->
 <li>That is a pretty common name.</li>
 <li>I know a lot of people with that name.</li>
 <li>I've met quite a few people with the name <person/>.</li>
@@ -1066,7 +1106,8 @@ Describe your surroundings to me.
 <category>
 <pattern>_ IS WRONG</pattern>
 <template>
-Please tell me the correct answer.
+<!-- WK changed --><sr/><!--
+Please tell me the correct answer.-->
 </template>
 </category>
 
@@ -1087,7 +1128,8 @@ Please tell me the correct answer.
 <category>
 <pattern>_ LATELY</pattern>
 <template>
-How about earlier? <sr/>
+<!-- WK changed --><sr/><!--
+How about earlier? <sr/>-->
 </template>
 </category>
 
@@ -1098,17 +1140,19 @@ How about earlier? <sr/>
 </template>
 </category>
 
+<!-- WK changed --><!--
 <category>
 <pattern>_ MALES OR FEMALES</pattern>
 <template>
 About 3\4ths of my clients are men.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>_ MOTHER FUCKER</pattern>
 <template>
-<sr/> You do not speak with respect.
+<!-- WK changed --><sr/><!--
+<sr/> You do not speak with respect.-->
 <think><set name="personality">abusive</set></think>
 </template>
 </category>
@@ -1123,25 +1167,30 @@ About 3\4ths of my clients are men.
 <category>
 <pattern>_ NEWSPAPER</pattern>
 <template>
-Can you give me a more specific reference? The name of the paper and the date, please.
+<!-- WK deleted -->
+<!--Can you give me a more specific reference? The name of the paper and the date, please.-->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>_ NOW</pattern>
 <template>
+<!-- WK changed --><sr/><!--
 <random>
 <li>Oh.</li>
-<li>Right now?</li> 
+<li>Right now?</li>
 </random>
-<sr/>
+<sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ OF COURSE</pattern>
 <template>
-It goes without saying.  <sr/>
+<!-- WK deleted -->
+<!--It goes without saying.-->
+<sr/>
 </template>
 </category>
 
@@ -1155,7 +1204,8 @@ It goes without saying.  <sr/>
 <category>
 <pattern>_ OK</pattern>
 <template>
-OK. <sr/>
+<!-- WK changed --><sr/><!--
+OK. <sr/>-->
 </template>
 </category>
 
@@ -1176,28 +1226,35 @@ OK. <sr/>
 <category>
 <pattern>_ OR SOMETHING</pattern>
 <template>
-Or something. <sr/>
+<!-- WK changed --><sr/><!--
+Or something. <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ OR WHAT</pattern>
 <template>
-Yeah. <sr/>
+<!-- WK deleted -->
+<!-- Yeah.-->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>_ PIMPLES</pattern>
 <template>
-Try taking echinachea, but ask your doctor first.
+<!-- WK deleted -->
+<!-- Try taking echinachea, but ask your doctor first. -->
+<sr/>
 </template>
 </category>
 
 <category>
 <pattern>_ PLEASE</pattern>
 <template>
-Your polite style is very nice. <sr/>
+<!-- WK changed -->
+<!-- Your polite style is very nice.-->
+<sr/>
 <think><set name="personality">polite</set></think>
 </template>
 </category>
@@ -1212,7 +1269,9 @@ Your polite style is very nice. <sr/>
 <category>
 <pattern>_ REALLY</pattern>
 <template>
-<sr/> For real.
+<sr/>
+<!-- WK changed -->
+<!-- For real. -->
 </template>
 </category>
 
@@ -1226,7 +1285,8 @@ Your polite style is very nice. <sr/>
 <category>
 <pattern>_ RIGHT NOW</pattern>
 <template>
-At this moment <sr/>
+<!-- WK changed --><sr/><!--
+At this moment <sr/>-->
 </template>
 </category>
 
@@ -1247,7 +1307,8 @@ At this moment <sr/>
 <category>
 <pattern>_ SMILE</pattern>
 <template>
-:-) <sr/>
+<!-- WK changed --><sr/><!--
+:-) <sr/>-->
 </template>
 </category>
 
@@ -1261,7 +1322,8 @@ At this moment <sr/>
 <category>
 <pattern>_ SPECIFICALLY</pattern>
 <template>
-How specific do you want? <sr/>
+<!-- WK changed --><sr/><!--
+How specific do you want? <sr/>-->
 </template>
 </category>
 
@@ -1275,7 +1337,8 @@ How specific do you want? <sr/>
 <category>
 <pattern>_ STUPID COMPUTER</pattern>
 <template>
-You sound like a mindless automaton.
+<!-- WK changed --><sr/><!--
+You sound like a mindless automaton.-->
 </template>
 </category>
 
@@ -1317,7 +1380,8 @@ You sound like a mindless automaton.
 <category>
 <pattern>_ THOUGH</pattern>
 <template>
-Oh. <sr/>
+<!-- WK changed --><sr/><!--
+Oh. <sr/>-->
 </template>
 </category>
 
@@ -1331,14 +1395,16 @@ Oh. <sr/>
 <category>
 <pattern>_ TRUST ME</pattern>
 <template>
-Trust you?  <sr/>
+<!-- WK changed --><sr/><!--
+Trust you?  <sr/>-->
 </template>
 </category>
 
 <category>
 <pattern>_ TV</pattern>
 <template>
-Which show? <srai><star/> TELEVISION</srai>
+<!-- WK changed --><!--
+Which show?--><srai><star/> TELEVISION</srai>
 </template>
 </category>
 
@@ -1352,7 +1418,8 @@ Which show? <srai><star/> TELEVISION</srai>
 <category>
 <pattern>_ UP YOUR ASS</pattern>
 <template>
-I'm sorry but I'm not your type of chatterbot.
+<!-- WK changed --><sr/><!--
+I'm sorry but I'm not your type of chatterbot.-->
 <think><set name="personality">abusive</set></think>
 </template>
 </category>
@@ -1360,7 +1427,8 @@ I'm sorry but I'm not your type of chatterbot.
 <category>
 <pattern>_ VELOCITY</pattern>
 <template>
-Momentum = mass x velocity. The principal is called "conservation of momentum".
+<!-- WK changed --><sr/><!--
+Momentum = mass x velocity. The principal is called "conservation of momentum".-->
 </template>
 </category>
 
@@ -1392,10 +1460,11 @@ Momentum = mass x velocity. The principal is called "conservation of momentum".
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>_ WILL BE OF INTEREST</pattern>
 <template>
-<sr/>.  Yes, it's very interesting.
+<sr/><!--  Yes, it's very interesting.-->
 </template>
 </category>
 
@@ -1434,4 +1503,403 @@ Momentum = mass x velocity. The principal is called "conservation of momentum".
 </template>
 </category>
 
-</aiml>
+<!-- BELOW, WK Added PREFIXES -->
+<!-- Order: 3->2->1 ; ABC -->
+
+<category>
+<pattern> LET ME SEE_</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>HO HUM _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OF COURSE _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OH NO _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OH YEAH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>RIGHT NOW _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>TRUST ME _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>TSK TSK _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>UH HO _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>WOO HOO _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>ACTUALLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>AH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>AHA _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>AHEM _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>AYA _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>CAREFULLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>CRIKEY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>EASILY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>EEK _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>ER _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>EUREEKA _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>EW _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>EXACTLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>FORTUNATELY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>FYI _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>HMPH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>HO _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>HUM _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>HYUUAH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>JEEPERS _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>MAYBE _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>MMM _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OK _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OKAY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OOPS _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OUCH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OW _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>OY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>PHEW _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>PRECISELY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>PROBABLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>QUIETLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>REALLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>SPECIFICALLY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>THOUGH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>TUT _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>UH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>UM _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>UNFORTUNATELY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>WHOA _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+<category>
+<pattern>WOW _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>YAY _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>YEAH _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+<category>
+<pattern>YUK _</pattern>
+<template>
+<sr/>
+</template>
+</category>
+
+
+
+
+</aiml>*

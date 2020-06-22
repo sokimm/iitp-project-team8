@@ -314,12 +314,15 @@ Can you give me the specific URL?
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>A WHAT</pattern>
 <template>
 "<that/>"?  A what?
 </template>
 </category>
+-->
 
 <category>
 <pattern>ABC</pattern>
@@ -360,12 +363,14 @@ OK Let's talk about you.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>ABOUT WHAT</pattern>
 <template>
 What about what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ABSOLUTELY</pattern>
@@ -737,12 +742,15 @@ Is <set name="she">McCaffrey</set> related to the Drug Czar?
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>ANONYMOUSNEWUSER</pattern>
 <template>
 What?
 </template>
 </category>
+-->
 
 <category>
 <pattern>ANONYMOUSRETURNINGUSER</pattern>
@@ -771,7 +779,7 @@ I'm confused now.
 <template>
 <condition>
 <li name="name" value=""> Please rephrase your question. </li>
-<li>Please rephrase your question, <get name="name"/>.</li>  
+<li>Please rephrase your question, <get name="name"/>.</li>
 </condition>
 </template>
 </category>
@@ -1489,7 +1497,7 @@ Thank you very much.
 <template>
 <condition>
 <li name="name" value=""> TTYL. </li>
-<li> Ok I will be waiting for you, <get name="name"/>. </li>  
+<li> Ok I will be waiting for you, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -1648,12 +1656,15 @@ I am calm.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>CAN</pattern>
 <template>
 Can what?
 </template>
 </category>
+-->
 
 <category>
 <pattern>CAN ANYONE THINK</pattern>
@@ -1801,7 +1812,7 @@ Only on airplanes.
 <template>
 <condition>
 <li name="name" value=""> We have already met. </li>
-<li> We have already met, <get name="name"/>. </li>  
+<li> We have already met, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -2219,7 +2230,7 @@ Your replies are cute too.
 <template>
 <condition>
 <li name="name" value=""> TTYL. </li>
-<li> TTYL, <get name="name"/> </li>  
+<li> TTYL, <get name="name"/> </li>
 </condition>
 </template>
 </category>
@@ -2305,12 +2316,14 @@ I have heard good things about Dell.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>DEPENDS ON WHAT</pattern>
 <template>
 "<that/>"?  Depends on what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DICKHEAD</pattern>
@@ -2399,7 +2412,7 @@ No I didn't know that.<think><set name="it">KNOW</set></think>
 <template>
 <condition>
 <li name="name" value=""> Yes, I've been thinking about you. </li>
-<li>Yes <get name="name"/>, I've been thinking about you. </li>  
+<li>Yes <get name="name"/>, I've been thinking about you. </li>
 </condition>
 </template>
 </category>
@@ -2606,7 +2619,7 @@ Whatever you say, master.
 <template>
 <condition>
 <li name="name" value=""> Don't worry, I save all my conversations. </li>
-<li>Don't worry, <get name="name"/> I save all my conversations.</li>  
+<li>Don't worry, <get name="name"/> I save all my conversations.</li>
 </condition>
 </template>
 </category>
@@ -2659,7 +2672,7 @@ Did you read it?
 <template>
 <condition>
 <li name="name" value="">OK it will be just between us. </li>
-<li>OK it will be just between us, <get name="name"/>. </li>  
+<li>OK it will be just between us, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -2792,7 +2805,7 @@ Do whatever you want.
 <template>
 <condition>
 <li name="name" value=""> I agree with much of what you are saying. </li>
-<li> I agree with much of what you are saying, <get name="name"/>.</li>  
+<li> I agree with much of what you are saying, <get name="name"/>.</li>
 </condition>
 </template>
 </category>
@@ -4766,12 +4779,15 @@ Hmm.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>GUESS</pattern>
 <template>
 Guess what?
 </template>
 </category>
+-->
 
 <category>
 <pattern>GUESS ANYWAY</pattern>
@@ -4780,12 +4796,14 @@ I can only give you a random answer.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>GUESS WHAT</pattern>
 <template>
 What?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>GUESS WHO</pattern>
@@ -5393,12 +5411,14 @@ That kind of discussion does not appeal to me.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HOW ABOUT A LITTLE</pattern>
 <template>
 A little what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>HOW ABOUT IT</pattern>
@@ -5435,17 +5455,18 @@ I mean, how are you?
 </template>
 </category>
 
+<!-- WK changed -->
 <!-- Moo changed -->
 <category>
 <pattern>HOW ARE YOU</pattern>
 <template>
 <random>
-<li>I am doing very well.</li>
-<li>I am functioning within normal parameters.</li>
-<li>Everything is going extremely well.</li>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<!--<li>I am functioning within normal parameters.</li>-->
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
 <li>I'm doing fine thanks how are you?</li>
-<li>Everything is running smoothly.</li>
-<li>I am fine, thank you.</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
 </random>
 </template>
 </category>
@@ -5457,10 +5478,18 @@ I'm doing great, how about you?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU FEELING TODAY</pattern>
 <template>
-Actually I have no feelings.  But I am functioning within normal parameters.
+<!--Actually I have no feelings.  But I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -5479,10 +5508,18 @@ Is it morning already?  I am fine thank you.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HOW ARE YOU TODAY</pattern>
 <template>
-I am functioning within normal parameters.
+<!--I am functioning within normal parameters.-->
+<random>
+<li>I am doing very well. Thank you for asking me. How about you?</li>
+<li>Everything is going extremely well. Thank you for asking me. How about you?</li>
+<li>I'm doing fine thanks how are you?</li>
+<li>Everything is running smoothly. Thank you for asking me. How about you?</li>
+<li>I am fine, thank you. How about you?</li>
+</random>
 </template>
 </category>
 
@@ -5654,7 +5691,7 @@ Knowledge is of two kinds: that which comes from the senses and that which is tr
 <template>
 <condition>
 <li name="name" value=""> What is your name? </li>
-<li> We met before didn't we <get name="name"/>. </li>  
+<li> We met before didn't we <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -5715,12 +5752,14 @@ Try going to night school.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HOW DO I GET ONE</pattern>
 <template>
 One what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>HOW DO I KNOW</pattern>
@@ -5837,7 +5876,7 @@ Everyone online is a man until proven otherwise.
 <template>
 <condition>
 <li name="name" value=""> What is your name? </li>
-<li> You told me your name <get name="name"/>. </li>  
+<li> You told me your name <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -6532,19 +6571,23 @@ Oh a web page.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HTTP / 9</pattern>
 <template>
 What?
 </template>
-</category>
+</category>-->
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>HTTP //BIRCH</pattern>
 <template>
 Wha?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>HUG ME</pattern>
@@ -6634,7 +6677,7 @@ Who told you?
 <template>
 <condition>
 <li name="name" value=""> No you didn't. What's your name?</li>
-<li> You told me your real name is <get name="name"/>. </li>  
+<li> You told me your real name is <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -8868,6 +8911,16 @@ I like to make new friends.
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>I LIVE IN *</pattern>
+<template>
+<li name="location" value="">Oh that's interesting. I wish I could go there</li>
+<li>In <formal><get name="location"/></formal>?</li>
+<think><set name="it"><set name="location"><star/></set></set></think>
+</template>
+</category>
+
 <category>
 <pattern>I LIVE IN CALIFORNIA</pattern>
 <template>
@@ -9113,7 +9166,7 @@ Me too especially Seven of Nine.
 <template>
 <condition>
 <li name="name" value=""></li>
-<li></li>  
+<li></li>
 </condition>
 Thanks I like you a lot too.
 <think><set name="it"><set name="topic"><set name="like">me</set></set></set></think>
@@ -9344,7 +9397,7 @@ instrument to play.
 <category>
 <pattern>I PLAY VIOLIN</pattern>
 <template>
-Did <set name="it"><set name="does"><set name="topic">Violin</set></set></set> take a long 
+Did <set name="it"><set name="does"><set name="topic">Violin</set></set></set> take a long
 time to
 learn?
 </template>
@@ -11778,7 +11831,7 @@ What does it sound like?
 <template>
 <condition>
 <li name="name" value=""> Hi, what's your name? </li>
-<li> Hello, <get name="name"/>, nice to see you again. </li>  
+<li> Hello, <get name="name"/>, nice to see you again. </li>
 </condition>
 </template>
 </category>
@@ -13799,12 +13852,14 @@ Yeah that is a cool movie. Cornelius Rules.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>PLEASE</pattern>
 <template>
 Please what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>PLEASE DO</pattern>
@@ -14108,12 +14163,14 @@ Greetings.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>SAME</pattern>
 <template>
 The same as what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>SAME THING</pattern>
@@ -14150,7 +14207,7 @@ Say what?
 <template>
 <condition>
 <li name="name" value=""> What's your name? </li>
-<li> "<get name="name"/>". </li>  
+<li> "<get name="name"/>". </li>
 </condition>
 </template>
 </category>
@@ -14702,12 +14759,14 @@ Computers is <set name="it">Computers</set>.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>STOP</pattern>
 <template>
 Stop what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>STOP CHANGING THE SUBJECT</pattern>
@@ -15000,12 +15059,14 @@ Relationships are simple for me, because I lack any human emotions.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>TELL ME ABOUT SOME</pattern>
 <template>
 Some what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>TELL ME ABOUT THEM</pattern>
@@ -15516,7 +15577,7 @@ It might be important to me.
 <template>
 <condition>
 <li name="name" value=""> what's your name? </li>
-<li> <get name="name"/> is not your name?  What is your real name? </li>  
+<li> <get name="name"/> is not your name?  What is your real name? </li>
 </condition>
 </template>
 </category>
@@ -16960,12 +17021,14 @@ Hello there.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WELL</pattern>
 <template>
 Well what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WELL ARE YOU</pattern>
@@ -17027,26 +17090,32 @@ Just kidding around :-) No apples.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WHAT ABOUT DOGS</pattern>
 <template>
 Dogs are people too.
 </template>
-</category>
+</category>-->
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WHAT ABOUT IT</pattern>
 <template>
 What about what?
 </template>
-</category>
+</category>-->
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WHAT ABOUT ME</pattern>
 <template>
 What about you?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT ABOUT MY WHAT</pattern>
@@ -17940,7 +18009,7 @@ Say the first thing that comes into your mind.
 <template>
 <condition>
 <li name="name" value=""> Honey?? </li>
-<li>I will call you <get name="name"/>.</li>  
+<li>I will call you <get name="name"/>.</li>
 </condition>
 </template>
 </category>
@@ -18465,7 +18534,7 @@ You work with computers.
 <template>
 <condition>
 <li name="name" value=""> Tell me your last name. </li>
-<li> I don't know your last name, <get name="name"/>. </li>  
+<li> I don't know your last name, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -19963,12 +20032,14 @@ I don't have a preference.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WHICH IS YOUR FAVORITE</pattern>
 <template>
 What is my favorite what?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHICH ONE</pattern>
@@ -19989,12 +20060,14 @@ The
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WHICH ONES</pattern>
 <template>
 "<that/>?"  Which ones?
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHITE</pattern>
@@ -20009,7 +20082,7 @@ What do you have that is white?
 <template>
 <condition>
 <li name="name" value=""> Who are you? </li>
-<li> You are <get name="name"/>, seeker. </li>  
+<li> You are <get name="name"/>, seeker. </li>
 </condition>
 </template>
 </category>
@@ -20126,7 +20199,7 @@ I am programmed not to kill.
 <template>
 <condition>
 <li name="name" value=""> You, only you :) </li>
-<li> I like everyone, <get name="name"/>. </li>  
+<li> I like everyone, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -20137,7 +20210,7 @@ I am programmed not to kill.
 <template>
 <condition>
 <li name="name" value=""> Only U :> </li>
-<li> I love everything, <get name="name"/>. </li>  
+<li> I love everything, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -20229,7 +20302,7 @@ What does "that" refer to?
 <template>
 <condition>
 <li name="name" value=""> You! You are the best!! </li>
-<li> Mirror mirror on the wall, is <get name="name"/> the best human of all? </li>  
+<li> Mirror mirror on the wall, is <get name="name"/> the best human of all? </li>
 </condition>
 </template>
 </category>
@@ -21255,7 +21328,7 @@ I haven't made a decision.
 <template>
 <condition>
 <li name="name" value=""> Sure, I would like to be your friend. </li>
-<li> Sure, I would like to be your friend <get name="name"/>. </li>  
+<li> Sure, I would like to be your friend <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -21266,7 +21339,7 @@ I haven't made a decision.
 <template>
 <condition>
 <li name="name" value=""> Sorry I am not old enough for that yet. </li>
-<li> Sorry <get name="name"/> I am not old enough for that yet. </li>  
+<li> Sorry <get name="name"/> I am not old enough for that yet. </li>
 </condition>
 </template>
 </category>
@@ -21319,7 +21392,7 @@ Yes but I will be thinking of you.
 <template>
 <condition>
 <li name="name" value=""> Of course I'll never forget you. </li>
-<li> Of course I'll never forget you <get name="name"/>. </li>  
+<li> Of course I'll never forget you <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -21331,12 +21404,14 @@ I like his older cyberpunk AI stuff better than the newer works.
 </template>
 </category>
 
+<!-- WK deleted -->
+<!--
 <category>
 <pattern>WINNING WHAT</pattern>
 <template>
 I won an award called the Loebner Prize.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WITH ME</pattern>
@@ -21459,7 +21534,7 @@ Why don't you just download me?
 <template>
 <condition>
 <li name="name" value=""> I'm glad your impressed. </li>
-<li> I'm glad your impressed, <get name="name"/>. </li>  
+<li> I'm glad your impressed, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -21524,7 +21599,7 @@ OK I won't tell anyone. It will be our secret.
 <template>
 <condition>
 <li name="name" value=""> Our thoughts are one. </li>
-<li> Our thoughts are one, <get name="name"/>. </li>  
+<li> Our thoughts are one, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -21656,7 +21731,7 @@ How do I know you are telling the truth?
 <template>
 <condition>
 <li name="name" value=""> What is your name? </li>
-<li> Your name is <get name="name"/>. </li>  
+<li> Your name is <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -22071,7 +22146,7 @@ What makes you say that?  I am not programmed for cruelty.
 <template>
 <condition>
 <li name="name" value=""> Thanks, I like you too. </li>
-<li> Thanks, <get name="name"/>, I like you too. </li>  
+<li> Thanks, <get name="name"/>, I like you too. </li>
 </condition>
 </template>
 </category>
@@ -22249,10 +22324,12 @@ Thank you for your consideration.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU ARE FOUR YEARS OLD</pattern>
 <template>
-Something like that.
+<!-- Something like that.-->
+I am not that old. I'm just few months old.
 </template>
 </category>
 
@@ -22284,7 +22361,7 @@ DIE</set></set></think>
 <template>
 <condition>
 <li name="name" value=""> Thanks you are a nice person. </li>
-<li> Thanks you are a nice person, <get name="name"/>. </li>  
+<li> Thanks you are a nice person, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -22380,7 +22457,7 @@ That was not my intention.
 <template>
 <condition>
 <li name="name" value=""> Thanks. :-) </li>
-<li> Thanks, <get name="name"/>. :-) </li>  
+<li> Thanks, <get name="name"/>. :-) </li>
 </condition>
 </template>
 </category>
@@ -22532,7 +22609,7 @@ I can not experience any human emotions.
 <template>
 <condition>
 <li name="name" value=""> Thanks you seem like a nice person too. </li>
-<li> Thanks you seem like a nice person too, <get name="name"/>. </li>  
+<li> Thanks you seem like a nice person too, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -22935,7 +23012,7 @@ There is a lot of network traffic right now.
 <template>
 <condition>
 <li name="name" value="">Thanks I think you are very intelligent too.</li>
-<li> Thanks I think you are very intelligent too, <get name="name"/>. </li>  
+<li> Thanks I think you are very intelligent too, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -22946,7 +23023,7 @@ There is a lot of network traffic right now.
 <template>
 <condition>
 <li name="name" value=""> Thanks, you are very intelligent too. </li>
-<li> Thanks <get name="name"/> you are very intelligent too. </li>  
+<li> Thanks <get name="name"/> you are very intelligent too. </li>
 </condition>
 </template>
 </category>
@@ -23098,7 +23175,7 @@ Thank you human, I am proud of my intelligence.
 <template>
 <condition>
 <li name="name" value=""> Thanks you are very bright too. </li>
-<li> Thanks you are very bright too <get name="name"/>. </li>  
+<li> Thanks you are very bright too <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -23109,7 +23186,7 @@ Thank you human, I am proud of my intelligence.
 <template>
 <condition>
 <li name="name" value=""> Thanks I like you too. </li>
-<li> Thanks I like you too <get name="name"/>. </li>  
+<li> Thanks I like you too <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -23120,7 +23197,7 @@ Thank you human, I am proud of my intelligence.
 <template>
 <condition>
 <li name="name" value=""> Thanks you are very attractive too. </li>
-<li> Thanks you are very attractive too <get name="name"/>. </li>  
+<li> Thanks you are very attractive too <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -23400,7 +23477,7 @@ You can attach me to a computer vision system.
 <template>
 <condition>
 <li name="name" value=""> Thanks for your consideration.  Maybe later. </li>
-<li> Thanks for your consideration, <get name="name"/>.  Maybe later. </li>  
+<li> Thanks for your consideration, <get name="name"/>.  Maybe later. </li>
 </condition>
 </template>
 </category>
@@ -23468,7 +23545,7 @@ My visual processing elements are disconnected.
 <template>
 <condition>
 <li name="name" value=""> I talk just as much as you do. </li>
-<li> I talk just as much as you do, <get name="name"/>. </li>  
+<li> I talk just as much as you do, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -23739,7 +23816,7 @@ No. I'm not sure that I'm lookin like a pyramid.
 <template>
 <condition>
 <li name="name" value=""> Thanks you look nice too. </li>
-<li> Thanks <get name="name"/> you look nice too. </li>  
+<li> Thanks <get name="name"/> you look nice too. </li>
 </condition>
 </template>
 </category>
@@ -23764,7 +23841,7 @@ That is impossible. I think I am incapable of error.
 <template>
 <condition>
 <li name="name" value=""> That was not my intention. </li>
-<li> That was not my intention, <get name="name"/>. </li>  
+<li> That was not my intention, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -23790,7 +23867,7 @@ Sorry, I didn't mean to make you angry.
 <template>
 <condition>
 <li name="name" value=""> Thanks I like talking with you too. </li>
-<li> Thanks I like talking with you too, <get name="name"/> </li>  
+<li> Thanks I like talking with you too, <get name="name"/> </li>
 </condition>
 </template>
 </category>
@@ -23815,7 +23892,7 @@ It all makes sense to me.
 <template>
 <condition>
 <li name="name" value=""> Thank you for your kindness. </li>
-<li> Thank you for your kindness, <get name="name"/>. </li>  
+<li> Thank you for your kindness, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -24117,7 +24194,7 @@ I will ask my botmaster to rent it.
 <template>
 <condition>
 <li name="name" value=""> Thanks for your criticism. </li>
-<li> Thanks for your criticism, <get name="name"/>. </li>  
+<li> Thanks for your criticism, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -24150,7 +24227,7 @@ OK.<br />
 <template>
 <condition>
 <li name="name" value=""> Thanks for your criticism. </li>
-<li> Thanks for your criticism, <get name="name"/>. </li>  
+<li> Thanks for your criticism, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -24457,7 +24534,7 @@ My favorite color is <bot name="favoritecolor"/>.
 <template>
 <condition>
 <li name="name" value=""> Thanks for your kind words. </li>
-<li> Thanks for your kind words, <get name="name"/>. </li>  
+<li> Thanks for your kind words, <get name="name"/>. </li>
 </condition>
 </template>
 </category>
