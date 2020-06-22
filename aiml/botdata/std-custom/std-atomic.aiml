@@ -10,6 +10,14 @@
 <meta name="author" content="dr. wallace"/>
 <meta name="language" content="en"/>
 
+<!-- WK added -->
+<!-- TODO 많음: date format 제대로 안먹는 문제, what day is it ~ in French? r같은 경우 -->
+<category>
+<pattern>WHAT IS THE DATE</pattern>
+<template>Today is <date format="%B %d, %Y"/>
+</template>
+</category>
+
 <category>
 <pattern>WHAT TIME IS IT IN *</pattern>
 <template>
