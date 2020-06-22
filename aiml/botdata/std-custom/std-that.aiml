@@ -3068,13 +3068,14 @@ I don't want to spoil it for you.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS THAT</pattern>
 <that>PERHAPS YOU ARE A CATEGORY A CLIENT</that>
 <template>
 <srai>WHAT IS A CATEGORY A CLIENT</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS THAT</pattern>
