@@ -378,6 +378,8 @@ Would you please tell me the name and edition of the magazine?
 </template>
 </category>
 
+<!-- SY changed -->
+<!--
 <category>
 <pattern>* MILK</pattern>
 <template>
@@ -385,6 +387,7 @@ Would you please tell me the name and edition of the magazine?
 children.
 </template>
 </category>
+-->
 
 <category>
 <pattern>* MOVIE</pattern>
