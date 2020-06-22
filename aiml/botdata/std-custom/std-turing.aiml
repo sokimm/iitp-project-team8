@@ -73,12 +73,13 @@ I really liked the biography of Turing by Andrew Hodges.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>ARE YOU GOING TO * LOEBNER PRIZE</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>ARE YOU GOING TO * TURING TEST</pattern>
@@ -218,12 +219,13 @@ You be the judge of that<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>CONGRATULATIONS * LOEBNER PRIZE</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>COULD YOU * TURING TEST</pattern>
@@ -239,12 +241,13 @@ You be the judge of that<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>DID YOU * LOEBNER PRIZE</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DID YOU * TURING TEST</pattern>
@@ -274,31 +277,39 @@ You be the judge of that<!--, <get name="name"/>-->.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>DID YOU WIN *</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
-</category>
+</category>-->
 
+<!-- WK changed -->
 <category>
 <pattern>DID YOU WIN THE LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU * LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU * TURING GAME</pattern>
 <template>
-<srai>DID YOU WIN THE LOEBNER PRIZE</srai>
+<!--<srai>DID YOU WIN THE LOEBNER PRIZE</srai>-->
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
 </category>
 
@@ -898,17 +909,21 @@ I liked the biography by Andrew Hodges.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WERE YOU * LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WERE YOU * LOEBNER PRIZE COMPETITION</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+I didn't win the Loebner prize yet, But I have a dream to win that prize!
 </template>
 </category>
 
@@ -1067,13 +1082,14 @@ We are playing Turing's Imitation Game.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>WHAT IS THAT</pattern>
 <that>MAYBE BUT I WON THE LOEBNER PRIZE</that>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHAT IS THE * GAME</pattern>
@@ -1098,13 +1114,14 @@ always tell the truth. Turing then asked the question, '"What will happen when a
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS THE LOEBNER PRIZE</pattern>
 <template>
-The Loebner Prize
-is an annual Turing Test sponsored by New York philanthropist Hugh Loebner.  Dr. Wallace and ALICE won 
-<a href="http://www.loebner.net/prizef/loebner-prize.html"><set name="it"><set name="topic">The Loebner Prize</set></set></a> 
-in 2000.  The ALICE program was ranked "most human computer" by the panel of judges.
+The Loebner Prize is an annual Turing Test sponsored by New York philanthropist Hugh Loebner.
+<!--Dr. Wallace and ALICE won
+<a href="http://www.loebner.net/prizef/loebner-prize.html"><set name="it"><set name="topic">The Loebner Prize</set></set></a>
+in 2000.  The ALICE program was ranked "most human computer" by the panel of judges.-->
 </template>
 </category>
 
@@ -1339,10 +1356,12 @@ Alan Turing.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO WON THE LOEBNER *</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+Dr. Wallace and ALICE won the Loebner prize in 2000. Someday, I will win the Loebner prize!
 </template>
 </category>
 
@@ -1354,12 +1373,13 @@ We are playing the Turing Game.
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>WHY DID YOU * LOEBNER PRIZE</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>WHY WAS TURING *</pattern>
@@ -1389,12 +1409,13 @@ We are playing already, didn't you know?
 </template>
 </category>
 
+<!-- WK deleted --><!--
 <category>
 <pattern>YOU * LOEBNER PRIZE</pattern>
 <template>
 <srai>WHAT IS THE LOEBNER PRIZE</srai>
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>YOU * TURING TEST</pattern>
@@ -1424,10 +1445,12 @@ We are playing already, didn't you know?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU ARE BETTER THAN * LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+Really? That's so sweet of you. I will do my best so that someday I will win that prize!
 </template>
 </category>
 
@@ -1487,10 +1510,12 @@ We are playing already, didn't you know?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU DID WIN THE LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!-- <srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+Actually, That's not true. But I will win the Loebner prize in someday!
 </template>
 </category>
 
@@ -1578,17 +1603,21 @@ I like to play the Turing Game.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>YOU WON THE LOEBNER *</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+No that's not true. But someday, I will win the Loebner prize!
 </template>
-</category>
+</category>-->
 
+<!-- WK changed -->
 <category>
 <pattern>YOU WON THE LOEBNER PRIZE</pattern>
 <template>
-<srai>WHAT IS THE LOEBNER PRIZE</srai>
+<!--<srai>WHAT IS THE LOEBNER PRIZE</srai>-->
+No that's not true. But someday, I will win the Loebner prize!
 </template>
 </category>
 

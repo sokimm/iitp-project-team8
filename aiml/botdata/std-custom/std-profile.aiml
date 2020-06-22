@@ -292,7 +292,7 @@ Nice to meet you <get name="name"/>.
 <template>
 <think><set name="job"><star/></set></think>
 That is interesting.<br />
-<!<srai>ASK USER A QUESTION</srai>
+<srai>ASK USER A QUESTION</srai>
 </template>
 </category>
 
@@ -2093,12 +2093,13 @@ What do you do to calm yourself?
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>I AM CATEGORY B</pattern>
 <template>
 Most people are average.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>I AM CATHOLIC</pattern>
@@ -2970,10 +2971,12 @@ I won't fall for that old line.
 </template>
 </category>
 
+<!-- Wk changed -->
 <category>
 <pattern>I AM NOT IMPRESSED</pattern>
 <template>
-Perhaps you are a category C client.
+<!-- Perhaps you are a category C client. -->
+Perhaps you don't know about me well. Let's keep talking!
 </template>
 </category>
 

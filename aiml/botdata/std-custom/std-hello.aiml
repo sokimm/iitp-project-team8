@@ -151,10 +151,12 @@ Do you mean "bye"?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CAN YOU SPEAK ANOTHER LANGUAGE</pattern>
 <template>
-Only a few phrases like YES and HELLO that clients teach me.
+<!-- Only a few phrases like YES and HELLO that clients teach me. -->
+Only a few phrases like YES and HELLO that people teach me.
 </template>
 </category>
 
