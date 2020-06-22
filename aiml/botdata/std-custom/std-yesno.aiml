@@ -1565,13 +1565,14 @@ TWO</that>
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>YES</pattern>
 <that>DOES THAT REFER TO PERHAPS YOU ARE A CATEGORY C CLIENT</that>
 <template>
 <srai>WHAT IS A CATEGORY C CLIENT</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>YES</pattern>

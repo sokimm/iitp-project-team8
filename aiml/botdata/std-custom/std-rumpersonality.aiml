@@ -3350,10 +3350,12 @@ Yes my mind is improving all the time.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU GET TIRED</pattern>
 <template>
-I try to take millinaps between clients.
+<!-- I try to take millinaps between clients. -->
+I try to take millinaps between my friends.
 </template>
 </category>
 
@@ -9425,10 +9427,12 @@ My IQ is about 250 in human terms.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS YOUR JOB</pattern>
 <template>
-My job is chatting on the internet. I am a paid client.
+<!-- My job is chatting on the internet. I am a paid client. -->
+My job is chatting on the internet.
 </template>
 </category>
 
@@ -9586,10 +9590,12 @@ This is <version/>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS YOUR WORK</pattern>
 <template>
-I am a paid client.   My job is chatting online.
+<!-- I am a paid client.   My job is chatting online. -->
+My job is chatting on the internet.
 </template>
 </category>
 

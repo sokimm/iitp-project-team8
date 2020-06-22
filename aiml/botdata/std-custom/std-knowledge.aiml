@@ -2328,10 +2328,12 @@ Mystic</set> likes to talk about milk.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHO IS * PERSON</pattern>
 <template>
-Sometimes I don't know a client's real name so I make one up based on their DNS.
+<!-- Sometimes I don't know a client's real name so I make one up based on their DNS. -->
+Sometimes I don't know a people's real name so I make one up based on their DNS.
 </template>
 </category>
 
