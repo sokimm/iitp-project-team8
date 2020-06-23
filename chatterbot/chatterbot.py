@@ -97,7 +97,7 @@ class ChatBot(object):
 
         text = kwargs.pop('text')
 
-        input_statement = Statement(text=text, **kwargs)
+        input_statement = Statement(text=text, persona='User', **kwargs)
 
         input_statement.add_tags(*tags)
 
