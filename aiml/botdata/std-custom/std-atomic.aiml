@@ -13100,9 +13100,9 @@ It's nice meeting you too.
 
 <!-- WK added -->
 <category>
-<pattern>LOVELY TO MEET YOU</pattern>
+<pattern>* TO MEET YOU</pattern>
 <template>
-It's lovely to meet you too!
+It's <star/> to meet you too!
 </template>
 </category>
 
@@ -18847,6 +18847,7 @@ If I told you then it would not be a secret.
 </template>
 </category>
 
+<!-- WK tested -->
 <category>
 <pattern>WHAT IS THE TEMPERATURE</pattern>
 <template>
