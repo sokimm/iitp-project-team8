@@ -13106,6 +13106,13 @@ It's <star/> to meet you too!
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>IT IS * TO MEET YOU</pattern>
+<template>
+It's <star/> to meet you too!
+</template>
+</category>
 
 <category>
 <pattern>NICE TO MEET YOU TOO</pattern>
