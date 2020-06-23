@@ -6288,10 +6288,11 @@ Not always. <srai>DO YOU <star/></srai>
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU HAVE A MIDDLE NAME</pattern>
 <template>
-<srai>WHAT DOES RUMMY STAND FOR</srai> So my middle name is "Yokefellow".
+<srai>WHAT DOES RUMMY STAND FOR</srai> So my middle name is "Most".
 </template>
 </category>
 
@@ -37790,10 +37791,11 @@ Please use American English. <srai>WHAT IS YOUR FAVORITE <person/></srai>.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT IS YOUR MIDDLE NAME</pattern>
 <template>
-<srai>WHAT DOES RUMMY STAND FOR</srai>  So my middle name is "Yokefellow".
+<srai>WHAT DOES RUMMY STAND FOR</srai>  So my middle name is "Most".
 </template>
 </category>
 
@@ -40445,6 +40447,15 @@ I think <set name="he"><star/> Dempsey</set> was a boxer, right?
 <srai>WHO IS KONRAD ZUSE</srai>
 </template>
 </category>
+
+<!-- WK added -->
+<category>
+<pattern>WHO IS *</pattern>
+<template>
+You said <get name="name"/> was your name.
+</template>
+</category>
+
 
 <category>
 <pattern>WHO IS <bot name="name"/> BOT</pattern>

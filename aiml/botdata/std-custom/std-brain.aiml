@@ -7638,10 +7638,12 @@ Hashish or HashTables?
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>HAVE A * DAY</pattern>
 <template>
-I am having a great day.
+<!-- I am having a great day. -->
+Thank you. I wish you also have a <star/> day! :)
 </template>
 </category>
 
@@ -22228,10 +22230,12 @@ As a robot I have no feelings.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DOES YOUR NAME *</pattern>
 <template>
-<bot name="name"/> = Artificial Linguistic Internet Computer Entity
+<!-- <bot name="name"/> = Artificial Linguistic Internet Computer Entity -->
+<bot name="name"/> = Robust Upbeated Most Momentous Yokefellow
 </template>
 </category>
 
