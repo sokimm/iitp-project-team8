@@ -317,12 +317,14 @@ growth, especially the skull.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DEFINE ACRONYM</pattern>
 <template>
 <random>
 <li>An acronym is a word formed from the initials of other words.</li>
-<li>An acronym is an abbreviation made of letters, like A.L.I.C.E.</li>
+<!-- <li>An acronym is an abbreviation made of letters, like A.L.I.C.E.</li> -->
+<li>An acronym is an abbreviation made of letters, like R.U.M.M.Y.</li>
 </random>
 </template>
 </category>

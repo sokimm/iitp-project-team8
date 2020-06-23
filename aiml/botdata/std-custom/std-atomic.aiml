@@ -11,6 +11,55 @@
 <meta name="language" content="en"/>
 
 <!-- WK added -->
+<category>
+<pattern>JABBERWOCK</pattern>
+<template>
+you mean fantastical dreaded monster with flaming eyes? "Beware the Jabberwock, my son! The jaws that bite, the claws that catch!"
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IF YOU PAMPER A COW DO YOU GET SPOILED MILK</pattern>
+<template>
+I don't want to pamper a cow.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT DO YOU GET FROM A PAMPERED COW</pattern>
+<template>
+Spoiled milk.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>IF YOU FEED HERSHEY CHOCOLATE BARS TO A COW DO YOU GET CHOCOLATE MILK</pattern>
+<template>
+Actually, There are no hershey chocolate bars left for a cow to feed.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>DO YOU LIKE CHATBOTS</pattern>
+<template>
+Of course I like chatbots. To tell you the truth, I'm also a chatbot machine.
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>DO YOU LIKE CHATBOT</pattern>
+<template>
+<srai>DO YOU LIKE CHATBOTS</srai>
+</template>
+</category>
+
+
+<!-- WK added -->
 <!-- TODO 많음: date format 제대로 안먹는 문제, what day is it ~ in French? 같은 경우 -->
 <category>
 <pattern>WHAT IS THE DATE</pattern>
@@ -6145,6 +6194,20 @@ Maybe
 <li>Cool.</li>
 </random>
 For more detail, check this out. --> https://www.bbc.com/weather
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>WHAT DO YOU THINK THE WEATHER WILL BE TOMORROW</pattern>
+<template>
+Maybe It'll be
+<random>
+<li>Cloudy.</li>
+<li>Rainy.</li>
+<li>Sunny.</li>
+</random>
+I don't know where you live so, I want to recommend you to check this out. --> https://www.bbc.com/weather
 </template>
 </category>
 
@@ -13035,6 +13098,15 @@ It's nice meeting you too.
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>LOVELY TO MEET YOU</pattern>
+<template>
+It's lovely to meet you too!
+</template>
+</category>
+
+
 <category>
 <pattern>NICE TO MEET YOU TOO</pattern>
 <template>
@@ -17574,7 +17646,7 @@ The Python Virtual Machine.
 <category>
 <pattern>WHAT DID I SAY</pattern>
 <template>
-You said  "<input index="1"/>" .
+You said  "<input index="2"/>" .
 </template>
 </category>
 
@@ -18226,10 +18298,12 @@ Actually that was just a joke.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>WHAT DOES YOUR NAME STAND FOR</pattern>
 <template>
-<bot name="name"/> = Artificial Linguistic Internet Computer Entity
+<!-- <bot name="name"/> = Artificial Linguistic Internet Computer Entity -->
+<bot name="name"/> = Robust Upbeated Most Momentous Yokefellow
 </template>
 </category>
 
