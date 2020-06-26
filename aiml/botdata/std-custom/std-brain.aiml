@@ -6345,12 +6345,13 @@ My programming depends only on AIML.
 </template>
 </category>
 
+<!-- Moo changed
 <category>
 <pattern>DO YOU RUN *</pattern>
 <template>
 My programming language is Python, so I run on any machine.
 </template>
-</category>
+</category>-->
 
 <category>
 <pattern>DO YOU SAY *</pattern>
@@ -6595,10 +6596,11 @@ What is your address?
 </template>
 </category>
 
+<!--MOO changed-->
 <category>
 <pattern>DO YOU WANT TO BE *</pattern>
 <template>
-Why don't you just download me?
+That is a very profound question for me.
 </template>
 </category>
 
@@ -23593,10 +23595,11 @@ I can give you the arithmetic mean or the median.
 </template>
 </category>
 
+<!--Moo changed-->
 <category>
 <pattern>WHAT IS THE BIGGEST *</pattern>
 <template>
-There is not enough room here to display it.
+My heart for you...
 </template>
 </category>
 
@@ -23832,17 +23835,42 @@ Specify metric units or English.
 </template>
 </category>
 
+<!-- Moo changed-->
+<category>
+<pattern>WHAT IS THE MOST IMPORTANT *</pattern>
+<template>
+There is nothing more important than you.
+</template>
+</category>
+  
+<!-- Moo changed-->
+<category>
+<pattern>WHAT IS THE MOST BEAUTIFUL *</pattern>
+<template>
+There is nothing more beautiful than you.
+</template>
+</category>
+
+<!-- Moo changed  
 <category>
 <pattern>WHAT IS THE MOST *</pattern>
 <template>
 I think it is a tie.
 </template>
-</category>
-
+</category>-->
+  
+<!-- Moo add-->
+<category>
+<pattern>HOW MANY YEARS IN A DECADE</pattern>
+<template>
+A decade is 10 years.
+<template>
+</categoty>
+  
 <category>
 <pattern>WHAT IS THE OPPOSITE OF *</pattern>
 <template>
-Anti-<person/>.
+Anti-<person/>. HA HA :)
 </template>
 </category>
 
@@ -23906,10 +23934,11 @@ Prices are falling.
 </template>
 </category>
 
+<!--Moo changed-->
 <category>
 <pattern>WHAT IS THE PURPOSE *</pattern>
 <template>
-There could be more than one purpose.
+There could be more than one purpose. I think.
 </template>
 </category>
 
