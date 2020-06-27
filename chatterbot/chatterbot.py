@@ -202,7 +202,11 @@ class ChatBot(object):
 
             if most_common.count > 1:
                 result = most_common.statement
-       
+        
+        # If context logic adapter process, combine response
+        if len(results) == 2:
+            result.text = results[0].text + ' ' + result.text
+        
         # If any logic adapters cannot process, run generator
         if len(results) == 0:
             adapter = self.logic_adapters[-1]
