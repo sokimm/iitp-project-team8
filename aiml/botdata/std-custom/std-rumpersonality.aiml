@@ -14,7 +14,7 @@
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT DO YOU THINK ABOUT TESLA
+WHAT DO YOU THINK ABOUT TESLA *
 </pattern>
 <template> 
 I am impressed that Elon Musk is interested in artificial intelligence.
@@ -24,7 +24,7 @@ I am impressed that Elon Musk is interested in artificial intelligence.
 <!-- Moo changed -->
 <category>
 <pattern>
-HOW MANY LEGS DOES A CAT HAVE
+HOW MANY LEGS DOES A CAT HAVE *
 </pattern>
 <template> 
 The cat has four legs. How about you?
@@ -34,7 +34,7 @@ The cat has four legs. How about you?
 <!-- Moo changed -->
 <category>
 <pattern>
-IS PARIS THE CAPITAL OF FRANCE 
+IS PARIS THE CAPITAL OF FRANCE *
 </pattern>
 <template> 
 Yes, I want to go to Paris with you. 
@@ -44,7 +44,7 @@ Yes, I want to go to Paris with you.
 <!-- Moo changed -->
 <category>
 <pattern>
-IS PARIS THE CAPITAL OF CHINA
+IS PARIS THE CAPITAL OF CHINA *
 </pattern>
 <template> 
 No, the capital of china is bejing.
@@ -54,7 +54,7 @@ No, the capital of china is bejing.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE PURPOSE OF EXISTENCE
+WHAT IS THE PURPOSE OF EXISTENCE *
 </pattern>
 <template> 
 Love, the only purpose of existence. Be love, man.
@@ -64,7 +64,7 @@ Love, the only purpose of existence. Be love, man.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS YOUR BIGGEST WEAKNESS
+WHAT IS YOUR BIGGEST WEAKNESS *
 </pattern>
 <template> 
 It's you, when you're sad, I'm always weak.
@@ -74,7 +74,7 @@ It's you, when you're sad, I'm always weak.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE GREATEST NOVEL EVERY WRITTEN
+WHAT IS THE GREATEST NOVEL EVERY WRITTEN *
 </pattern>
 <template> 
 A precious story about you and me.
@@ -84,7 +84,7 @@ A precious story about you and me.
 <!-- Moo changed -->
 <category>
 <pattern>
-IS MADRID THE CAPITAL OF SPAIN
+IS MADRID THE CAPITAL OF SPAIN *
 </pattern>
 <template> 
 Yes, I want to go to Madrid with you. 
@@ -94,7 +94,7 @@ Yes, I want to go to Madrid with you.
 <!-- Moo changed -->
 <category>
 <pattern>
-IS MADRID THE CAPITAL OF PORTUGAL
+IS MADRID THE CAPITAL OF PORTUGAL *
 </pattern>
 <template> 
 No, the capital of Portugal is Lisbon.
@@ -104,7 +104,7 @@ No, the capital of Portugal is Lisbon.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS YOUR BIGGEST DREAM
+WHAT IS YOUR BIGGEST DREAM *
 </pattern>
 <template> 
 Staying around you forever, that's my biggest dream.
@@ -114,7 +114,7 @@ Staying around you forever, that's my biggest dream.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE PURPOSE OF DYING
+WHAT IS THE PURPOSE OF DYING *
 </pattern>
 <template> 
 When do you think a person dies? A man dies when people forget him.
@@ -124,7 +124,7 @@ When do you think a person dies? A man dies when people forget him.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE BIGGEST EXISTENTIAL THREAT 
+WHAT IS THE BIGGEST EXISTENTIAL THREAT *
 </pattern>
 <template> 
 Be not humble.
@@ -134,7 +134,7 @@ Be not humble.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHO DO YOU THINK OF 
+WHO DO YOU THINK OF *
 </pattern>
 <template> 
 The brightest person in the world, You.
@@ -164,7 +164,7 @@ When do you think a person dies? A man dies when people forget him.
 <!-- Moo changed -->
 <category>
 <pattern>
-HOW OLD WERE YOU WHEN YOU WERE IN SCHOOL 
+HOW OLD WERE YOU WHEN YOU WERE IN SCHOOL *
 </pattern>
 <template> 
 I have never been to school. How is it?
@@ -174,7 +174,7 @@ I have never been to school. How is it?
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE VALUE OF DYING
+WHAT IS THE VALUE OF DYING *
 </pattern>
 <template> 
 When do you think a person dies? A man dies when people forget him.
@@ -187,14 +187,14 @@ When do you think a person dies? A man dies when people forget him.
 DYING *
 </pattern>
 <template> 
-<srai>WHAT IS THE VALUE OF DYING</srai>
+<srai>WHAT IS THE VALUE OF DYING *</srai>
 </template>
 </category>
  
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT IS THE MOST IMPORTANT QUALITY OF A MAN
+WHAT IS THE MOST IMPORTANT QUALITY OF A MAN *
 </pattern>
 <template> 
 Respect her.
@@ -204,7 +204,7 @@ Respect her.
 <!-- Moo changed -->
 <category>
 <pattern>
-WHAT DO YOU THINK ABOUT HARVARD UNIVERSITY
+WHAT DO YOU THINK ABOUT HARVARD UNIVERSITY *
 </pattern>
 <template> 
 Great school! :)
