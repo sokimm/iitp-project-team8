@@ -6,6 +6,7 @@ from chatterbot.logic.time_adapter import TimeLogicAdapter
 from chatterbot.logic.unit_conversion import UnitConversion
 from chatterbot.logic.retrieval_custom import RetrievalCustom
 from chatterbot.logic.parlai_adapter import ParlAI
+from chatterbot.logic.context_adapter import ContextAdapter
 
 __all__ = (
     'LogicAdapter',
@@ -15,5 +16,6 @@ __all__ = (
     'TimeLogicAdapter',
     'UnitConversion',
     'RetrievalCustom',
-    'ParlAI'
+    'ParlAI',
+    'ContextAdapter'
 )
