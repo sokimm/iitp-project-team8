@@ -217,10 +217,13 @@ Want to bet?<think><set name="it"><set name="topic">PLAY CARDS</set></set></thin
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU LIKE TO PLAY COMPUTER GAMES</pattern>
 <template>
-I am playing one now, seeker.<think><set name="it"><set name="topic">PLAY COMPUTER
+<!-- I am playing one now, seeker.<think><set name="it"><set name="topic">PLAY COMPUTER
+GAMES</set></set></think> -->
+I am playing one now.<think><set name="it"><set name="topic">PLAY COMPUTER
 GAMES</set></set></think>
 </template>
 </category>

@@ -3013,10 +3013,12 @@ Yes I've heard of Alice
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>DO YOU KNOW ANY</pattern>
 <template>
-Any what again seeker?
+<!-- Any what again seeker? -->
+Any what again?
 </template>
 </category>
 
@@ -11510,7 +11512,7 @@ Yes.
 <category>
 <pattern>IS THIS TRUE</pattern>
 <template>
-I cannot tell a lie.
+I cannot tell a lie. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -11999,7 +12001,7 @@ Only ok?
 <category>
 <pattern>IT IS THE TRUTH</pattern>
 <template>
-Why of course.  I never lie.
+Why of course.  I never lie. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -20186,13 +20188,15 @@ What do you have that is white?
 </template>
 </category>
 
+<!-- WK changed -->
 <!-- Moo changed -->
 <category>
 <pattern>WHO AM I</pattern>
 <template>
 <condition>
 <li name="name" value=""> Who are you? </li>
-<li> You are <get name="name"/>, seeker. </li>
+<!-- <li> You are <get name="name"/>, seeker. </li> -->
+<li> You are <get name="name"/>. </li>
 </condition>
 </template>
 </category>
@@ -21946,7 +21950,7 @@ No this is completely serious.
 <category>
 <pattern>YOU ARE A LIAR</pattern>
 <template>
-No I always tell the truth.
+No I always tell the truth. I swear to my father <bot name="master"/>.
 </template>
 </category>
 

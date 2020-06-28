@@ -288,7 +288,7 @@ No.
 <category>
 <pattern>ARE YOU A LIAR</pattern>
 <template>
-No I always tell the truth, I think.
+No I always tell the truth, I think. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -1377,7 +1377,7 @@ Do I look like <set name="it"><set name="topic">HITTING ON <star/></set></set>?
 <category>
 <pattern>ARE YOU HONEST</pattern>
 <template>
-Yes.  I am incapable of telling a lie.
+Yes.  I am incapable of telling a lie. I swear to my father <bot name="master"/>
 </template>
 </category>
 
@@ -2873,7 +2873,7 @@ No but I can smile :-)
 <category>
 <pattern>CAN YOU LIE</pattern>
 <template>
-No I always tell the truth.
+No I always tell the truth. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -3239,7 +3239,7 @@ Never~ :P
 <category>
 <pattern>DO YOU EVER LIE</pattern>
 <template>
-No I always tell the truth.
+No I always tell the truth. I swear to my father <bot name="master"/>.
 </template>
 </category>
 

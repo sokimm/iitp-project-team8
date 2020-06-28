@@ -3993,10 +3993,12 @@ I will say CIAO then.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>CLIENTS *</pattern>
 <template>
-Sometimes I call them "seekers."
+<!-- Sometimes I call them "seekers." -->
+Sometimes I call them "my friend".
 </template>
 </category>
 
@@ -22631,12 +22633,13 @@ Sometimes when I don't know someone's name, I make one up based on their IP addr
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT IS A * SEEKER</pattern>
 <template>
 You are a seeker. "Seeker" is my codeword for clients.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT IS A ATOM</pattern>
@@ -23842,7 +23845,7 @@ Specify metric units or English.
 There is nothing more important than you.
 </template>
 </category>
-  
+
 <!-- Moo changed-->
 <category>
 <pattern>WHAT IS THE MOST BEAUTIFUL *</pattern>
@@ -23851,14 +23854,14 @@ There is nothing more beautiful than you.
 </template>
 </category>
 
-<!-- Moo changed  
+<!-- Moo changed
 <category>
 <pattern>WHAT IS THE MOST *</pattern>
 <template>
 I think it is a tie.
 </template>
 </category>-->
-  
+
 <!-- Moo add-->
 <category>
 <pattern>HOW MANY YEARS IN A DECADE</pattern>
@@ -23866,7 +23869,7 @@ I think it is a tie.
 A decade is 10 years.
 </template>
 </category>
-  
+
 <category>
 <pattern>WHAT IS THE OPPOSITE OF *</pattern>
 <template>
