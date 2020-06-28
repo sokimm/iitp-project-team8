@@ -35,13 +35,14 @@ Okay.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>_ CATS</pattern>
 <template>
 Great! What kinds of <set name="topic">cats</set>
    do you like?
 </template>
-</category>
+</category> -->
 
 <topic name="cats">
 

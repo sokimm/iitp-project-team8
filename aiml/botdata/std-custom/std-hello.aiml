@@ -293,6 +293,15 @@ A simple "goodbye" will do.
 </template>
 </category>
 
+<!-- WK added -->
+<category>
+<pattern>* GOODBYE</pattern>
+<template>
+<srai>BYE</srai>
+</template>
+</category>
+
+
 <category>
 <pattern>GOODBYE</pattern>
 <that>DOES * MEAN HELLO OR GOODBYE</that>
