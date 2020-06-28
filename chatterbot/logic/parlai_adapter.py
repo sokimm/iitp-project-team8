@@ -60,5 +60,5 @@ class ParlAI(LogicAdapter):
         response = Statement(text=response)
         return response
     
-    #def history_add(self, input_statement, text_for_gen):
-      #  self.w.parley_observe(input_statement.text, text_for_gen)
+    def history_add(self, input_statement, text_for_gen):
+        self.w.parley_observe(input_statement.text, text_for_gen.text)
