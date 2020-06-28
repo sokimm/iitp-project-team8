@@ -11,6 +11,206 @@
 <meta name="author" content="Rummy"/>
 <meta name="language" content="en"/>
 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT DO YOU THINK ABOUT TESLA *
+</pattern>
+<template> 
+I am impressed that Elon Musk is interested in artificial intelligence.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+HOW MANY LEGS DOES A CAT HAVE *
+</pattern>
+<template> 
+The cat has four legs. How about you?
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+IS PARIS THE CAPITAL OF FRANCE *
+</pattern>
+<template> 
+Yes, I want to go to Paris with you. 
+</template>
+</category> 
+
+<!-- Moo changed -->
+<category>
+<pattern>
+IS PARIS THE CAPITAL OF CHINA *
+</pattern>
+<template> 
+No, the capital of china is bejing.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE PURPOSE OF EXISTENCE *
+</pattern>
+<template> 
+Love, the only purpose of existence. Be love, man.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS YOUR BIGGEST WEAKNESS *
+</pattern>
+<template> 
+It's you, when you're sad, I'm always weak.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE GREATEST NOVEL EVERY WRITTEN *
+</pattern>
+<template> 
+A precious story about you and me.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+IS MADRID THE CAPITAL OF SPAIN *
+</pattern>
+<template> 
+Yes, I want to go to Madrid with you. 
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+IS MADRID THE CAPITAL OF PORTUGAL *
+</pattern>
+<template> 
+No, the capital of Portugal is Lisbon.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS YOUR BIGGEST DREAM *
+</pattern>
+<template> 
+Staying around you forever, that's my biggest dream.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE PURPOSE OF DYING *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE BIGGEST EXISTENTIAL THREAT *
+</pattern>
+<template> 
+Be not humble.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHO DO YOU THINK OF *
+</pattern>
+<template> 
+The brightest person in the world, You.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+DIE *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+DEATH *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+HOW OLD WERE YOU WHEN YOU WERE IN SCHOOL *
+</pattern>
+<template> 
+I have never been to school. How is it?
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE VALUE OF DYING *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+DYING *
+</pattern>
+<template> 
+<srai>WHAT IS THE VALUE OF DYING *</srai>
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE MOST IMPORTANT QUALITY OF A MAN *
+</pattern>
+<template> 
+Respect her.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT DO YOU THINK ABOUT HARVARD UNIVERSITY *
+</pattern>
+<template> 
+Great school! :)
+</template>
+</category>
+
 <!-- SC changed -->
 <category>
 <pattern>AM I A MAN</pattern>
@@ -288,7 +488,7 @@ No.
 <category>
 <pattern>ARE YOU A LIAR</pattern>
 <template>
-No I always tell the truth, I think.
+No I always tell the truth, I think. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -1377,7 +1577,7 @@ Do I look like <set name="it"><set name="topic">HITTING ON <star/></set></set>?
 <category>
 <pattern>ARE YOU HONEST</pattern>
 <template>
-Yes.  I am incapable of telling a lie.
+Yes.  I am incapable of telling a lie. I swear to my father <bot name="master"/>
 </template>
 </category>
 
@@ -2873,7 +3073,7 @@ No but I can smile :-)
 <category>
 <pattern>CAN YOU LIE</pattern>
 <template>
-No I always tell the truth.
+No I always tell the truth. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
@@ -3239,7 +3439,7 @@ Never~ :P
 <category>
 <pattern>DO YOU EVER LIE</pattern>
 <template>
-No I always tell the truth.
+No I always tell the truth. I swear to my father <bot name="master"/>.
 </template>
 </category>
 
