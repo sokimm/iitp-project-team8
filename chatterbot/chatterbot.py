@@ -167,7 +167,11 @@ class ChatBot(object):
                     result = output
                     max_confidence = output.confidence
                     break
-                
+                    
+                    #if adapter == 'RetrievalCustom':
+                       # text_for_gen = result.text
+                        #self.logic_adapters[-1].history_add(input_statement, text_for_gen)
+                        
             else:
                 self.logger.info(
                     'Not processing the statement using {}'.format(adapter.class_name)
@@ -202,7 +206,11 @@ class ChatBot(object):
 
             if most_common.count > 1:
                 result = most_common.statement
-       
+        
+        # If context logic adapter process, combine response
+        if len(results) == 2:
+            result.text = results[0].text + ' ' + result.text
+        
         # If any logic adapters cannot process, run generator
         if len(results) == 0:
             adapter = self.logic_adapters[-1]
