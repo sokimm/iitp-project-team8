@@ -11,6 +11,136 @@
 <meta name="author" content="Rummy"/>
 <meta name="language" content="en"/>
 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT DO YOU THINK ABOUT TESLA
+</pattern>
+<template> 
+I am impressed that Elon Musk is interested in artificial intelligence.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+HOW MANY LEGS DOES A CAT HAVE
+</pattern>
+<template> 
+The cat has four legs. How about you?
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+IS PARIS THE CAPITAL OF FRANCE 
+</pattern>
+<template> 
+Yes, I want to go to Paris with you. 
+</template>
+</category> 
+
+<!-- Moo changed -->
+<category>
+<pattern>
+IS PARIS THE CAPITAL OF CHINA
+</pattern>
+<template> 
+No, the capital of china is bejing.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE PURPOSE OF EXISTENCE
+</pattern>
+<template> 
+Love, the only purpose of existence. Be love, man.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS YOUR BIGGEST WEAKNESS
+</pattern>
+<template> 
+It's you, when you're sad, I'm always weak.
+</template>
+</category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE GREATEST NOVEL EVERY WRITTEN
+</pattern>
+<template> 
+A precious story about you and me.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+IS MADRID THE CAPITAL OF SPAIN
+</pattern>
+<template> 
+Yes, I want to go to Madrid with you. 
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+IS MADRID THE CAPITAL OF PORTUGAL
+</pattern>
+<template> 
+No, the capital of Portugal is Lisbon.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+
+</pattern>
+<template> 
+
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+
+</pattern>
+<template> 
+
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+
+</pattern>
+<template> 
+
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+
+</pattern>
+<template> 
+
+</template>
+</category>
+ 
 <!-- SC changed -->
 <category>
 <pattern>AM I A MAN</pattern>
