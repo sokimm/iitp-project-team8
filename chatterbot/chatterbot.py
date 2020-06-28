@@ -166,12 +166,12 @@ class ChatBot(object):
                 if output.confidence == 1:
                     result = output
                     max_confidence = output.confidence
-                    break
+                   
                     
-                    #if adapter == 'RetrievalCustom':
-                       # text_for_gen = result.text
-                        #self.logic_adapters[-1].history_add(input_statement, text_for_gen)
+                    if adapter == self.logic_adapters[-2]:
                         
+                        self.logic_adapters[-1].history_add(input_statement, result)
+                    break
             else:
                 self.logger.info(
                     'Not processing the statement using {}'.format(adapter.class_name)
