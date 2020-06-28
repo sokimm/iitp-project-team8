@@ -40448,15 +40448,6 @@ I think <set name="he"><star/> Dempsey</set> was a boxer, right?
 </template>
 </category>
 
-<!-- WK added -->
-<category>
-<pattern>WHO IS *</pattern>
-<template>
-You said <get name="name"/> was your name.
-</template>
-</category>
-
-
 <category>
 <pattern>WHO IS <bot name="name"/> BOT</pattern>
 <template>
