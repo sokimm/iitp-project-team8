@@ -140,7 +140,77 @@ WHO DO YOU THINK OF
 The brightest person in the world, You.
 </template>
 </category>
+
+<!-- Moo changed -->
+<category>
+<pattern>
+DIE *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
  
+<!-- Moo changed -->
+<category>
+<pattern>
+DEATH *
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+HOW OLD WERE YOU WHEN YOU WERE IN SCHOOL 
+</pattern>
+<template> 
+I have never been to school. How is it?
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE VALUE OF DYING
+</pattern>
+<template> 
+When do you think a person dies? A man dies when people forget him.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+DYING *
+</pattern>
+<template> 
+<srai>WHAT IS THE VALUE OF DYING</srai>
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT IS THE MOST IMPORTANT QUALITY OF A MAN
+</pattern>
+<template> 
+Respect her.
+</template>
+</category>
+ 
+<!-- Moo changed -->
+<category>
+<pattern>
+WHAT DO YOU THINK ABOUT HARVARD UNIVERSITY
+</pattern>
+<template> 
+Great school! :)
+</template>
+</category>
+
 <!-- SC changed -->
 <category>
 <pattern>AM I A MAN</pattern>
