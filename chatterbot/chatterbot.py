@@ -167,10 +167,8 @@ class ChatBot(object):
                     result = output
                     max_confidence = output.confidence
                    
-                    
-                    if adapter == self.logic_adapters[-2]:
-                        
-                        self.logic_adapters[-1].history_add(input_statement, result)
+# if adapter == self.logic_adapters[-2]:                        
+#                       self.logic_adapters[-1].history_add(input_statement, result)
                     break
             else:
                 self.logger.info(
@@ -207,23 +205,24 @@ class ChatBot(object):
             if most_common.count > 1:
                 result = most_common.statement
         
-        # If context logic adapter process, combine response
-        if len(results) == 2:
-            result.text = results[0].text + ' ' + result.text
-        
+       
         # If any logic adapters cannot process, run generator
-        if len(results) == 0:
+        if result == None:
             adapter = self.logic_adapters[-1]
             output = adapter.process(input_statement, additional_response_selection_parameters)
+            results.append(output)
             
             self.logger.info(
                 '{} selected "{}" as a response with a confidence of {}'.format(
                         adapter.class_name, output.text, output.confidence
                 )
             )  
-            
             result = output
-
+        
+        # If context logic adapter process, combine response
+        if len(results) == 2:
+            result.text = results[0].text + ' ' + result.text
+        
             
         response = Statement(
             text=result.text,

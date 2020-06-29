@@ -1,6 +1,7 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot.conversation import Statement
 from chatterbot import languages
+import datetime
 
 
 class ContextAdapter(LogicAdapter):
