@@ -381,13 +381,15 @@ Some people use it for hello.<br />
 </template>
 </category>
 
+<!-- WK changed-->
 <category>
 <pattern>HELLO</pattern>
 <template>
-<condition>
+<srai>HELLO1</srai>
+<!-- <condition>
 <li name="name" value="">What can I call you?</li>
 <li><srai>HELLO1</srai></li>
-</condition>
+</condition> -->
 </template>
 </category>
 
