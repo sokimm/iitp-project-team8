@@ -10,7 +10,8 @@
 <meta name="author" content="Dr. Wallace"/>
 <meta name="language" content="en"/>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>WHAT IS THAT FEELING LIKE</that>
 <template>
@@ -53,7 +54,7 @@ robot.
 <think><set name="it"><set name="topic"><person/></set></set></think> You can create your own
 robot personality.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>* A ROBOT</pattern>

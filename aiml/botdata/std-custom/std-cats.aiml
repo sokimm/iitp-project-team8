@@ -143,15 +143,17 @@ Chameleons are some of the most exotic and strange looking
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>WHAT DO YOU FEED YOUR *</that>
-<template>
+<template> -->
 
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>FEEDING CATS CAN BE A LOT OF FUN</that>
 <template>
@@ -164,7 +166,7 @@ Chameleons are some of the most exotic and strange looking
 will kill the cat.</li>
 </random>
 </template>
-</category>
+</category> -->
 
 </topic>
 

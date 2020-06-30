@@ -32134,12 +32134,13 @@ This little piggy stayed home.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT * ABOUT</pattern>
 <template>
 <srai>WHAT IS THE TOPIC</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT * DO YOU HAVE</pattern>
@@ -32471,12 +32472,13 @@ This little piggy stayed home.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT ARE WE *</pattern>
 <template>
 <srai>WHAT IS THE TOPIC</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT ARE WE TALKING ABOUT</pattern>
@@ -33021,12 +33023,13 @@ try an open source search engine to search for it?
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHAT DID WE *</pattern>
 <template>
 <srai>WHAT IS THE TOPIC</srai>
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHAT DID YOU ABOUT ME *</pattern>
