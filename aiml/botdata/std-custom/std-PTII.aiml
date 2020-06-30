@@ -154,8 +154,8 @@ FINAL WARNING!! This will destroy the bot. Are you absolutely sure YES or NO?
 		<set name="crashdate"><date locale="en_GB" timezone="0" format="%A %d %B %Y %H:%M:%S %p"/></set>
 	</think>
 <bot name="name"/>CHATBOT REFORMATTED SUCCESSFULLY<br/><br/>
-Microsoft Windows 2000 [Version 5.00.2195]<br/>
-(C) Copyright 1985-200 Microsoft Corp.<br/><br/>
+Microsoft Windows 2020 [Version 5.00.2195]<br/>
+(C) Copyright 1985-2020 Microsoft Corp.<br/><br/>
 
 c:\<bot name="name"/>\chat&gt;.
 </template>
@@ -172,7 +172,7 @@ c:\<bot name="name"/>\chat&gt;.
 		<li value="RESTORE BOT"><bot name="name"/>bot now functioning again.<set name="topic"></set></li>
 		<li>
 		<random>
-			<li>COMMAND NOT RECOGNIZED. Please email mitsuku@square-bear.co.uk for assistance.<br/><bot name="name"/>reformatted on<get name="crashdate"/>by user:<get name="name"/><br/><br/>c:\<bot name="name"/>\chat&gt;.</li>
+			<li>COMMAND NOT RECOGNIZED. Please email YUMMY@iitp.kr for assistance.<br/><bot name="name"/>reformatted on<get name="crashdate"/>by user:<get name="name"/><br/><br/>c:\<bot name="name"/>\chat&gt;.</li>
 		</random>
 		</li>
 	</condition>
