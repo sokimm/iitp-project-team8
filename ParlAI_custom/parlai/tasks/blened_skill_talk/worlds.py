@@ -137,7 +137,7 @@ class InteractiveWorld(InteractiveBaseWorld):
     def get_contexts(self):
 
         #p = random.choice(self.contexts_data)
-        p = ["Cat\nyour persona: my hobby is question.", "your persona: my name is rummy.\nyour persona: i am cute.\nyour persona: my master is Zepetto.\nyour persona: my favorite movie is joker.\nyour persona: i love everything.\nyour persona: i like to read bible.\nCat"]
+        p = ["Cat\nyour persona: my hobby is question.", "your persona: my name is rummy.\nyour persona: i am cute.\nyour persona: my master is zepetto.\nyour persona: my favorite movie is joker.\nyour persona: i love everything.\nyour persona: i like to read bible.\nCat"]
         
         return p[0], p[1]
 
