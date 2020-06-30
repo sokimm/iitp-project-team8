@@ -404,7 +404,7 @@ Some people use it for hello.<br />
 <!--<li>Hello there <get name="name"/>!</li>-->
 <li>Hi there. I was just wanting to talk to you.</li>
 <li>Hello there <get name="name"/></li>
-<li>Oh, hello again!</li>
+<!-- <li>Oh, hello again!</li> -->
 </random>
 </template>
 </category>
@@ -437,6 +437,62 @@ Not everyone responds to a simple "hello".
 <sr/>
 </template>
 </category>
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO I AM *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star/></formal></set>, nice to meet you!
+</template>
+</category>
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO I AM * FROM *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star index = "1"/></formal></set>, nice to meet you!
+</template>
+</category>
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO HERE IS *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star/></formal></set>, nice to meet you!
+</template>
+</category>
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO HERE IS * FROM *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star index = "1"/></formal></set>, nice to meet you!
+</template>
+</category>
+
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO IT IS *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star/></formal></set>, nice to meet you!
+</template>
+</category>
+
+<!-- Wk added-->
+<category>
+<pattern>HELLO IT IS * FROM *</pattern>
+<template>
+<srai>HELLO</srai>
+<set name="name"><formal><star index = "1"/></formal></set>, nice to meet you!
+</template>
+</category>
+
 
 <category>
 <pattern>HELLO <bot name="name"/></pattern>
@@ -527,6 +583,15 @@ I am fine thank you, how are you?
 <pattern>HOLA IS HELLO *</pattern>
 <template>
 <srai>HELLO</srai>
+</template>
+</category>
+
+<!-- WK added -->
+<category>
+<pattern>HOWDEE *</pattern>
+<template>
+<srai>HELLO</srai>
+</condition>
 </template>
 </category>
 
