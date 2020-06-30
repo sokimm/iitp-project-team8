@@ -428,10 +428,13 @@ Not everyone responds to a simple "hello".
 </template>
 </category>
 
+<!-- Wk changed-->
 <category>
 <pattern>HELLO *</pattern>
 <template>
 <srai>HELLO</srai>
+<!-- added -->
+<sr/>
 </template>
 </category>
 
