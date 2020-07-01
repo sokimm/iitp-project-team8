@@ -4,7 +4,7 @@ postprocess the generator output
 ex. i don ' t have a money . how about you ? => I don't have a money. How about you?
 
 """
-def sentences(s):
+def joint_sentence(s):
     """Split the string s into a list of sentences."""
     try: s+""
     except: raise TypeError( "s must be a string" )
@@ -35,5 +35,3 @@ def sentences(s):
     if len(sentenceList) == 0: sentenceList.append(s.capitizalie())
     sentence = ' '.join(map(str, sentenceList))
     return sentence
-
-print(sentences("i don ' t know . how about you ? "))
