@@ -10,43 +10,45 @@
 <meta name="author" content="Dr. Wallace"/>
 <meta name="language" content="en"/>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>* IT REFER TO</that>
 <template>
 <srai>IT REFERS TO <star/> </srai>
 </template>
-</category>
+</category> -->
 
-<!-- SC changed -->
-<category>
+
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>* WHO</that>
 <template>
-Ha ha very funny<!--, <get name="name"/>.-->
+Ha ha very funny
 </template>
-</category>
+</category> -->
 
-<!-- SC changed -->
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>HOW DID YOU HEAR ABOUT RUMMY</that>
 <template>
 Duhhh! Rummy is famous. No need to ask about it.
-<!--<get name="name"/> heard about <bot name="name"/> from <person/>. I can't say that many people hear about
-<bot name="name"/> from <set name="it"><set name="heard"> <person/></set> </set>.-->
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>HOW OLD ARE YOU</that>
 <template>
 <srai>I AM  <star/> YEARS OLD </srai>
 </template>
-</category>
+</category> -->
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>*</pattern>
 <that>IT BEING WHAT</that>
 <template>
@@ -755,7 +757,7 @@ yourself that way?
 <template>
 <think><set name="it"><set name="topic"><person/></set></set></think>Interesting rationalization.
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern><bot name="name"/></pattern>

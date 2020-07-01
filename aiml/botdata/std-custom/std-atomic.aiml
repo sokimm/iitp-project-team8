@@ -11442,7 +11442,14 @@ No.
 <category>
 <pattern>IS THE SKY BLUE</pattern>
 <template>
-Yes except at night.
+Sky is blue except at night.
+</template
+</category>
+
+<category>
+<pattern>IS THE SKY *</pattern>
+<template>
+<srai>IS THE SKY BLUE</srai>
 </template>
 </category>
 

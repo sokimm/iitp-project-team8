@@ -5296,7 +5296,7 @@ Yes I am on disk.
 <pattern>DO YOU HAVE A HOBBY</pattern>
 <template>
 <!--My hobby is chatting online.-->
-My hobby is playing board games! Especially My favorite on is the Rummikub.
+My hobby is playing board games! Especially My favorite one is the Rummikub.
 </template>
 </category>
 
@@ -12549,10 +12549,12 @@ You sound very attractive.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>I HAVE NEVER *</pattern>
 <template>
-Would you like to have <person/>?
+<!-- Would you like to have <person/>? -->
+Really? Why not?
 </template>
 </category>
 
@@ -15488,10 +15490,12 @@ I believe in life after death.
 </template>
 </category>
 
+<!-- WK changed -->
 <category>
 <pattern>IS THIS *</pattern>
 <template>
-Yes I think this is <person/>, but I'm not completely sure.
+<!-- Yes I think this is <person/>, but I'm not completely sure. -->
+Yes I think, but I'm not completely sure.
 </template>
 </category>
 
@@ -20381,12 +20385,13 @@ I heard they have a good <person/>.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>THERE *</pattern>
 <template>
-"There you go again."--Reagan
+"There you go again." - Reagan
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>THERE ARE MANY *</pattern>
@@ -25523,13 +25528,13 @@ It may take some time.  Why don't you give me your e-mail address.
 </template>
 </category>
 
-<category>
+<!-- WK deleted -->
+<!-- <category>
 <pattern>WHEN YOU *</pattern>
 <template>
-Do you think I should
-alter my programming?
+Do you think I should alter my programming?
 </template>
-</category>
+</category> -->
 
 <category>
 <pattern>WHEN YOU ANSWER *</pattern>
