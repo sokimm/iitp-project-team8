@@ -47,9 +47,19 @@ class ChatBot(object):
         )
 
         self.preprocessors = []
+        self.postprocessors = []
 
         for preprocessor in preprocessors:
             self.preprocessors.append(utils.import_module(preprocessor))
+
+        postprocessors = kwargs.get(
+            'postprocessors', [
+                'chtterbot.postprocessors.joint_sentence'
+            ]
+        )
+
+        for postprocessor in postprocessors:
+            self.postprocessors.append(utils.import_module(postprocessor))
 
         self.logger = kwargs.get('logger', logging.getLogger(__name__))
 
@@ -157,17 +167,17 @@ class ChatBot(object):
                         adapter.class_name, output.text, output.confidence
                     )
                 )
-                
+
                 # if output.confidence > max_confidence:
                 #     result = output
                 #     max_confidence = output.confidence
-                
+
                 # If output confidence is equal to 1, stop process
                 if output.confidence == 1:
                     result = output
                     max_confidence = output.confidence
-                   
-# if adapter == self.logic_adapters[-2]:                        
+
+# if adapter == self.logic_adapters[-2]:
 #                       self.logic_adapters[-1].history_add(input_statement, result)
                     break
             else:
@@ -204,26 +214,30 @@ class ChatBot(object):
 
             if most_common.count > 1:
                 result = most_common.statement
-        
-       
+
+
         # If any logic adapters cannot process, run generator
         if result == None:
             adapter = self.logic_adapters[-1]
             output = adapter.process(input_statement, additional_response_selection_parameters)
+
+            for preprocessor in self.preprocessors:
+                output = preprocessor(output)
+
             results.append(output)
-            
+
             self.logger.info(
                 '{} selected "{}" as a response with a confidence of {}'.format(
                         adapter.class_name, output.text, output.confidence
                 )
-            )  
+            )
             result = output
-        
+
         # If context logic adapter process, combine response
         if len(results) == 2:
             result.text = results[0].text + ' ' + result.text
-        
-            
+
+
         response = Statement(
             text=result.text,
             in_response_to=input_statement.text,
@@ -301,4 +315,3 @@ class ChatBot(object):
 
     class ChatBotException(Exception):
         pass
-

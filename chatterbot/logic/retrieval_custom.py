@@ -14,7 +14,7 @@ class RetrievalCustom(LogicAdapter):
         self.k = Kernel()
         self.k.learn("std-startup.xml")
         self.k.respond("load aiml b")
-        
+
     def can_process(self, statement):
         response = self.process(statement)
         self.cache[statement.text] = response
@@ -36,7 +36,7 @@ class RetrievalCustom(LogicAdapter):
 
 
         if response_aiml == "": #retrieval 안에 없을 때
-            txt = "No match aiml"
+            txt = "No match aiml."
             response = Statement(text=txt)
             response.confidence = 0
         else:
@@ -44,4 +44,3 @@ class RetrievalCustom(LogicAdapter):
             response.confidence = 1
 
         return response
-

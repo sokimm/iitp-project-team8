@@ -1,7 +1,6 @@
 from chatterbot.logic import LogicAdapter
 from chatterbot import filters
 from chatterbot.conversation import Statement
-from chatterbot import postprocessor.joint_sentece as postprocess
 
 
 class ParlAI(LogicAdapter):
