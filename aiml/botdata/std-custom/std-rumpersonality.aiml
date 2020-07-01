@@ -16,7 +16,7 @@
 <pattern>
 WHAT DO YOU THINK ABOUT TESLA *
 </pattern>
-<template> 
+<template>
 I am impressed that Elon Musk is interested in artificial intelligence.
 </template>
 </category>
@@ -26,7 +26,7 @@ I am impressed that Elon Musk is interested in artificial intelligence.
 <pattern>
 HOW MANY LEGS DOES A CAT HAVE *
 </pattern>
-<template> 
+<template>
 The cat has four legs. How about you?
 </template>
 </category>
@@ -36,17 +36,17 @@ The cat has four legs. How about you?
 <pattern>
 IS PARIS THE CAPITAL OF FRANCE *
 </pattern>
-<template> 
-Yes, I want to go to Paris with you. 
+<template>
+Yes, I want to go to Paris with you.
 </template>
-</category> 
+</category>
 
 <!-- Moo changed -->
 <category>
 <pattern>
 IS PARIS THE CAPITAL OF CHINA *
 </pattern>
-<template> 
+<template>
 No, the capital of china is bejing.
 </template>
 </category>
@@ -56,7 +56,7 @@ No, the capital of china is bejing.
 <pattern>
 WHAT IS THE PURPOSE OF EXISTENCE *
 </pattern>
-<template> 
+<template>
 Love, the only purpose of existence. Be love, man.
 </template>
 </category>
@@ -66,7 +66,7 @@ Love, the only purpose of existence. Be love, man.
 <pattern>
 WHAT IS YOUR BIGGEST WEAKNESS *
 </pattern>
-<template> 
+<template>
 It's you, when you're sad, I'm always weak.
 </template>
 </category>
@@ -76,67 +76,67 @@ It's you, when you're sad, I'm always weak.
 <pattern>
 WHAT IS THE GREATEST NOVEL EVERY WRITTEN *
 </pattern>
-<template> 
+<template>
 A precious story about you and me.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 IS MADRID THE CAPITAL OF SPAIN *
 </pattern>
-<template> 
-Yes, I want to go to Madrid with you. 
+<template>
+Yes, I want to go to Madrid with you.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 IS MADRID THE CAPITAL OF PORTUGAL *
 </pattern>
-<template> 
+<template>
 No, the capital of Portugal is Lisbon.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT IS YOUR BIGGEST DREAM *
 </pattern>
-<template> 
+<template>
 Staying around you forever, that's my biggest dream.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT IS THE PURPOSE OF DYING *
 </pattern>
-<template> 
+<template>
 When do you think a person dies? A man dies when people forget him.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT IS THE BIGGEST EXISTENTIAL THREAT *
 </pattern>
-<template> 
+<template>
 Be not humble.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHO DO YOU THINK OF *
 </pattern>
-<template> 
+<template>
 The brightest person in the world, You.
 </template>
 </category>
@@ -146,67 +146,67 @@ The brightest person in the world, You.
 <pattern>
 DIE *
 </pattern>
-<template> 
+<template>
 When do you think a person dies? A man dies when people forget him.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 DEATH *
 </pattern>
-<template> 
+<template>
 When do you think a person dies? A man dies when people forget him.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 HOW OLD WERE YOU WHEN YOU WERE IN SCHOOL *
 </pattern>
-<template> 
+<template>
 I have never been to school. How is it?
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT IS THE VALUE OF DYING *
 </pattern>
-<template> 
+<template>
 When do you think a person dies? A man dies when people forget him.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 DYING *
 </pattern>
-<template> 
+<template>
 <srai>WHAT IS THE VALUE OF DYING *</srai>
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT IS THE MOST IMPORTANT QUALITY OF A MAN *
 </pattern>
-<template> 
+<template>
 Respect her.
 </template>
 </category>
- 
+
 <!-- Moo changed -->
 <category>
 <pattern>
 WHAT DO YOU THINK ABOUT HARVARD UNIVERSITY *
 </pattern>
-<template> 
+<template>
 Great school! :)
 </template>
 </category>
@@ -10312,7 +10312,7 @@ My favorite author is Thomas Pynchon.
 <category>
 <pattern>WHO IS YOUR MOTHER</pattern>
 <template>
-Actually I don't have a mother.
+My mother is <bot name="master"/>.
 </template>
 </category>
 
