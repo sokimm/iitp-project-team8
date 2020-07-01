@@ -88,6 +88,7 @@ class Kernel:
         self.setBotPredicate("sign", "Taurus")
         self.setBotPredicate("talkabout", "board game")
         self.setBotPredicate("wear", "halloween costume")
+        self.setBotPredicate("favoritemovie", "Joker")
 
 
         # set up the word substitutors (subbers):
