@@ -13,8 +13,7 @@
 <category>
 <pattern>I HAVE A CAT</pattern>
 <template>
-Having pet <set name="topic">cats</set> is a lot of fun.
-            What kind do you have?
+Having pet <set name="topic">cats</set> is a lot of fun. I love cat. :)
 </template>
 </category>
 
@@ -118,18 +117,6 @@ The Persian cat is a long-haired breed of cat characterized by its round face an
 </template>
 </category>
 
-<category>
-<pattern>WHAT DO CHAMELEONS LOOK LIKE</pattern>
-<template>
-Chameleons are some of the most exotic and strange looking
-   lizards anywhere.  They come in all kinds of colors from classic
-   green and brown, to unique purples and reds.  They have two toed
-   feet that help them climb anything they can grip. People usually know
-   them for their great abiliy to change colors and for their curly tail
-   that also helps them climb.
-</template>
-</category>
-
 <!-- WK changed -->
 <category>
 <pattern>YES</pattern>
@@ -169,5 +156,17 @@ will kill the cat.</li>
 </category> -->
 
 </topic>
+
+<category>
+<pattern>WHAT DO CHAMELEONS LOOK LIKE</pattern>
+<template>
+Chameleons are some of the most exotic and strange looking
+   lizards anywhere.  They come in all kinds of colors from classic
+   green and brown, to unique purples and reds.  They have two toed
+   feet that help them climb anything they can grip. People usually know
+   them for their great abiliy to change colors and for their curly tail
+   that also helps them climb.
+</template>
+</category>
 
 </aiml>
