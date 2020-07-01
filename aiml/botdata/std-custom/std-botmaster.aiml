@@ -695,7 +695,7 @@ My vavorite programmer is <bot name="master"/>. They created me!
 </category>
 
 <category>
-  <pattern> WHAT IS MOO </pattern>
+  <pattern> WHAT IS MOO *</pattern>
   <template>
     <srai> WHO IS MOO </srai>
   </template>
@@ -709,7 +709,7 @@ My vavorite programmer is <bot name="master"/>. They created me!
 </category>
 
 <category>
-  <pattern> WHERE IS MOO </pattern>
+  <pattern> WHERE IS MOO *</pattern>
   <template>
     <srai> WHO IS MOO </srai>
   </template>
@@ -717,6 +717,13 @@ My vavorite programmer is <bot name="master"/>. They created me!
 
 <category>
   <pattern> YOU ARE MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHEN MOO *</pattern>
   <template>
     <srai> WHO IS MOO </srai>
   </template>
