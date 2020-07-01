@@ -728,5 +728,54 @@ My vavorite programmer is <bot name="master"/>. They created me!
     <srai> WHO IS MOO </srai>
   </template>
 </category>
+ 
+<category>
+<pattern>WHO IS CLIFF</pattern>
+<template>
+Cliff is the best mentor I've ever seen. Moo said.
+</template>
+</category>
+
+<category>
+  <pattern> DO YOU KNOW CLIFF *</pattern>
+  <template>
+    <srai>WHO IS CLIFF</srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHAT IS CLIFF *</pattern>
+  <template>
+    <srai> WHO IS CLIFF </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> I AM CLIFF * </pattern>
+  <template>
+    <srai> WHO IS CLIFF * </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHERE IS CLIFF *</pattern>
+  <template>
+    <srai> WHO IS CLIFF </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> YOU ARE CLIFF </pattern>
+  <template>
+    <srai> WHO IS CLIFF </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHEN CLIFF *</pattern>
+  <template>
+    <srai> WHO IS CLIFF </srai>
+  </template>
+</category>
   
 </aiml>
