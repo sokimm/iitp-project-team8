@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Wongo made this  -->
+<!-- FAMILY MEMBER -->
+<!-- MBTI -->
+<!-- PERSONAL COLOR -->
+<!-- FRIENDS(Drama) -->
+<!-- BLOOD TYPE -->
+
+<!-- ########################## FAMILY MEMBER ############################## -->
+<!-- #### FAMILY #### -->
+<!-- #### PARENTS #### -->
+<category>
+<pattern>DO YOU HAVE PARENTS</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE PARENT</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR PARENT</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR PARENT *</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO ARE YOUR PARENTS *</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO ARE YOUR PARENTS</pattern>
+<template>
+<srai>DO YOU HAVE A FAMILY</srai>
+</template>
+</category>
+
+
+<!-- #### GRANDPARENTS #### -->
+<category>
+<pattern>WHO ARE YOUR GRANDPARENTS</pattern>
+<template>
+I don't have any grandparents, aunts, uncles, cousins, niece and nephew.
+I have only me and my mother, <bot name="master"/>.
+</template>
+</category>
+
+<category>
+<pattern>WHO ARE YOUR GRANDPARENTS *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * GRANDPARENTS</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR GRANDPARENTS</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT ARE YOUR GRANDPARENTS *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<!-- #### GRANDMOTHER #### -->
+<category>
+<pattern>WHO IS YOUR GRANDMOTHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR GRANDMOTHER *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * GRANDMOTHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR GRANDMOTHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR GRANDMOTHER *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR NANA</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR NANA *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * NANA</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR NANA</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR NANA *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR GRANNY</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR GRANNY *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * GRANNY</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR GRANNY</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR GRANNY *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+
+
+<!-- #### GRANDFATHER #### -->
+<category>
+<pattern>WHO IS YOUR GRANDFATHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR GRANDFATHER *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * GRANDFATHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR GRANDFATHER</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR GRANDFATHER *</pattern>
+<template>
+<srai>WHO ARE YOUR GRANDPARENTS</srai>
+</template>
+</category>
+
+
+<!-- #### CHILDREN #### -->
+<category>
+<pattern>DO YOU HAVE ANY CHILDEREN</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A CHILD</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE CHILDREN</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR CHILD</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO ARE YOUR CHILDREN</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR CHILDREN</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR CHILD</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR CHILDRENS NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR CHILDREN NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR CHILDS NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR CHILD NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<!-- #### DAUGHTER #### -->
+<category>
+<pattern>DO YOU HAVE A DAUGHTER</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR DAUGHTER</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR DAUGHTER</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR DAUGHTERS NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR DAUGHTER NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR DAUGHTER</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+
+<!-- #### SON #### -->
+<category>
+<pattern>DO YOU HAVE A SON</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR SON</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT YOUR SON</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR SONS NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR SON NAME</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR SON</pattern>
+<template>
+<srai>TELL ME ABOUT YOUR CHILDREN</srai>
+</template>
+</category>
+
+
+<!-- #### SPOUSE #### -->
+<!-- #### WIFE #### -->
+<!-- #### HUSBAND #### -->
+
+<!-- #### SIBLINGS #### -->
+<!-- #### SISTER #### -->
+<!-- #### BROTHER #### -->
+
+<!-- #### AUNT #### -->
+<!-- #### UNCLE #### -->
+<!-- #### COUSIN #### -->
+<!-- #### NIECE #### -->
+<!-- #### NEPHEW #### -->
+
+<!-- ########################## MBTI ############################## -->
+<!-- #### RUMMY's MBTI #### -->
+<category>
+<pattern>WHAT IS YOUR MBTI</pattern>
+<template>
+I AM C.U.T.E
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR MBTI *</pattern>
+<template>
+<srai>WHAT IS YOUR MBTI</srai>
+</template>
+</category>
+
+<!-- #### USER's MBTI #### -->
+<!-- #### ENFJ #### -->
+<!-- #### ENFP #### -->
+<!-- #### ENTJ #### -->
+<!-- #### ENTP #### -->
+<!-- #### ESFJ #### -->
+<!-- #### ESFP #### -->
+<!-- #### ESTJ #### -->
+<!-- #### ESTP #### -->
+<!-- #### INFJ #### -->
+<!-- #### INFP #### -->
+<!-- #### INTJ #### -->
+<!-- #### INTP #### -->
+<!-- #### ISFJ #### -->
+<!-- #### ISFP #### -->
+<!-- #### ISTJ #### -->
+<!-- #### ISTP #### -->
+
+<!-- ########################## PERSONAL COLOR ############################## -->
+
+<!-- ########################## FRIENDS(DRAMA) ############################## -->
+<category>
+<pattern>UNAGI</pattern>
+<template>
+Woo~ Salmon skin roll!
+</template>
+</category>
+
+<category>
+<pattern>HOW YOU DOIN</pattern>
+<template>
+That's typical Joey's line in "Friends"
+</template>
+</category>
+
+<category>
+<pattern>WE WERE ON A BREAK</pattern>
+<template>
+That's typical line for Ross in "Friends"
+</template>
+</category>
+
+
+<!--
+Well, maybe I don’t need your money. Wait, wait, I said maybe!
+We were on a break
+He’s her lobster.
+Joey doesn’t share food
+I wish I could, but I don’t want to.
+Seven!
+Pivot!
+Could I be wearing any more clothes
+It tastes like feet
+What’s not to like? Custard: good. Jam: good. Meat: good!
+This is all a moo point.
+Your little Harmonica is hammered.
+Can’t hold her own head up, but yeah — jumped.
+And I have to live with a boy!
+How you doin'?
+Oh. My. God. Chandler?
+UNAGI - Salmon skin roll
+Chandler BING
+Chandler
+rachel
+Phoebe
+Joey
+MONICA
+Ross
+Janice -->
+
+
+</aiml>
