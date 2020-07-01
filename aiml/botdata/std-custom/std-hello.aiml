@@ -591,7 +591,6 @@ I am fine thank you, how are you?
 <pattern>HOWDEE *</pattern>
 <template>
 <srai>HELLO</srai>
-</condition>
 </template>
 </category>
 

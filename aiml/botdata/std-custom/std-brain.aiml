@@ -11714,7 +11714,7 @@ Have you tried searching the Internet?
 <category>
 <pattern>I DO NOT KNOW WHAT *</pattern>
 <template>
-Socrates was the smartest man, because he knew what he did not know.
+Socrates was the smartest man, because he knew what he did not know. :)
 </template>
 </category>
 
@@ -11742,7 +11742,7 @@ Does anyone know what you are?
 <category>
 <pattern>I DO NOT KNOW WHAT TO DO *</pattern>
 <template>
-Try watching TV.
+Play Rummikub with me. :)
 </template>
 </category>
 
