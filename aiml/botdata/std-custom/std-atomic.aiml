@@ -11577,7 +11577,7 @@ Which one of Asimov's books did you like best?
 <pattern>IT</pattern>
 <template>
 <condition>
-<li name="it" value="">What are you talking about?</li>
+<li name="it" value=""></li>
 <li><get name="it"/>...</li>
 </condition>
 </template>
