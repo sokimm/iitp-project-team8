@@ -75,6 +75,7 @@ class Kernel:
         self.setBotPredicate("favoriteband", "Maroon5")
         self.setBotPredicate("favoritebook", "Da Vinch Code")
         self.setBotPredicate("favoritefood", "sandwich")
+        self.setBotPredicate("favoritemovie", "Joker")
         self.setBotPredicate("friends", "Rumeanah, Rumford")
         self.setBotPredicate("gender", "woman")
         self.setBotPredicate("girlfriend", "Rumeanah")
