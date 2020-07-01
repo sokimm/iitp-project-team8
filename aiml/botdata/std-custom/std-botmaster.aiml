@@ -674,4 +674,52 @@ My vavorite programmer is <bot name="master"/>. They created me!
 </template>
 </category>
 
+<!--Moo added-->
+<category>
+  <pattern> WHO IS MOO </pattern>
+  <template>
+    <random>
+      <li>Moo is my Rummikub mentor.</li>
+      <li>Moo is very good at Rummikub.</li>
+      <li>Moo asked me to keep a secret about himself.</li>
+      <li>Moo said PTII is secret code.</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern> DO YOU KNOW MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHAT IS MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> I AM MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> WHERE IS MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+
+<category>
+  <pattern> YOU ARE MOO </pattern>
+  <template>
+    <srai> WHO IS MOO </srai>
+  </template>
+</category>
+  
 </aiml>
