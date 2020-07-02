@@ -54,7 +54,7 @@ class ChatBot(object):
 
         postprocessors = kwargs.get(
             'postprocessors', [
-                'chtterbot.postprocessors.joint_sentence'
+                'chatterbot.postprocessors.joint_sentence'
             ]
         )
 
@@ -221,8 +221,8 @@ class ChatBot(object):
             adapter = self.logic_adapters[-1]
             output = adapter.process(input_statement, additional_response_selection_parameters)
 
-            for preprocessor in self.preprocessors:
-                output = preprocessor(output)
+            for postprocessor in self.postprocessors:
+                output.text = postprocessor(output.text)
 
             results.append(output)
 
