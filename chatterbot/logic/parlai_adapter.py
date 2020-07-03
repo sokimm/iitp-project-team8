@@ -64,7 +64,6 @@ class ParlAI(LogicAdapter):
 
     def process(self, input_statement, additional_response_selection_parameters=None):
         response = self.w.parley_custom(input_statement.text)
-        response = postprocess(response)
         response = Statement(text=response)
         return response
 

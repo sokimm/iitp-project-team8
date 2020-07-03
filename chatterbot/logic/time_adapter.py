@@ -116,7 +116,7 @@ class TimeLogicAdapter(LogicAdapter):
 
         if 'time' in statement.text.lower():
             confidence = self.classifier.classify(time_features)
-            response = Statement(text='The current time in Seoul is ' + now.strftime('%I:%M %p') + 'The more information of other region, please check it out --> https://www.timeanddate.com/worldclock/')
+            response = Statement(text='The current time in Seoul is ' + now.strftime('%I:%M %p') + '. The more information of other region, please check it out --> https://www.timeanddate.com/worldclock/')
             response.confidence = confidence
             return response
         confidence = 0
